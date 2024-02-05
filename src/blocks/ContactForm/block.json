@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ms-block-demo/contactform",
+  "title": "Contact Form",
+  "category": "text",
+  "description": "Contact Form",
+  "keywords": ["contact", "form", "hover"],
+  "version": "1",
+  "textdomain": "ms-block-demo",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "underline_color": {
+      "type": "string",
+      "default": "#f87171"
+    }
+  },
+  "style": "file:./index.css"
+}

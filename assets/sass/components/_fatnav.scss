@@ -1,0 +1,249 @@
+
+
+.content-wrapper {
+  display: flex; // Enables flexbox layout
+  align-items: center; // Aligns items vertically in the center
+  padding-left: 35vw;
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 50%; // Adjust this to set the desired size of the square
+    min-width: 50%; // Prevent collapse of image caused by text.
+    margin-right: 20px; // Adds some space between the image and text block
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .overlayFM {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .text-block {
+    // Style your text block as needed
+    //flex-grow: 1; // Takes up the remaining space in the flex container
+    // Add more styling here for fonts, colors, etc.
+    width: 40%; // Adjust this to set the desired size of the square
+    min-width: 40%; // Prevent collapse of image caused by text.
+    height: 550px;
+    max-height: 550px;
+    overflow-y: hidden;
+  }
+}
+
+.setMeH {
+    font-family: Georgia, serif;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 10px;
+    //  text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+.menuContent {
+  width: 100%;
+  text-align: center;
+}
+
+.fatnav {
+  position: relative;
+  z-index: 3;
+}
+
+.lineme {
+  border-bottom: solid;
+  border-width: medium;
+  border-color: rgba(122,0,223,1);
+}
+
+.fatnav ul {
+  box-sizing: border-box;
+  float: left;
+  display: flex;
+  background-color: #333;
+  color: whitesmoke;
+  //width: 100vw;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+  padding-left: 9vw;
+  padding-right: 10vw;
+
+  z-index: 3;
+  //  padding-left: 25%;
+  //  overflow: hidden;
+  //background-color: transparent;
+}
+
+.fatnav ul li {
+  float: left;
+  width: 16vw;
+}
+
+.fatnav ul li a {
+  display: block;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+
+}
+.fatnav ul li.sm1 ul li a {
+
+}
+.fatnav ul li a:hover {
+  //   color: black;
+  //   background-color: #4c8df8;
+  .sm2 {
+
+  }
+}
+
+.fatnav ul li.sm2 ul {
+  display: none;
+  position: absolute;
+  //  min-width: 160px;
+  margin-bottom: 2vh;
+}
+
+.fatnav ul li.sm2:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  color: whitesmoke;
+  // background-color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
+
+.fatnav li.sm2 li {
+  float: none;
+  width: 80vw;
+}
+
+.fatnav ul li.sm2 ul li a {
+  padding: 8px 16px 8px 25px;
+  display: block;
+  text-align: left;
+}
+
+.b2 {
+
+}
+
+.b2:hover {
+  background-color: #4c8df8; /* Change this color as needed */
+  color: black;
+  transition: background-color .75s;
+}
+
+.hover-effect-list li {
+  width: 100vw;
+  // height: 50px;
+  // line-height: 50px; /* Center text vertically */
+  position: relative;
+  // overflow: hidden;
+}
+.hover-effect-list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16vw;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.75s;
+  z-index: 3; /* Send the colored area behind the text */
+}
+.hover-effect-list li:hover ul {
+  display: block;
+
+}
+
+.hover-effect-list li:hover::before  {
+  background-color: #4c8df8; /* Change this color as needed */
+  transition: background-color 0.75s;
+  z-index: -1;
+}
+// ------------------------------------------------------------------
+
+
+
+.hover-effect-list li:hover .mImg {
+  display: block;
+  z-index: 5;
+}
+
+.sm3:hover .sm3b {
+  display: block !important;
+
+}
+
+.sm3b {
+  position: relative;
+  display: none !important;
+  //  left: 100% !important;
+  margin-left: 15vw !important;
+  padding: 0 !important;
+  z-index: 5;
+}
+
+.nBak {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  right: 0;
+  display: none;
+  height: 600px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.fatnav:hover .nBak{
+  display: block;
+}
+
+.mRight {
+  //  display: none;
+  position: relative;
+  height: 600px;
+  max-height: 600px;
+  margin-left: 5%;
+  overflow-y: hidden;
+  // background-color: rgba(0, 0, 0, 0.6);
+  // z-index: 11;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
+  width: 33%;
+  height: 500px;
+  max-height: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  // height: 600px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}

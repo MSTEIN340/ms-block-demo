@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ms-block-demo/home--1",
+  "title": "AA Home Page",
+  "category": "text",
+  "icon": "star-filled",
+  "description": "Adds a header with a hover effect",
+  "keywords": [
+    "header",
+    "underline",
+    "hover"
+  ],
+  "version": "1",
+  "textdomain": "ms-block-demo",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "underline_color": {
+      "type": "string",
+      "default": "#f87171"
+    }
+  },
+  "style": "file:./index.css"
+}

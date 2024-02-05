@@ -1,0 +1,105 @@
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/ContactForm/main.css ***!
+  \*************************************************************************************************************************************************************************************/
+.contact_form-container {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 30px 30px 30px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  z-index: 10;
+}
+.contact_form-container h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+.contact_form-container .contact_form-row {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form-container .contact_form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.contact_form-container .contact_form-group.half-width {
+  width: 48%;
+}
+.contact_form-container .contact_form-group input, .contact_form-container .contact_form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.contact_form-container .contact_form-group input:focus, .contact_form-container .contact_form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.contact_form-container .contact_form-group input:not(:-moz-placeholder-shown) + label, .contact_form-container .contact_form-group textarea:not(:-moz-placeholder-shown) + label {
+  top: -6px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: #ffffff;
+  padding: 0 4px;
+  border-radius: 4px;
+  left: 8px;
+}
+.contact_form-container .contact_form-group input:focus + label, .contact_form-container .contact_form-group input:not(:placeholder-shown) + label, .contact_form-container .contact_form-group textarea:focus + label, .contact_form-container .contact_form-group textarea:not(:placeholder-shown) + label {
+  top: -6px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: #ffffff;
+  padding: 0 4px;
+  border-radius: 4px;
+  left: 8px;
+}
+.contact_form-container .contact_form-group label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 14px;
+  color: #777;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.contact_form-container .contact_submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact_form-container .contact_submit-button:hover {
+  background-color: #0056b3;
+}
+.contact_form-container #messageSentNotification {
+  text-align: center;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: none;
+}
+
+.contact_checkbox-group {
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
+/*# sourceMappingURL=index.css.map*/

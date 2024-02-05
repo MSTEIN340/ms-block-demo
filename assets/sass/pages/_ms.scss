@@ -1,0 +1,360 @@
+.ms_header-outer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  position: sticky;
+  top: -25px;
+  height: 100px;
+  width: 100%;
+  z-index: 7;
+  overflow-x: hidden;
+}
+
+.ms_header-inner {
+  color: white;
+  background-color: transparent;
+  height: 70px;
+  position: sticky;
+  vertical-align: center;
+  top: 20px;
+  width: 100%;
+  box-shadow: 0 5px 15px #1f1f1f;
+  z-index: 7;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  //  border-radius: 100px;
+  transition: all 1s;
+}
+
+.tight {
+  margin-top: -30px !important;
+  overflow-y: hidden;
+  vertical-align: top;
+}
+
+
+.big_btn{
+  background-image: url("https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/GoldBack.jpg");
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(255,255,255,.1), -1px -1px 0px rgba(250, 188, 6, 0.7);
+  background-color: whitesmoke;
+  display: inline-block;
+  height: 110px ;
+  min-height: 110px;
+  width: 300px !important;
+  text-align: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin: .5rem;
+  border-radius: 10px;
+  content: "";
+  transition: all .8s linear;
+  //top: 40px;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  &:hover  {
+    height: 180px !important;
+  }
+}
+
+.web-summary {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  transform: translateZ(-10px) scale(2);
+}
+
+
+.ms-image-background {
+  background-image: url("https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Hong-Kong-City-Through-The-Windowsmall.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  z-index: -9;
+}
+
+
+.more1 {
+  position: absolute;
+  font-size: .8rem;
+  font-weight: 800;
+  bottom: 0;
+  right: 0;
+  color: #0040ad;
+  text-shadow: 1px 1px 1px rgba(250, 188, 6, 0.87), -1px -1px 0px rgb(61, 60, 60);
+}
+
+
+// old fashioned float center for header
+.ms_center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  //  margin: auto;
+  float: left;
+  content: "";
+  //  margin-top: 10px;
+  //  margin-bottom: 10px;
+  width: 50%;
+  //  height: 6rem;
+  //  padding-left: 0%;
+  //  margin-top: 10px;
+  text-align: center;
+  text-shadow: 7px 7px 7px rgba(0,0,0,0.6);
+}
+
+.ms-col-a {
+  //background-image: linear-gradient(to left,whitesmoke, white);
+}
+
+
+// three floating job desc icons
+.ms-forward {
+  //display: ;
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  z-index: -2 !important;
+  //transform: translateZ(-10px) scale(2);
+  width: 100vw;
+  //margin-top: -180px;
+}
+
+// Dashicon adjustment
+.ms-di1 {
+  margin-top: 5px;
+  content: "";
+}
+.bdev{
+  display: none;
+  width: 100vw;
+  justify-content: center;
+}
+.ms-di2 {
+  display: flex;
+  margin-right: 2.65rem;
+  margin-top: 1.9rem;
+  padding: 0;
+  //left: 0;
+//  top: 0;
+  color: rgba(213, 208, 208, 0.88);
+  text-shadow: 1px 1px 1px rgb(31, 31, 31), -1px -1px 0px rgb(61, 60, 60);
+  font-size: 3.5rem;
+  //margin-top: 25px;
+
+  content: "";
+}
+
+.invisible{
+  display: none;
+}
+.visible {
+  display: inline-flex;
+}
+
+
+
+.pos1 {
+  grid-column: 1/span 1;
+  grid-row: 2;
+}
+
+.ms-bki{
+  min-height: 95vh;
+  min-width: 110vw;
+}
+
+.c1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.fit {
+  position: absolute;
+  height: 100%;
+  width: auto;
+
+//  margin-top: 10%;
+
+//  margin-top: 40vh;
+ // margin-left: 90%;
+  //  margin-bottom: -100px;
+  z-index: 10 !important;
+//  transform: translateZ(-5px);
+//  height: 50vh;
+//  width: auto;
+
+  //background-position-y: bottom;
+//  position: absolute;
+//  left: 700px;
+//  top: -90px;
+  right: 0;
+  bottom: 0;
+}
+
+.noarm {
+  position: absolute;
+  bottom: 0;
+ // margin-top: 250px;
+  height: 70%;
+  width: auto;
+  z-index: 0;
+  margin-left: 30px;
+  right: 0;
+}
+.arm {
+  position: absolute;
+  bottom: 30%;
+  margin-left: 0;
+  height: 40%;
+  //top: 60px;
+  z-index: -1;
+  right: 0;
+  // default start is 304 degrees
+  transform: rotate(0deg);
+}
+
+body {
+  margin: 0;
+
+}
+
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+/* Set the animation, color, size and hide the text */
+.intro {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 1;
+  animation: intro 6s ease-out 1s;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 300%;
+  opacity: 0;
+  text-shadow: 7px 7px 3px rgba(0,0,0,0.6);
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Set the animation & hide the logo */
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  z-index: 1;
+  margin: auto;
+  animation: logo 9s ease-out 9s;
+  opacity: 0;
+}
+
+.logo svg {
+  width: inherit;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+  0% {
+    width: 18em;
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1);
+    width: 18em;
+  }
+}
+
+p {
+ // color: rgba(250, 188, 6, 0.87);
+}
+
+/* Set the font, lean the board, position it */
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(10deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -11em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+  text-shadow: 7px 7px 3px rgba(0,0,0,0.6);
+}
+
+.droids {
+  width: 60%;
+  align-items: center;
+  margin-left: 25%;
+  border-radius: 20px;
+  transform: perspective(-3000px) rotateX(-40deg) !important;
+  transform-origin: 100% 50% !important;
+}
+
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll 100s linear 6s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}

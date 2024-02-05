@@ -1,0 +1,269 @@
+.App {
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none; /* Standard */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container-ms {
+  min-height: 99vh;
+  min-width: 99vw;
+  max-height: 99vh;
+  max-width: 99vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 43vh 9vh 9vh 9vh 9vh 9vh 5vh;
+  grid-gap: 10px;
+  grid-template-areas: "head head head head" "display display display clear" "box7 box8 box9 bksp" "box4 box5 box6 minus" "box1 box2 box3 plus" "zero zero period plus" "foot foot foot foot";
+}
+.container-ms > * {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 5px;
+}
+
+.header {
+  background-color: black;
+  grid-area: head;
+  padding: 0;
+}
+
+.display {
+  grid-area: display;
+  border-style: solid;
+  border-color: black;
+  font-size: calc(1rem + 6vmin);
+  text-align: right;
+  padding: 0 0.5rem 0 0;
+}
+.display--btn {
+  margin: 0;
+  padding: 0;
+  font-size: calc(1rem + 6vmin);
+  text-align: right;
+  background-color: whitesmoke;
+  transition: all 0.2s;
+}
+.display--wh {
+  background-color: whitesmoke;
+}
+.display--lg {
+  background-color: lightblue;
+}
+.display--dg {
+  background-color: #1ed646;
+}
+
+.display--btn:hover {
+  transform: translateY(-0.2rem);
+}
+
+.display--btn:active {
+  background-color: darkblue;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.2rem);
+  color: whitesmoke;
+}
+
+.um {
+  grid-area: display;
+  font-size: calc(1rem + 4vmin);
+  margin-top: -1rem;
+  text-align: right;
+  padding-right: 0rem;
+}
+
+.padButton {
+  margin: 0;
+  padding: 0;
+  font-size: calc(1rem + 6vmin);
+  text-align: center;
+  background-color: #61dafb;
+  transition: all 0.2s;
+}
+.padButton--1 {
+  grid-area: box1;
+}
+.padButton--2 {
+  grid-area: box2;
+}
+.padButton--3 {
+  grid-area: box3;
+}
+.padButton--4 {
+  grid-area: box4;
+}
+.padButton--5 {
+  grid-area: box5;
+}
+.padButton--6 {
+  grid-area: box6;
+}
+.padButton--7 {
+  grid-area: box7;
+}
+.padButton--8 {
+  grid-area: box8;
+}
+.padButton--9 {
+  grid-area: box9;
+}
+.padButton--0 {
+  grid-area: zero;
+}
+.padButton--per {
+  grid-area: period;
+}
+.padButton--bksp {
+  grid-area: bksp;
+  background-color: darkgray;
+}
+.padButton--clear {
+  grid-area: clear;
+  background-color: darkgray;
+}
+.padButton--plus {
+  grid-area: plus;
+  background-color: #404040;
+  color: whitesmoke;
+}
+.padButton--minus {
+  grid-area: minus;
+  background-color: #404040;
+  color: whitesmoke;
+}
+
+.padButton:hover {
+  transform: translateY(-0.2rem);
+}
+
+.padButton:active {
+  background-color: darkblue;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.2rem);
+  color: whitesmoke;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: foot;
+  background-color: darkblue;
+  color: whitesmoke;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: block;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {}
+.boxem {
+  background-color: grey;
+  border-radius: 0.5rem;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.partno {
+  text-align: left;
+  background-color: black;
+  border-radius: 1rem;
+  color: darkblue;
+}
+
+.disp-item {
+  margin: 0px;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: calc(2rem + 2vmin);
+  border-radius: 1rem;
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+  background-color: whitesmoke;
+}
+
+.confirm {
+  margin: 0px;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: calc(2.5rem + 4vmin);
+  border-radius: 1rem;
+  text-align: center;
+  border-style: solid;
+  color: white;
+  border-color: #700404;
+  background-color: #de0404;
+}
+
+.confirm-btn {
+  display: inline-block;
+  margin: 0px;
+  width: 50%;
+  height: 100%;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: calc(2.5rem + 4vmin);
+  border-radius: 1rem;
+  text-align: center;
+  border-style: solid;
+  color: gold;
+  border-color: whitesmoke;
+  transition: all 0.2s;
+}
+.confirm-btn-1 {
+  background-color: #65E981;
+  color: black;
+  border-color: #02400f;
+}
+.confirm-btn-2 {
+  background-color: #FECECE;
+  color: black;
+  border-color: #700404;
+}
+
+.confirm-btn:hover {
+  transform: translateY(-0.2rem);
+}
+
+.confirm-btn:active {
+  background-color: darkblue;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.2rem);
+  color: whitesmoke;
+}
+
+.rj {
+  float: right;
+}
+
+/*# sourceMappingURL=home--1.css.map */

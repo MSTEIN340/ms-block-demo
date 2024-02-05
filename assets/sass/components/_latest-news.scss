@@ -1,0 +1,441 @@
+.news-h {
+  img {
+    width: 100%;
+  }
+}
+.post-details {
+//    position: absolute;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+
+  span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white !important;
+    font-size: .8rem;
+    line-height: 1;
+
+    width: 50%;
+    content: "";
+  }
+  a {
+    color: white !important;
+  }
+}
+.content-line {
+  margin: -2px 0 0px 0 ;
+  font-size: .9rem;
+  height: 42px;
+  overflow: hidden;
+  padding: 3px 20px;
+  border-width: thin ;
+  border-style: solid; /* This line is needed */
+  border-top-color: #7b7777;
+  border-bottom-color: #7b7777;
+  background-color: whitesmoke;
+
+  p {
+    line-height: 1;
+    margin: 0 6px;
+    color: #3d3c3c;
+    padding: 0 5px;
+
+      margin: 0;
+
+
+
+
+  }
+}
+.news_title {
+  margin: -10px 0 0 0;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  background-color: #3e86ff;
+}
+
+.category-banner {
+  position: absolute;
+  top: 60%;
+  left: -15%;
+  background-color: #000; /* Or any color of your choice */
+  color: #fff; /* Text color */
+  transform: translate(0, -50%) rotate(-45deg);
+  transform-origin: 0 0;
+  padding: 5px 10px;
+  width: 100%; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px; /* Adjust as needed */
+}
+
+.news-h {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block; /* or block, depending on your layout */
+}
+
+.img-h {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 100%; /* Adjust as needed */
+}
+.more-link {
+  position: absolute;
+  color: #3e86ff;
+  font-weight: 600;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  /* Additional styling for the link */
+}
+.more-link:visited {
+  color: #3e86ff;
+}
+
+
+.ln_content-area {
+  /* Style as needed, this is where your content will go */
+  font-size: .9rem;
+  line-height: 1;
+  box-sizing: border-box;
+  height: 90%;
+
+  padding: 30px 8px 0 ;
+  margin-bottom: -10px; /* Adjust as needed, provides space for the 'More' link */
+  overflow-y: hidden;
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+}
+
+.ln-media {
+  position: absolute;
+  width: 100%;
+ // color: white !important;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+.ln_image-container {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  height: 390px;
+  max-height: 390px;
+}
+
+.ln_image-container img {
+  width: 100%;
+  height: 100%;
+  // height: 600px;
+}
+
+
+.latest_news {
+  background-color: white;
+  content: "";
+  display: grid;
+  position: relative;
+  height: 95vh;
+  z-index: 5;
+  text-align: center;
+
+}
+
+.ms_latest_news {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.ln-span-d {
+  //margin-top: 5vh;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  padding: 0;
+  height: 600px !important;
+  width: 100%;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.top-line {
+//  background-color: #ffffff;
+  background-color: #333;
+ // color: white;
+  tr, td {
+    margin: 0;
+    padding: 0;
+  }
+
+ // padding-top: 5px;
+}
+
+.c1c {
+  width: 110%;
+  margin: -5%;
+}
+
+
+
+.ln_card {
+
+  // FUNCTIONALITY
+  perspective: 300rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  display: inline-block;
+  //  width: 260px !important;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  //margin: 10px;
+  height: 100% !important;
+  min-height: 100px;
+  border-radius: 20px;
+
+
+  &__side {
+    // height: 8rem;
+    height: 90% !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    content: "";
+    transition: all .8s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    //      box-shadow: 1rem 1.5rem 4rem rgba($color-black, .15);
+
+    &--front {
+      //padding: 5px;
+      background-image: linear-gradient(to left,whitesmoke, white);
+      border-radius: 20px;
+      height: 90%;
+      width: 99%;
+      border-style: solid;
+      border-width: thin;
+      border-color: gray;
+
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-color: whitesmoke;
+      color: black;
+      height: 90%;
+      border-style: solid;
+      border-width: thin;
+      border-color: gray;
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      }
+    }
+  }
+
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      //  background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../../img/nat-5.jpg);
+    }
+
+    &--2 {
+      //  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../../img/nat-6.jpg);
+    }
+
+    &--3 {
+      // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../../img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-secondary-light, .85),
+              rgba($color-secondary-dark, .85));
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-primary-light, .85),
+              rgba($color-primary-dark, .85));
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-tertiary-light, .85),
+              rgba($color-tertiary-dark, .85));
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+
+
+
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
+
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+
+}

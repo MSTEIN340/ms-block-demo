@@ -1,0 +1,311 @@
+$startX: 4;
+$startY: 13;
+$topH: 5;
+$startW: 2;
+
+$bi: 1;
+$ac: 2;
+$hr: 3;
+$sa: 4;
+$en: 5;
+$om: 6;
+$ma: 7;
+$sh: 8;
+
+
+
+@function posiX($x,$s) {
+  @return ($x + $startX) /span $s;
+}
+
+@function posiY($y, $s) {
+  @return    ($y + $startY) / span $s; //($y + $startY) + " / span " + $s;
+}
+
+.symbi {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, .5);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  grid-row: posiY(0, $topH);
+  &__1 { grid-column: posiX(( ($bi)-1)*$startW,$startW );}
+  &__2 { grid-column: posiX(( ($ac)-1)*$startW,$startW );}
+  &__3 { grid-column: posiX(( ($en)-1)*$startW,$startW );}
+  &__4 { grid-column: posiX(( ($ma)-1)*$startW,$startW );}
+  &__5 { grid-column: posiX(( ($sh)-1)*$startW,$startW );}
+  &__6 { grid-column: posiX(( ($hr)-1)*$startW,$startW );}
+  &__7 { grid-column: posiX(( ($sa)-1)*$startW,$startW );}
+  &__8 { grid-column: posiX(( ($om)-1)*$startW,$startW );}
+}
+
+.sy-icon-h2 {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 140px;
+  z-index: 3;
+}
+
+.bi-1 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.bi-2 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.bi-3 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.bi-4 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.bi-5 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.bi-6 {
+  grid-column: posiX(( ($bi)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.ac-1 {
+  grid-column: posiX(( ($ac)-1)*$startW,$startW );
+  grid-row: posiY(((1)-1)+($topH), 1);
+}
+.ac-2 {
+  grid-column: posiX(( ($ac)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.ac-3 {
+  grid-column: posiX(( ($ac)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.ac-4 {
+  grid-column: posiX(( ($ac)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.ac-5 {
+  grid-column: posiX(( ($ac)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.en-1 {
+  grid-column: posiX(( ($en)-1)*$startW,$startW );
+  grid-row: posiY(((1)-1)+($topH), 1);
+}
+.en-2 {
+  grid-column: posiX(( ($en)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.en-3 {
+  grid-column: posiX(( ($en)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.ma-1 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.ma-2 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.ma-3 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.ma-4 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.ma-5 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.ma-6 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.ma-7 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((7)-1)+($topH), 1);
+}
+.ma-8 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((8)-1)+($topH), 1);
+}
+.ma-9 {
+  grid-column: posiX(( ($ma)-1)*$startW,$startW );
+  grid-row: posiY(((9)-1)+($topH), 1);
+}
+.sh-1 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.sh-2 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.sh-3 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.sh-4 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.sh-5 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.sh-6 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.sh-7 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((7)-1)+($topH), 1);
+}
+.sh-8 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((8)-1)+($topH), 1);
+}
+.sh-9 {
+  grid-column: posiX(( ($sh)-1)*$startW,$startW );
+  grid-row: posiY(((9)-1)+($topH), 1);
+}
+.hr-1 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.hr-2 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.hr-3 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.hr-4 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.hr-5 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.hr-6 {
+  grid-column: posiX(( ($hr)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.sa-1 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.sa-2 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.sa-3 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.sa-4 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.sa-5 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.sa-6 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.sa-7 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((7)-1)+($topH), 1);
+}
+.sa-8 {
+  grid-column: posiX(( ($sa)-1)*$startW,$startW );
+  grid-row: posiY(((8)-1)+($topH), 1);
+}
+.om-1 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW ); // 1 in parentheses is the first column
+  grid-row: posiY(((1)-1)+($topH), 1);           //  20 / span 1;
+}
+.om-2 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((2)-1)+($topH), 1);
+}
+.om-3 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((3)-1)+($topH), 1);
+}
+.om-4 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((4)-1)+($topH), 1);
+}
+.om-5 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((5)-1)+($topH), 1);
+}
+.om-6 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((6)-1)+($topH), 1);
+}
+.om-7 {
+  grid-column: posiX(( ($om)-1)*$startW,$startW );
+  grid-row: posiY(((7)-1)+($topH), 1);
+}
+
+
+
+
+
+
+
+.gridBlock {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  display: grid !important;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(60, 1fr);
+}
+
+.cell {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  color: black;
+  background-color: rgba(255,255,255,.8);
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 0;
+  padding-top: 0;
+  z-index: 1;
+}
+.cell2 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  grid-gap: 10px;
+  background-color: rgba(255,255,255,.8);
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 3px;
+  margin-bottom: 0;
+
+  z-index: 1;
+}
