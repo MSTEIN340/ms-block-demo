@@ -73,10 +73,11 @@ class MsHk extends Component {
                     <StarWars_Intro />
                 </div>
 
-                <GridBlock />
+
 
 
                 <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} onScroll={soop2()}>
+                    <GridBlock />
                     <div className="fit">
                         <img id="arm" src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/arm.png"
                              className="arm"  alt="f"/>

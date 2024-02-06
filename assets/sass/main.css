@@ -2973,4 +2973,26 @@ he3 {
   line-height: 1.2 !important;
 }
 
+.wp-site-blocks {
+  margin: -32;
+  padding: 0;
+}
+
+.wp-block-group {
+  margin-top: 0 !important;
+}
+
+ol.has-background, ul.has-background {
+  padding: 0em;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#headerimg {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

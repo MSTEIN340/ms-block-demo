@@ -1407,12 +1407,13 @@ html, body {
 .gridBlock {
   box-sizing: border-box;
   position: absolute;
+  overflow-y: hidden;
   left: 0;
   top: 0;
   width: 100vw;
   display: grid !important;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: repeat(60, 1fr);
+  grid-template-rows: repeat(24, 1fr);
 }
 
 .cell {

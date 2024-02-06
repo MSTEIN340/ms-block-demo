@@ -3,6 +3,7 @@ $startY: 13;
 $topH: 5;
 $startW: 2;
 
+// Column Order
 $bi: 1;
 $ac: 2;
 $hr: 3;
@@ -262,21 +263,16 @@ $sh: 8;
   grid-row: posiY(((7)-1)+($topH), 1);
 }
 
-
-
-
-
-
-
 .gridBlock {
   box-sizing: border-box;
   position: absolute;
+  overflow-y: hidden;
   left: 0;
   top: 0;
   width: 100vw;
   display: grid !important;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-rows: repeat(60, 1fr);
+  grid-template-rows: repeat(24, 1fr);
 }
 
 .cell {
@@ -292,6 +288,7 @@ $sh: 8;
   padding-top: 0;
   z-index: 1;
 }
+
 .cell2 {
   overflow-x: hidden;
   overflow-y: hidden;
