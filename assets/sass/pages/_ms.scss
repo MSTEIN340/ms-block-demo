@@ -136,9 +136,11 @@
   content: "";
 }
 .bdev{
+  position: relative;
   display: none;
   width: 100vw;
   justify-content: center;
+  z-index: 1;
 }
 .ms-di2 {
   display: flex;

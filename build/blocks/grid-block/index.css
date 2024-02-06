@@ -448,9 +448,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .bdev {
+  position: relative;
   display: none;
   width: 100vw;
   justify-content: center;
+  z-index: 1;
 }
 
 .ms-di2 {

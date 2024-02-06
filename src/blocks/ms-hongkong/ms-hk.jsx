@@ -130,8 +130,6 @@ class MsHk extends Component {
                                 </span>
                             </div>
 
-
-
                             <div className={"ms-forward"}>
                                 <span className={"ms-col-a "}>
                                     <a href={"#"} onClick="ShowTitle('wd')">
