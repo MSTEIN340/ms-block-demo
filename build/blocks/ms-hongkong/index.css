@@ -14,55 +14,6 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/ms-hongkong/main.css (3) ***!
   \*****************************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/starwars-intro/main.css ***!
-  \****************************************************************************************************************************************************************************************/
-/* Page Header */
-.wp-block-ms-block-demo-page-header {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 0 !important;
-}
-.wp-block-ms-block-demo-page-header .inner-page-header {
-    width: 100%
-}
-@media (min-width: 640px) {
-    .wp-block-ms-block-demo-page-header .inner-page-header {
-        max-width: 640px
-    }
-}
-@media (min-width: 768px) {
-    .wp-block-ms-block-demo-page-header .inner-page-header {
-        max-width: 768px
-    }
-}
-@media (min-width: 1024px) {
-    .wp-block-ms-block-demo-page-header .inner-page-header {
-        max-width: 1024px
-    }
-}
-@media (min-width: 1280px) {
-    .wp-block-ms-block-demo-page-header .inner-page-header {
-        max-width: 1280px
-    }
-}
-@media (min-width: 1536px) {
-    .wp-block-ms-block-demo-page-header .inner-page-header {
-        max-width: 1536px
-    }
-}
-.wp-block-ms-block-demo-page-header .inner-page-header {
-    margin-left: auto;
-    margin-right: auto
-}
-.wp-block-ms-block-demo-page-header h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    font-weight: 500;
-    padding: 0;
-}
 /*!*****************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/ms-hongkong/main.css (4) ***!
   \*****************************************************************************************************************************************************************************************/
@@ -531,7 +482,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   min-width: 110vw;
 }
 
-.c1 {
+.c1hk {
   margin-left: auto;
   margin-right: auto;
 }

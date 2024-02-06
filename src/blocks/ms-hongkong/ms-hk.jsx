@@ -135,7 +135,7 @@ class MsHk extends Component {
                                 <span className={"ms-col-a "}>
                                     <a href={"#"} onClick="ShowTitle('wd')">
                                         <div className=" big_btn">
-                                            <table className={"c1"}>
+                                            <table className={"c1hk"}>
                                                 <tr>
                                                     <td>
                                                         <span className="ms-di1 dashicons dashicons-cover-image"></span>
@@ -156,7 +156,7 @@ class MsHk extends Component {
                                 <span className={"ms-col-a "}>
                                     <a href={"#"} onClick="ShowTitle('db')">
                                         <div className=" big_btn">
-                                            <table className={"c1"}>
+                                            <table className={"c1hk"}>
                                                 <tr>
                                                     <td>
                                                         <span className="ms-di1 dashicons dashicons-database-add"></span>
@@ -177,7 +177,7 @@ class MsHk extends Component {
                                 <span className="ms-col-a ">
                                     <a href={"#"} onClick="ShowTitle('bi')">
                                     <div className=" big_btn">
-                                        <table className="c1">
+                                        <table className="c1hk">
                                             <tr>
                                                 <td>
                                                     <span className="ms-di1 dashicons dashicons-welcome-learn-more"></span>
@@ -197,7 +197,7 @@ class MsHk extends Component {
                                 <span className="ms-col-a">
                                     <a href={"#"}  onClick="ShowTitle('erp')">
                                         <div className="big_btn">
-                                            <table className="c1">
+                                            <table className="c1hk">
                                                 <tr>
                                                     <td>
                                                         <span className="ms-di1 dashicons dashicons-clipboard"></span>

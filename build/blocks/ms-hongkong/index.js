@@ -325,7 +325,7 @@ class MsHk extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: " big_btn"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", {
-      className: "c1"
+      className: "c1hk"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("td", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "ms-di1 dashicons dashicons-cover-image"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -342,7 +342,7 @@ class MsHk extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: " big_btn"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", {
-      className: "c1"
+      className: "c1hk"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("td", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "ms-di1 dashicons dashicons-database-add"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -359,7 +359,7 @@ class MsHk extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: " big_btn"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", {
-      className: "c1"
+      className: "c1hk"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("td", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "ms-di1 dashicons dashicons-welcome-learn-more"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -376,7 +376,7 @@ class MsHk extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "big_btn"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", {
-      className: "c1"
+      className: "c1hk"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("td", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "ms-di1 dashicons dashicons-clipboard"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
@@ -406,8 +406,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.js */ "./src/blocks/starwars-intro/index.js");
-
 
 
 
@@ -486,74 +484,6 @@ class StarWars_Intro extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (StarWars_Intro);
-
-/***/ }),
-
-/***/ "./src/blocks/starwars-intro/index.js":
-/*!********************************************!*\
-  !*** ./src/blocks/starwars-intro/index.js ***!
-  \********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/blocks/starwars-intro/block.json");
-/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../icons */ "./src/icons.js");
-/* harmony import */ var _StarWars_Intro_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StarWars-Intro.jsx */ "./src/blocks/starwars-intro/StarWars-Intro.jsx");
-/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main.css */ "./src/blocks/starwars-intro/main.css");
-
-
-
-
-
-
-
- // This only works because WebPack is running. ( NPM RUN START )
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
-  icon: _icons__WEBPACK_IMPORTED_MODULE_5__["default"].primary,
-  edit({
-    attributes,
-    setAttributes
-  }) {
-    const {
-      content,
-      underline_color
-    } = attributes;
-    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
-    //  console.log(blockProps)
-
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_StarWars_Intro_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null);
-  },
-  save({
-    attributes
-  }) {
-    const {
-      content,
-      underline_color
-    } = attributes;
-    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
-      className: 'starwars-intro',
-      style: {
-        'background-image': `
-                    linear-gradient(transparent, transparent), linear-gradient(${underline_color}, ${underline_color});
-                    `
-      }
-    });
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_StarWars_Intro_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], null);
-  }
-});
-function soop2() {
-  console.log("You're in the Sup");
-}
-/* harmony default export */ __webpack_exports__["default"] = (soop2);
 
 /***/ }),
 
@@ -918,18 +848,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/starwars-intro/main.css":
-/*!********************************************!*\
-  !*** ./src/blocks/starwars-intro/main.css ***!
-  \********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
   !*** external "React" ***!
@@ -1007,16 +925,6 @@ module.exports = window["wp"]["i18n"];
 /***/ (function(module) {
 
 module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"ms-block-demo/ms-hongkong","title":"MS Hong Kong","category":"text","icon":"star-filled","description":"Adds a header with a hover effect","keywords":["header","underline","hover"],"version":"1","textdomain":"ms-block-demo","editorScript":"file:./index.js","attributes":{"content":{"type":"string"},"underline_color":{"type":"string","default":"#f87171"}},"style":"file:./index.css"}');
-
-/***/ }),
-
-/***/ "./src/blocks/starwars-intro/block.json":
-/*!**********************************************!*\
-  !*** ./src/blocks/starwars-intro/block.json ***!
-  \**********************************************/
-/***/ (function(module) {
-
-module.exports = JSON.parse('{"$schema":"https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json","apiVersion":2,"name":"ms-block-demo/starwars-intro","title":"StarWarsIntro","category":"text","description":"Plays Intro Text like Star Wars Movies","textdomain":"ms-block-demo","attributes":{"content":{"type":"string","default":""},"showCategory":{"type":"boolean","default":false}},"editorScript":"file:./index.js","style":"file:./index.css"}');
 
 /***/ })
 
