@@ -38,11 +38,9 @@ class GridBlock extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "ms-gb",
       className: "gridBlock"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      id: "abc",
-      className: "cell pos1",
-      onClick: "FlowElement('abc')"
-    }, "Box ", this.state.box), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_symbiosis_Symbi__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_symbiosis_Symbi__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      status: "on"
+    })));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (GridBlock);
@@ -505,16 +503,19 @@ __webpack_require__.r(__webpack_exports__);
 
 class Symbi extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   /* add constructor, add componentdidmount, add state, call AjaxMe from component did mount, and set state to re-render */
-  state = {};
-  scrollMeDiv = null;
+
   constructor(props) {
     super(props);
-    this.state.itemno = this.props.itemno;
-    this.state.partno = this.props.partno;
-    this.state.box = 0;
+    this.state = {
+      box: 0,
+      // status is on ... or it's not.
+      display: props.status.toLowerCase() === "on" ? "contents" : "none"
+    };
+
     // Initialize scrollMeDiv as a class property
-    this.scrollMeRef = React.createRef();
+    // this.scrollMeRef = React.createRef();
   }
+
   componentDidMount() {
     console.log("Symbi Did Mount");
   }
@@ -523,7 +524,12 @@ class Symbi extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   }
   render() {
     console.log("Render Symbi");
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "SymbiWrapper",
+      style: {
+        display: this.state.display
+      }
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "Dagwood",
       className: "cell symbi symbi__1"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "Michael"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
@@ -701,14 +707,7 @@ class Symbi extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       className: "cell2 om-6"
     }, "Customer Service"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "cell2 om-7"
-    }, "Invoicing"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      id: "symbi",
-      className: "symbi"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      id: "symbi-sub",
-      className: "cell pos1",
-      onClick: "FlowElement('abc')"
-    }, "Symbi")));
+    }, "Invoicing"));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (Symbi);

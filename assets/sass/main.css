@@ -2992,7 +2992,7 @@ body {
 }
 
 #headerimg {
-  display: none;
+  display: inline-grid;
 }
 
 /*# sourceMappingURL=main.css.map */

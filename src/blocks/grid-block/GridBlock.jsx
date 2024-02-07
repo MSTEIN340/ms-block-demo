@@ -27,11 +27,14 @@ class GridBlock extends Component {
         return (
             <>
                 <div id="ms-gb" className={"gridBlock"}>
-
+                    {/*
                     <div id="abc" className={"cell pos1" }  onClick="FlowElement('abc')">
                         Box {this.state.box}
                     </div>
-                    <Symbi />
+                    */}
+                    <Symbi
+                        status={"on"}
+                    />
 
                 </div>
             </>

@@ -1,24 +1,22 @@
 import { Component } from 'react';
 
-
-
 // this class operates as the main class that operates the application.
 
 class Symbi extends Component {
     /* add constructor, add componentdidmount, add state, call AjaxMe from component did mount, and set state to re-render */
-    state = {
-
-    };
-
-    scrollMeDiv= null;
 
     constructor(props) {
         super(props);
-        this.state.itemno = this.props.itemno;
-        this.state.partno = this.props.partno;
-        this.state.box = 0;
+        this.state = {
+            box: 0,
+            // status is on ... or it's not.
+            display: props.status.toLowerCase() === "on" ? "contents" : "none"
+        }
+
+
         // Initialize scrollMeDiv as a class property
-        this.scrollMeRef = React.createRef();
+       // this.scrollMeRef = React.createRef();
+
     }
 
     componentDidMount() {
@@ -27,56 +25,65 @@ class Symbi extends Component {
     }
     componentWillUnmount() {
         // Get the div element from the ref
-
     }
 
 
     render() {
-
-
         console.log("Render Symbi");
 
         return (
-            <>
+            <div id="SymbiWrapper" style={{display: this.state.display}}>
                 <div id={"Dagwood"} className={"cell symbi symbi__1"}>
                     <div>Michael</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Dagwood.jpg" alt="Dagwood" />
-                  </div>
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Dagwood.jpg"
+                             alt="Dagwood"/>
+                    </div>
                     <div className={"ms_font3"}>Business Intelligence</div>
                 </div>
                 <div id={"Samantha"} className={"cell symbi symbi__2"}>
                     <div>Samantha</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Summer.jpg" alt="Samantha" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Summer.jpg"
+                             alt="Samantha"/>
                     </div>
                     <div className={"ms_font3"}>Accounting</div>
                 </div>
                 <div id={"Jonas"} className={"cell symbi symbi__3"}>
                     <div>Jonas</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Jonas.jpg" alt="Jonas" />
-                  </div>
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Jonas.jpg"
+                             alt="Jonas"/>
+                    </div>
                     <div className={"ms_font3"}>Engineering</div>
                 </div>
                 <div id={"Manny"} className={"cell symbi symbi__4"}>
                     <div>Manny</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Manny.jpg" alt="Manny" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Manny.jpg"
+                             alt="Manny"/>
                     </div>
                     <div className={"ms_font3"}>Manufacturing</div>
                 </div>
                 <div id={"Pepe"} className={"cell symbi symbi__5"}>
                     <div>Pepe</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/pepe.jpg" alt="Pepe" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/pepe.jpg"
+                             alt="Pepe"/>
                     </div>
                     <div className={"ms_font3"}>Shipping and Logistics</div>
                 </div>
                 <div id={"Cathy"} className={"cell symbi symbi__6"}>
                     <div>Cathy</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/cathy.jpg" alt="Cathy" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/cathy.jpg"
+                             alt="Cathy"/>
                     </div>
                     <div className={"ms_font3"}>Human Resources</div>
                 </div>
@@ -84,14 +91,18 @@ class Symbi extends Component {
                 <div id={"Sally"} className={"cell symbi symbi__7"}>
                     <div>Sally</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Sally2b.jpg" alt="Sally" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Sally2b.jpg"
+                             alt="Sally"/>
                     </div>
                     <div className={"ms_font3"}>Sales Management</div>
                 </div>
                 <div id={"Margo"} className={"cell symbi symbi__8"}>
                     <div>Margo</div>
                     <div>
-                        <img className={"sy-icon-h2"} src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Margo3.jpg" alt="Margo" />
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Margo3.jpg"
+                             alt="Margo"/>
                     </div>
                     <div className={"ms_font3"}>Order Management</div>
                 </div>
@@ -158,14 +169,16 @@ class Symbi extends Component {
                 <div className={"cell2 om-6"}>Customer Service</div>
                 <div className={"cell2 om-7"}>Invoicing</div>
 
-
+                {/*
                 <div id="symbi" className={"symbi"}>
                     <div id="symbi-sub" className={"cell pos1" }  onClick="FlowElement('abc')">
                         Symbi
                     </div>
                 </div>
-            </>
-            )
+                */
+                }
+            </div>
+        )
     }
 }
 
