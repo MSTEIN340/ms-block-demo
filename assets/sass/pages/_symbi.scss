@@ -4,6 +4,14 @@ $topH: 5;
 $startW: 2;
 
 // Column Order
+$bi: 1;
+$ac: 2;
+$hr: 3;
+$sa: 4;
+$en: 5;
+$om: 6;
+$ma: 7;
+$sh: 8;
 $columns: bi ac hr sa en om ma sh;
 
 
@@ -31,6 +39,9 @@ $columns: bi ac hr sa en om ma sh;
     grid-column: posiX(($i - 1) * $startW, $startW);
   }
 }
+
+
+
 
 .sy-icon-h2 {
   position: relative;

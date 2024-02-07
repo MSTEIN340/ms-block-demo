@@ -51,34 +51,7 @@ class Symbi extends Component {
                     </div>
                     <div className={"ms_font3"}>Accounting</div>
                 </div>
-                <div id={"Jonas"} className={"cell symbi symbi__3"}>
-                    <div>Jonas</div>
-                    <div>
-                        <img className={"sy-icon-h2"}
-                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Jonas.jpg"
-                             alt="Jonas"/>
-                    </div>
-                    <div className={"ms_font3"}>Engineering</div>
-                </div>
-                <div id={"Manny"} className={"cell symbi symbi__4"}>
-                    <div>Manny</div>
-                    <div>
-                        <img className={"sy-icon-h2"}
-                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Manny.jpg"
-                             alt="Manny"/>
-                    </div>
-                    <div className={"ms_font3"}>Manufacturing</div>
-                </div>
-                <div id={"Pepe"} className={"cell symbi symbi__5"}>
-                    <div>Pepe</div>
-                    <div>
-                        <img className={"sy-icon-h2"}
-                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/pepe.jpg"
-                             alt="Pepe"/>
-                    </div>
-                    <div className={"ms_font3"}>Shipping and Logistics</div>
-                </div>
-                <div id={"Cathy"} className={"cell symbi symbi__6"}>
+                <div id={"Cathy"} className={"cell symbi symbi__3"}>
                     <div>Cathy</div>
                     <div>
                         <img className={"sy-icon-h2"}
@@ -87,8 +60,7 @@ class Symbi extends Component {
                     </div>
                     <div className={"ms_font3"}>Human Resources</div>
                 </div>
-
-                <div id={"Sally"} className={"cell symbi symbi__7"}>
+                <div id={"Sally"} className={"cell symbi symbi__4"}>
                     <div>Sally</div>
                     <div>
                         <img className={"sy-icon-h2"}
@@ -97,7 +69,16 @@ class Symbi extends Component {
                     </div>
                     <div className={"ms_font3"}>Sales Management</div>
                 </div>
-                <div id={"Margo"} className={"cell symbi symbi__8"}>
+                <div id={"Jonas"} className={"cell symbi symbi__5"}>
+                    <div>Jonas</div>
+                    <div>
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Jonas.jpg"
+                             alt="Jonas"/>
+                    </div>
+                    <div className={"ms_font3"}>Engineering</div>
+                </div>
+                <div id={"Margo"} className={"cell symbi symbi__6"}>
                     <div>Margo</div>
                     <div>
                         <img className={"sy-icon-h2"}
@@ -105,6 +86,26 @@ class Symbi extends Component {
                              alt="Margo"/>
                     </div>
                     <div className={"ms_font3"}>Order Management</div>
+                </div>
+
+
+                <div id={"Manny"} className={"cell symbi symbi__7"}>
+                    <div>Manny</div>
+                    <div>
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/Manny.jpg"
+                             alt="Manny"/>
+                    </div>
+                    <div className={"ms_font3"}>Manufacturing</div>
+                </div>
+                <div id={"Pepe"} className={"cell symbi symbi__8"}>
+                    <div>Pepe</div>
+                    <div>
+                        <img className={"sy-icon-h2"}
+                             src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/pepe.jpg"
+                             alt="Pepe"/>
+                    </div>
+                    <div className={"ms_font3"}>Shipping and Logistics</div>
                 </div>
 
                 <div className={"cell2 bi-1"}>ERP System</div>
