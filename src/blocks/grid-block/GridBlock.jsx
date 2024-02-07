@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Symbi from "../symbiosis/Symbi";
-import {createRoot} from "react-dom";
+import { createRoot } from "react-dom";
 
 class GridBlock extends Component {
     /* add constructor, add componentdidmount, add state, call AjaxMe from component did mount, and set state to re-render */
