@@ -33,7 +33,7 @@ class GridBlock extends Component {
                     </div>
                     */}
                     <Symbi
-                        status={"on"}
+                        status={"off"}
                     />
 
                 </div>

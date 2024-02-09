@@ -285,32 +285,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   opacity: 1 !important;
 }
 
-.intro-start {
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  background: #0c88b4;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 7px;
-  color: black;
-  z-index: 1;
-}
-
-.intro-stop {
-  position: absolute;
-  bottom: 0;
-  left: 55px;
-  background: #0c88b4;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 7px;
-  color: black;
-  z-index: 1;
-}
-
 .m50 {
   height: 100%;
   margin-bottom: -150px;
@@ -573,62 +547,6 @@ body {
     opacity: 0;
     transform: scale(0.1);
     width: 18em;
-  }
-}
-/* Set the font, lean the board, position it */
-#board {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(10deg);
-  transform-origin: 50% 100%;
-  text-align: justify;
-  position: absolute;
-  margin-left: -11em;
-  font-weight: bold;
-  overflow: hidden;
-  font-size: 350%;
-  height: 50em;
-  width: 18em;
-  bottom: 0;
-  left: 50%;
-  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
-}
-
-.droids {
-  width: 60%;
-  align-items: center;
-  margin-left: 25%;
-  border-radius: 20px;
-  transform: perspective(-3000px) rotateX(-40deg) !important;
-  transform-origin: 100% 50% !important;
-}
-
-#board:after {
-  position: absolute;
-  content: " ";
-  bottom: 60%;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-/* Set the scrolling animation and position it */
-#content {
-  color: rgba(250, 188, 6, 0.87);
-  animation: scroll 100s linear 6s;
-  position: absolute;
-  top: 100%;
-}
-
-#title, #subtitle {
-  text-align: center;
-}
-
-@keyframes scroll {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -170%;
   }
 }
 .aa_font1 {
@@ -1240,6 +1158,11 @@ html, body {
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
   z-index: -2;
+}
+
+.brassPlates {
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .cell, .cell2 {

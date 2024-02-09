@@ -9,6 +9,7 @@
   border-radius: 7px;
   color: black;
   z-index: 2;
+
 }
 
 .intro-stop {
@@ -40,18 +41,20 @@
   bottom: 0;
   left: 50%;
   opacity: 1;
-  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 7px 7px 3px rgba(0,0,0,0.6);
   z-index: 1;
+ // background-color: black;
 }
 
 #IntroBackground {
   position: absolute;
-  content: " ";
+  content: ' ';
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba( 0, 0, 0, .5);
+
   z-index: -1;
 }
 
@@ -60,6 +63,8 @@
   align-items: center;
   margin-left: 0;
   border-radius: 0;
+  //transform: perspective(-3000px) rotateX(-40deg) !important;
+ // transform-origin: 100% 50% !important;
 }
 
 .div_droids {
@@ -71,10 +76,18 @@
   transform: translate(-50%, -50%);
   height: 30vh;
   width: 40vw;
+
   display: flex;
   border: 2px solid white;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
+}
+
+.D-container {
+  //display: flex;
+  //border: 2px solid white;
+  //align-items: center; /* Center vertically */
+  //justify-content: center; /* Center horizontally */
 }
 
 .D-image, .D-text {
@@ -91,13 +104,16 @@
   height: auto;
 }
 
+
+
 #board:after {
   position: absolute;
-  content: " ";
+  content: ' ';
   bottom: 60%;
   left: 0;
   right: 0;
   top: 0;
+
 }
 
 @keyframes scroll {
@@ -108,6 +124,7 @@
     top: -50%;
   }
 }
+
 @keyframes obianimation {
   0% {
     opacity: 0;
@@ -119,6 +136,9 @@
     opacity: 0;
   }
 }
+
+
+
 /* Set the scrolling animation and position it */
 #content {
   color: rgba(250, 188, 6, 0.87);
@@ -132,7 +152,6 @@
   text-align: center;
   opacity: 1;
 }
-
 /* Page Header */
 .wp-block-ms-block-demo-page-header {
   --tw-bg-opacity: 1;
@@ -141,41 +160,38 @@
   padding-bottom: 2rem;
   margin-top: 0 !important;
 }
-
 .wp-block-ms-block-demo-page-header .inner-page-header {
-  width: 100%;
+  width: 100%
 }
-
 @media (min-width: 640px) {
   .wp-block-ms-block-demo-page-header .inner-page-header {
-    max-width: 640px;
+    max-width: 640px
   }
 }
 @media (min-width: 768px) {
   .wp-block-ms-block-demo-page-header .inner-page-header {
-    max-width: 768px;
+    max-width: 768px
   }
 }
 @media (min-width: 1024px) {
   .wp-block-ms-block-demo-page-header .inner-page-header {
-    max-width: 1024px;
+    max-width: 1024px
   }
 }
 @media (min-width: 1280px) {
   .wp-block-ms-block-demo-page-header .inner-page-header {
-    max-width: 1280px;
+    max-width: 1280px
   }
 }
 @media (min-width: 1536px) {
   .wp-block-ms-block-demo-page-header .inner-page-header {
-    max-width: 1536px;
+    max-width: 1536px
   }
 }
 .wp-block-ms-block-demo-page-header .inner-page-header {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto
 }
-
 .wp-block-ms-block-demo-page-header h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -183,4 +199,3 @@
   padding: 0;
 }
 
-/*# sourceMappingURL=main.css.map */

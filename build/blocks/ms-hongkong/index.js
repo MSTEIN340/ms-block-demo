@@ -39,7 +39,7 @@ class GridBlock extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       id: "ms-gb",
       className: "gridBlock"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_symbiosis_Symbi__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      status: "on"
+      status: "off"
     })));
   }
 }
@@ -314,7 +314,8 @@ class MsHk extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       className: "grad-text",
       "data-text": "Enterprise Resource Planning"
     }, "Enterprise Resource Planning"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "ms-forward"
+      id: "brassPlates",
+      className: "ms-forward brassPlates"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "ms-col-a "
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
@@ -422,34 +423,33 @@ class StarWars_Intro extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     this.scrollMeRef = React.createRef();
   }
   componentDidMount() {
-    const scrollMeDiv = this.scrollMeRef.current;
-    if (scrollMeDiv) {
-      // Add the scroll event listener
-      scrollMeDiv.addEventListener('scroll', this.handleScroll);
+    // Add the animation end event listener
+    const contentDiv = document.getElementById('content');
+    if (contentDiv) {
+      console.log("Event Listener Added");
+      contentDiv.addEventListener('animationend', this.handleAnimationEnd);
     }
-    console.log("GridBlock Did Mount");
+    console.log("StarWars-Intro Did Mount");
   }
+  handleAnimationEnd = () => {
+    console.log('Animation ended!');
+
+    // Call the function you want to fire after the animation ends
+    this.afterAnimation();
+  };
+  afterAnimation() {
+    console.log('This function is called after the animation ends.');
+    // You can execute any logic here or call another function
+  }
+
   componentWillUnmount() {
     // Get the div element from the ref
-    const scrollMeDiv = this.scrollMeRef.current;
-    if (scrollMeDiv) {
-      // Remove the scroll event listener
-      scrollMeDiv.removeEventListener('scroll', this.handleScroll);
+
+    // Remove the animation end event listener
+    const contentDiv = document.getElementById('content');
+    if (contentDiv) {
+      contentDiv.removeEventListener('animationend', this.handleAnimationEnd);
     }
-  }
-  handleScroll(event) {
-    console.log('Scrolled!', event);
-    const {
-      scrollTop,
-      scrollLeft
-    } = event.target;
-    console.log('Scroll position:', {
-      scrollTop,
-      scrollLeft
-    });
-  }
-  soop2() {
-    console.log("This is outside the class");
   }
   inc() {
     let i = this.state.box;
@@ -460,7 +460,9 @@ class StarWars_Intro extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   }
   render() {
     console.log("Render Star Wars Intro");
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("script", null, "document.addEventListener(\"DOMContentLoaded\", animationend_listener);"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "IntroBackground"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "intro-start"
     }, "Start"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "intro-stop"
@@ -474,11 +476,18 @@ class StarWars_Intro extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       id: "title"
     }, "Episode I"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
       id: "subtitle"
-    }, "IN A PARALLAX FAR FAR AWAY"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Highly skilled full stack software developer with extensive backend and data management experience. Over 35 years of experience in developing scalable, high-performance web applications. Proficient in a wide range of technologies, with a proven track record of delivering projects on time and within budget. Strong background in designing, developing, and maintaining complex systems and applications, with expertise in front-end and back-end development. Highly skilled in problem-solving and critical thinking, with a passion for creating user-friendly and efficient software. Excellent communication and collaboration skills, with experience working in cross-functional teams and managing stakeholders."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    }, "IN SEARCH OF A NEW HOME"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Highly skilled full stack software developer with extensive backend and data management experience. Over 35 years of experience in developing scalable, high-performance web applications. Proficient in a wide range of technologies, with a proven track record of delivering projects on time and within budget. Strong background in designing, developing, and maintaining complex systems and applications, with expertise in front-end and back-end development. Highly skilled in problem-solving and critical thinking, with a passion for creating user-friendly and efficient software. Excellent communication and collaboration skills, with experience working in cross-functional teams and managing stakeholders."))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "droids",
+      className: "div_droids D-container"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "D-image"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       className: "droids",
-      src: "https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/droids.jpg",
+      src: "https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/droids2.jpg",
       alt: "Obi Wan"
-    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, " This IS the developer you're looking for."))));
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "D-text"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, " This IS the developer you're looking for.")))));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (StarWars_Intro);

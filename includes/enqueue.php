@@ -19,6 +19,8 @@ function aa_enqueue_scripts()
     wp_register_script('fat-nav-data', plugins_url('/ms-block-demo/assets/js/fat-nav-data.js'));
     wp_enqueue_script('fat-nav-data');
 
+    wp_register_script('starwars-intro', plugins_url('/ms-block-demo/assets/js/starwars-intro.js'));
+    wp_enqueue_script('starwars-intro');
 
     wp_register_script('latest-news', plugins_url('/ms-block-demo/assets/js/latest-news.js'));
     wp_enqueue_script('latest-news');
@@ -34,7 +36,6 @@ function aa_enqueue_scripts()
     wp_register_script('grid-block', plugins_url('/ms-block-demo/assets/js/grid-block.js'));
     wp_enqueue_script('grid-block');
 
-
     wp_localize_script('fat-nav-data', 'msFatNavData', array(
         'pluginsUrl' => plugins_url(),
     ));
@@ -49,10 +50,6 @@ function aa_enqueue_scripts()
         'nonce'    => wp_create_nonce( 'my_nonce' ),
     ) );
 }
-
-
-
-
 
 function msaa_enqueue_block_editor_assets()
 {

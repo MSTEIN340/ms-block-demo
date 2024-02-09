@@ -20,7 +20,6 @@ class Symbi extends Component {
     }
 
     componentDidMount() {
-
         console.log("Symbi Did Mount");
     }
     componentWillUnmount() {

@@ -77,7 +77,7 @@ class MsHk extends Component {
 
 
                 <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} onScroll={soop2()}>
-                    <GridBlock />
+                    <GridBlock  />
                     <div className="fit">
                         <img id="arm" src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/arm.png"
                              className="arm"  alt="f"/>
@@ -130,7 +130,7 @@ class MsHk extends Component {
                                 </span>
                             </div>
 
-                            <div className={"ms-forward"}>
+                            <div id="brassPlates" className={"ms-forward brassPlates"}>
                                 <span className={"ms-col-a "}>
                                     <a href={"#"} onClick="ShowTitle('wd')">
                                         <div className=" big_btn">
@@ -152,6 +152,7 @@ class MsHk extends Component {
                                     </a>
 
                                 </span>
+
                                 <span className={"ms-col-a "}>
                                     <a href={"#"} onClick="ShowTitle('db')">
                                         <div className=" big_btn">

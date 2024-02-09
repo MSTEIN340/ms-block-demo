@@ -39,7 +39,7 @@ class GridBlock extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       id: "ms-gb",
       className: "gridBlock"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_symbiosis_Symbi__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      status: "on"
+      status: "off"
     })));
   }
 }
