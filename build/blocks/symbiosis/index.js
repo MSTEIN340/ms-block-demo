@@ -1,5 +1,4 @@
 /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/blocks/symbiosis/Symbi.jsx":
@@ -8,6 +7,7 @@
   \****************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -246,6 +246,7 @@ class Symbi extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
   \**********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -356,11 +357,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./src/blocks/symbiosis/main.css ***!
   \***************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ (function() {
 
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nSyntaxError: Unexpected token < in JSON at position 0\n    at JSON.parse (<anonymous>)\n    at Object.parseSourceMapInput (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\source-map-js\\lib\\util.js:539:15)\n    at new SourceMapConsumer (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\source-map-js\\lib\\source-map-consumer.js:17:22)\n    at PreviousMap.consumer (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\previous-map.js:33:28)\n    at new Input (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\input.js:52:24)\n    at parse (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\parse.js:8:15)\n    at new LazyResult (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\lazy-result.js:133:16)\n    at Processor.process (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\processor.js:53:14)\n    at Object.loader (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss-loader\\dist\\index.js:97:30)\n    at tryRunOrWebpackError (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\HookWebpackError.js:88:9)\n    at __webpack_require_module__ (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5067:12)\n    at __webpack_require__ (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5024:18)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5095:20\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5002:43\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4967:16\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4935:15\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4882:8\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3361:32\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\HookWebpackError.js:68:3\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:107:20)\n    at ItemCacheFacade.store (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3361:11\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:93:5\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:75:18)\n    at ItemCacheFacade.get (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3331:9)\n    at codeGen (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4870:11)\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4900:14\n    at processQueue (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n-- inner error --\nError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\nSyntaxError: Unexpected token < in JSON at position 0\n    at JSON.parse (<anonymous>)\n    at Object.parseSourceMapInput (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\source-map-js\\lib\\util.js:539:15)\n    at new SourceMapConsumer (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\source-map-js\\lib\\source-map-consumer.js:17:22)\n    at PreviousMap.consumer (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\previous-map.js:33:28)\n    at new Input (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\input.js:52:24)\n    at parse (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\parse.js:8:15)\n    at new LazyResult (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\lazy-result.js:133:16)\n    at Processor.process (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss\\lib\\processor.js:53:14)\n    at Object.loader (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss-loader\\dist\\index.js:97:30)\n    at Object.<anonymous> (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[2].use[1]!C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[2].use[2]!C:\\wamp64\\www\\michaelastein\\wp-content\\plugins\\ms-block-demo\\src\\blocks\\symbiosis\\main.css:1:7)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:452:10\n    at Hook.eval [as call] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5069:39\n    at tryRunOrWebpackError (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\HookWebpackError.js:83:7)\n    at __webpack_require_module__ (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5067:12)\n    at __webpack_require__ (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5024:18)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5095:20\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:5002:43\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4967:16\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4935:15\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4882:8\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3361:32\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\HookWebpackError.js:68:3\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:107:20)\n    at ItemCacheFacade.store (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3361:11\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:93:5\n    at Hook.eval [as callAsync] (eval at create (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Cache.js:75:18)\n    at ItemCacheFacade.get (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:3331:9)\n    at codeGen (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4870:11)\n    at symbolIterator (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\Compilation.js:4900:14\n    at processQueue (C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n\nGenerated code for C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[2].use[1]!C:\\wamp64\\www\\MichaelAStein\\wp-content\\plugins\\ms-block-demo\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[2].use[2]!C:\\wamp64\\www\\michaelastein\\wp-content\\plugins\\ms-block-demo\\src\\blocks\\symbiosis\\main.css\n1 | throw new Error(\"Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):\\nSyntaxError: Unexpected token < in JSON at position 0\\n    at JSON.parse (<anonymous>)\\n    at Object.parseSourceMapInput (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\source-map-js\\\\lib\\\\util.js:539:15)\\n    at new SourceMapConsumer (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\source-map-js\\\\lib\\\\source-map-consumer.js:17:22)\\n    at PreviousMap.consumer (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss\\\\lib\\\\previous-map.js:33:28)\\n    at new Input (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss\\\\lib\\\\input.js:52:24)\\n    at parse (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss\\\\lib\\\\parse.js:8:15)\\n    at new LazyResult (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss\\\\lib\\\\lazy-result.js:133:16)\\n    at Processor.process (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss\\\\lib\\\\processor.js:53:14)\\n    at Object.loader (C:\\\\wamp64\\\\www\\\\MichaelAStein\\\\wp-content\\\\plugins\\\\ms-block-demo\\\\node_modules\\\\postcss-loader\\\\dist\\\\index.js:97:30)\");");
 
 /***/ }),
 
@@ -370,6 +369,7 @@ __webpack_require__.r(__webpack_exports__);
   \************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["React"];
 
 /***/ }),
@@ -380,6 +380,7 @@ module.exports = window["React"];
   \*************************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
@@ -390,6 +391,7 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ }),
@@ -400,6 +402,7 @@ module.exports = window["wp"]["blocks"];
   \************************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["wp"]["components"];
 
 /***/ }),
@@ -410,6 +413,7 @@ module.exports = window["wp"]["components"];
   \*********************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ }),
@@ -420,6 +424,7 @@ module.exports = window["wp"]["element"];
   \******************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ }),
@@ -430,6 +435,7 @@ module.exports = window["wp"]["i18n"];
   \*****************************************/
 /***/ (function(module) {
 
+"use strict";
 module.exports = JSON.parse('{"$schema":"https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json","apiVersion":2,"name":"ms-block-demo/symbiosis","title":"Symbi ERP","category":"text","description":"Symbi ERP Shell","textdomain":"ms-block-demo","attributes":{},"editorScript":"file:./index.js","style":"file:./index.css"}');
 
 /***/ })
@@ -503,8 +509,9 @@ module.exports = JSON.parse('{"$schema":"https://raw.githubusercontent.com/WordP
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
+"use strict";
 /*!***************************************!*\
   !*** ./src/blocks/symbiosis/index.js ***!
   \***************************************/

@@ -1469,6 +1469,18 @@ html, body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+<<<<<<< HEAD
+=======
+.cell, .cell2 {
+  overflow: hidden;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: thin solid black;
+  z-index: 1;
+}
+
+>>>>>>> 1a2e2c559ff30df5152da6d00b9624323516fee6
 .cell {
   margin-top: 0;
   padding-top: 0;
@@ -1480,10 +1492,13 @@ html, body {
   grid-gap: 10px;
   margin-top: 3px;
   margin-bottom: 0;
+<<<<<<< HEAD
 }
 
 #SymbiWrapper {
   display: contents;
+=======
+>>>>>>> 1a2e2c559ff30df5152da6d00b9624323516fee6
 }
 
 /*# sourceMappingURL=main.css.map */
