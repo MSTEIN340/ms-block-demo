@@ -1,1 +1,1 @@
-MS Block Demo for WordPress Block Editor
+MS Block Demo for WordPress Gutenberg Block Editor
