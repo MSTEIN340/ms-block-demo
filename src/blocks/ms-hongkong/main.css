@@ -1414,35 +1414,26 @@ html, body {
   grid-template-rows: repeat(60, 1fr);
 }
 
-.cell {
-  overflow-x: hidden;
-  overflow-y: hidden;
+.cell, .cell2 {
+  overflow: hidden;
   text-align: center;
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
-  margin-top: 0;
-  padding-top: 0;
+  border: thin solid black;
   z-index: 1;
 }
 
+.cell {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .cell2 {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 14px;
-  text-align: center;
-  color: black;
   grid-gap: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
   margin-top: 3px;
   margin-bottom: 0;
-  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
