@@ -224,6 +224,19 @@ function ShowTitle(f)
         document.getElementById(f).classList.remove("invisible");
     }
     document.getElementById(f).classList.add("visible");
+
+    if( f==='erp' )
+    {
+        console.log("f = 'erp'")
+        const Symbi = document.getElementById("SymbiWrapper")
+        Symbi.style.display = "contents";
+    }else{
+        const Symbi = document.getElementById("SymbiWrapper")
+        Symbi.style.display = "none";
+    }
+
+
+
 }
 
 function invisAllTitles(f) {

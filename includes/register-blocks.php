@@ -25,6 +25,7 @@ function up_register_blocks() {
             'render_callback' => 'get_post_details_cb'
         ]],
         [ 'name' => 'contactform' ],
+        [ 'name' => 'topper' ],
     ];
 
     foreach($blocks as $block) {

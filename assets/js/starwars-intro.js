@@ -7,20 +7,25 @@ function animationend_listener() {
         setTimeout(function() {
             console.log("World");
             obiwan.style.opacity = 1;
-        }, 50000);
+        }, 51000);
+        setTimeout(function() {
+            console.log("World");
+            const obiwan = document.getElementById('droids');
+            obiwan.style.opacity = 0;
+        }, 57000);
+        setTimeout(function() {
+            console.log("Animation End");
+            const brassPlates = document.getElementById('brassPlates');
+            brassPlates.style.opacity = 1;
+        }, 57000);
+        setTimeout(function() {
+            console.log("Animation End");
+            const brassPlates = document.getElementById('IntroBackground');
+            brassPlates.style.opacity = 0;
+        }, 57000);
     }
 }
 
 function handleAnimationEnd() {
-    setTimeout(function() {
-        console.log("World");
-        const obiwan = document.getElementById('droids');
-        obiwan.style.opacity = 0;
-    }, 2000);
-    setTimeout(function() {
-        console.log("Animation End");
-        const brassPlates = document.getElementById('brassPlates');
-        brassPlates.style.opacity = 1;
-    }, 2500);
 
 }

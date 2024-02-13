@@ -52,6 +52,7 @@
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: all 3s;
   z-index: -1;
 }
 
@@ -72,7 +73,7 @@
   height: 30vh;
   width: 40vw;
   display: flex;
-  border: 2px solid white;
+  border: 2px solid rgba(250, 188, 6, 0.87);
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
 }
@@ -80,7 +81,7 @@
 .D-image, .D-text {
   flex: 1; /* Each takes up equal width */
   display: flex;
-  color: white;
+  color: rgba(250, 188, 6, 0.87);
   font-size: 2.5rem;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */

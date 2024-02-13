@@ -42,10 +42,40 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   display: inline-block;
 }
+.fade-in a, .fade-in span {
+  color: whitesmoke;
+}
 
 .hAngel {
   height: 50px;
   width: 50px;
+}
+
+.hMichael {
+  height: 50px;
+  width: 50px;
+  color: whitesmoke;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  content: "";
+  text-align: center;
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+}
+
+.hMichael2 {
+  height: 50px;
+  position: absolute;
+  color: inherit;
+  float: left;
+  top: 50%;
+  left: 13%;
+  transform: translateY(-50%);
+  content: "";
+  text-align: center;
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
 }
 
 .aa_header-outer {
@@ -59,6 +89,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .hUp {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  top: -5px;
+}
+
+.hUp-ms {
   content: "";
   position: relative;
   display: inline-block;
@@ -88,6 +126,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .center {
   float: left;
+  content: "";
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.w50 {
+  float: right;
   content: "";
   width: 50%;
   padding-left: 0%;

@@ -11,7 +11,7 @@
 }
 
 .ms_header-inner {
-  color: white;
+  //color: white;
   background-color: transparent;
   height: 70px;
   position: sticky;
@@ -96,7 +96,7 @@
 
 // old fashioned float center for header
 .ms_center {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   //  margin: auto;

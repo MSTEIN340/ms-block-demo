@@ -79,7 +79,7 @@ class StarWars_Intro extends Component {
                     <div id="board">
                         <div id="content">
                             <p id="title">Episode I</p>
-                            <p id="subtitle">IN SEARCH OF A NEW HOME</p>
+                            <p id="subtitle">A NEW HOME</p>
 
                             <p>Highly skilled full stack software developer with extensive backend and data management
                                 experience. Over 35 years of experience in developing scalable, high-performance web
