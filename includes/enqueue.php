@@ -25,6 +25,8 @@ function aa_enqueue_scripts()
     wp_register_script('latest-news', plugins_url('/ms-block-demo/assets/js/latest-news.js'));
     wp_enqueue_script('latest-news');
 
+    wp_register_script('collapsing-section', plugins_url('/ms-block-demo/assets/js/collapsing-section.js'));
+    wp_enqueue_script('collapsing-section');
 
     wp_register_script('contact-form', plugins_url('/ms-block-demo/assets/js/contact-form.js'));
     wp_enqueue_script('contact-form');
@@ -53,6 +55,9 @@ function aa_enqueue_scripts()
 
 function msaa_enqueue_block_editor_assets()
 {
+    wp_register_script('collapsing-section', plugins_url('/ms-block-demo/assets/js/collapsing-section.js'));
+    wp_enqueue_script('collapsing-section');
+
     wp_enqueue_script(
         'msln-block-js',
         plugins_url('/ms-block-demo/assets/js/e-latest-news.js'), // Path to your JS file

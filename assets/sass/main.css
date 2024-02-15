@@ -1922,6 +1922,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   opacity: 1;
 }
 
+.CS-title {
+  width: 100%;
+  text-align: center;
+  background-color: #3d3c3c;
+  color: whitesmoke;
+}
+
+.CS-button {
+  position: absolute;
+  right: 1rem;
+}
+
+.CS-btnimg {
+  height: 1rem !important;
+}
+
 .footer {
   background-color: #333;
   padding: 10rem 0;

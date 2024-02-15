@@ -65,7 +65,7 @@ class MenWin extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, "Some text about this picture"));
   }
 }
-/* harmony default export */ __webpack_exports__["default"] = (Boots);
+/* harmony default export */ __webpack_exports__["default"] = (CollapsingSection);
 
 /***/ }),
 
