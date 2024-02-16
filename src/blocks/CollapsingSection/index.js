@@ -26,11 +26,17 @@ registerBlockType(block.name, {
         borderColor: {
             type: 'string',
             default: "#000"
+        },
+        textColor: {
+            type: 'string',
+            default: "#000"
         }
     },
     edit({ attributes, setAttributes }) {
         const [Title, setTitle] = useState(attributes.title);
         const [borderColor, setBorderColor] = useState(attributes.borderColor);
+        const [textColor, setTextColor] = useState(attributes.textColor);
+
         // Generate unique ID if it doesn't exist
         if (!attributes.uniqueId) {
             const uniqueId = `block-${Math.floor(Math.random() * 999999)}`;
@@ -44,6 +50,11 @@ registerBlockType(block.name, {
         const onBorderColorChange = (color) => {
             setBorderColor(color);
             setAttributes({ borderColor: color });
+            forceRerender();
+        };
+        const onTextColorChange = (color) => {
+            setTextColor(color);
+            setAttributes({ textColor: color });
             forceRerender();
         };
         const handleTitleChange = (title, value) => {
@@ -81,7 +92,18 @@ registerBlockType(block.name, {
                                 {
                                     value: borderColor,
                                     onChange: (colorValue) => onBorderColorChange(colorValue),
-                                    label: __("Border Color", "text-domain"),
+                                    label: __("Header/Border", "text-domain"),
+                                },
+                            ]}
+                        />
+                        <PanelColorSettings
+                            title={__("Text Color", "text-domain")}
+                            initialOpen={true}
+                            colorSettings={[
+                                {
+                                    value: textColor,
+                                    onChange: (colorValue) => onTextColorChange(colorValue),
+                                    label: __("Text Color", "text-domain"),
                                 },
                             ]}
                         />

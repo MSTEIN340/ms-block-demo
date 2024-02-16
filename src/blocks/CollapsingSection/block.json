@@ -25,6 +25,10 @@
     "borderColor": {
       "type": "string",
       "default": "#000"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#FFF"
     }
   },
   "style": "file:./index.css"

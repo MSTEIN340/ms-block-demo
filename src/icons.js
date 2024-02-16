@@ -11,9 +11,7 @@ export default {
         <defs
             id="defs1" />
 
-        <g
-
-            id="g1">
+        <g id="g1">
             <image
                 width="233.28"
                 height="235.2"
