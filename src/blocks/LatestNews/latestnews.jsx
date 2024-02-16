@@ -63,9 +63,6 @@ class LatestNews extends Component {
                         and</p>
                     <p>sign up for our newsletter below. Stay part of our family, and spread the Wings of Freedom! </p>
                 </div>
-                <script>
-                    document.addEventListener('DOMContentLoaded', LoadLatestNews );
-                </script>
             </>
         )
     }

@@ -12,6 +12,7 @@ function aa_enqueue_scripts()
 //	wp_enqueue_style('r_rateit2');
 	wp_register_style('r_rateit',plugins_url('/ms-block-demo/assets/css/style2.css') );
 	wp_enqueue_style('r_rateit');
+
     wp_register_style('ms_style',plugins_url('/ms-block-demo/assets/css/style.css') );
     wp_enqueue_style('ms_style');
     wp_enqueue_style('dashicons');
