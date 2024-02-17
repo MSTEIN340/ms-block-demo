@@ -9,27 +9,27 @@
   overflow: hidden;
   font-size: 1rem;
   font-style: italic;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
   z-index: 1;
-  transition: all 0.2s;
+  transition: all .2s;
   padding: 5px;
   border-radius: 6px;
   line-height: 1.2rem;
-}
-.barticle-div:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.barticle-div:hover::after {
-  background-color: black;
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
+  &:hover {
+    //   background-color: #03a9f4;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, .2);
+
+    &::after {
+      background-color: black;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 }
 
 .author {
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-style: normal;
   margin-top: 5px;
 }
-
-/*# sourceMappingURL=main.css.map */

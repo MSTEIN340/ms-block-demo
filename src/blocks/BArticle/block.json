@@ -1,23 +1,54 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
-  "name": "ms-block-demo/boots",
-  "title": "Boots",
+  "name": "ms-block-demo/barticle",
+  "title": "Bar Article",
   "category": "text",
   "icon": "star-filled",
-  "description": "Sticky Header",
+  "description": "Simple formatted Sidebar article link",
   "keywords": ["header", "underline", "hover"],
   "version": "1",
   "textdomain": "ms-block-demo",
   "editorScript": "file:./index.js",
   "attributes": {
-    "content": {
-      "type": "string"
-    },
-    "underline_color": {
+    "postID": {
       "type": "string",
-      "default": "#f87171"
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "date": {
+      "type": "string",
+      "default": ""
+    },
+    "author": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string",
+      "default": ""
+    },
+    "opacity": {
+      "type": "string",
+      "default": ""
     }
   },
   "style": "file:./index.css"
 }
+
+
