@@ -23,9 +23,6 @@ function aa_enqueue_scripts()
     wp_register_script('starwars-intro', plugins_url('/ms-block-demo/assets/js/starwars-intro.js'));
     wp_enqueue_script('starwars-intro');
 
-    wp_register_script('latest-news', plugins_url('/ms-block-demo/assets/js/latest-news.js'));
-    wp_enqueue_script('latest-news');
-
     wp_register_script('collapsing-section', plugins_url('/ms-block-demo/assets/js/collapsing-section.js'));
     wp_enqueue_script('collapsing-section');
 

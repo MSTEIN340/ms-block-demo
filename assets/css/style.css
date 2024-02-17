@@ -1714,9 +1714,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   width: 100vw;
   height: 100vh; }
+
+.fog {
+  z-index: 0; }
 
 /* ---------- Fog ---------- */
 .fogwrapper {

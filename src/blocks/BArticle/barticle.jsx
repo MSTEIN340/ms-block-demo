@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 // this class operates as the main class that operates the application.
 
-class Boots extends Component {
+class BArticle extends Component {
     /* add constructor, add componentdidmount, add state, call AjaxMe from component did mount, and set state to re-render */
     state = {
 
@@ -33,7 +33,7 @@ class Boots extends Component {
     }
 }
 
-export default Boots;
+export default BArticle;
 
 
 
