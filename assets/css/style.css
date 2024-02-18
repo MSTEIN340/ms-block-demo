@@ -1961,7 +1961,7 @@ body {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   overflow: hidden;
   font-size: 1rem;
-  font-style: italic;
+  font-style: normal;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   z-index: 1;
   transition: all .2s;
@@ -1978,8 +1978,8 @@ body {
 
 .author {
   font-size: .8rem;
-  font-style: normal;
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-style: italic; }
 
 .footer {
   background-color: #333;

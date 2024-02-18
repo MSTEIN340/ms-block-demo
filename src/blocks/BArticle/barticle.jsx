@@ -73,7 +73,7 @@ class BArticle extends Component {
                         {this.state.title}
                     </div>
                     <div className="author w50">
-                        {this.state.author}
+                        {"by "+this.state.author}
                     </div>
                     <div className="author w50">
                         {this.state.date}

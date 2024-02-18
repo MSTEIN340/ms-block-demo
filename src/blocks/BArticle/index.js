@@ -11,7 +11,7 @@ import {PanelBody, TextControl, RangeControl } from "@wordpress/components";
 import {__} from "@wordpress/i18n"; // This only works because WebPack is running. ( NPM RUN START )
 
 registerBlockType(block.name, {
-    icon: icons.secondary,
+    icon: icons.Wings,
     attributes: {
         postID: {
             type: 'string',
