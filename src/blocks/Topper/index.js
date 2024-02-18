@@ -13,7 +13,7 @@ registerBlockType(block.name, {
                 <header className="ms_header-outer">
                     <div className="ms_header-inner fade-in" id="stack1xy">
 
-                            <span className={"center aa_font1"}>
+                            <span className={"center aa_font1ms"}>
                                 <img
                                     className={"hMichael"}
                                     src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
@@ -32,7 +32,7 @@ registerBlockType(block.name, {
             <>
                 <header className="ms_header-outer">
                     <div className="ms_header-inner fade-in" id="stack1xy">
-                        <a href={"https://www.MichaelAStein.com/"}> <span className={"center aa_font1"}>
+                        <a href={"https://www.MichaelAStein.com/"}> <span className={"center aa_font1ms"}>
                             <img
                                 className={"hMichael"}
                                 src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}

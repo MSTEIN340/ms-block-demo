@@ -1,0 +1,54 @@
+// My Nav
+
+.MsNav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  //  padding-left: 25%;
+  overflow: hidden;
+  //background-color: transparent;
+}
+
+.MsNav ul li {
+  float: left;
+}
+
+.MsNav ul li a {
+  display: block;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+
+}
+
+.MsNav ul li a:hover {
+  color: black;
+  background-color: #4c8df8;
+
+}
+
+.MsNav ul li.submenu ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin-bottom: 2vh;
+}
+
+.MsNav ul li.submenu:hover ul {
+  display: block;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.MsNav ul li.submenu ul li {
+  float: none;
+}
+
+.MsNav ul li.submenu ul li a {
+  padding: 8px 16px;
+  display: block;
+  text-align: left;
+}

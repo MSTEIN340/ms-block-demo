@@ -30,7 +30,7 @@ class HaloHeader extends Component {
             <>
                     <header className="aa_header-outer">
                         <div className="aa_header-inner boom2"  id="stack1xy" >
-                            <span className={"center aa_font1"}><img className={"hAngel"} src={"https://www.archangel-media.com/wp-content/uploads/2023/11/Archangel-Favicon-small.png"} />
+                            <span className={"center aa_font1ms"}><img className={"hAngel"} src={"https://www.archangel-media.com/wp-content/uploads/2023/11/Archangel-Favicon-small.png"} />
                             <span className={"hUp"}>RCHANGEL MEDIA DEVELOPMENT</span></span>
                             <span className={"center aa_font2"}>{this.state.inner}</span>
                         </div>

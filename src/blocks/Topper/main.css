@@ -230,6 +230,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   letter-spacing: -1px;
 }
 
+.aa_font1ms {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
 .ms_font2 {
   text-decoration: underline;
   font-size: 1rem;

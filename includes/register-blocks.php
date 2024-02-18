@@ -29,7 +29,8 @@ function up_register_blocks() {
         [ 'name' => 'contactform' ],
         [ 'name' => 'topper' ],
         [ 'name' => 'clouds' ],
-        [ 'name' => 'barticle' ]
+        [ 'name' => 'barticle' ],
+        [ 'name' => 'msnav' ]
     ];
 
     foreach($blocks as $block) {

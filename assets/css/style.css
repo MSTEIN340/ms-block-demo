@@ -26,6 +26,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 2rem;
   letter-spacing: -1px; }
 
+.aa_font1ms {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -1px; }
+
 .ms_font2 {
   text-decoration: underline;
   font-size: 1rem;
@@ -1344,6 +1350,47 @@ ORDER: Base + typography > general layout + grid > page layout > components
   float: none; }
 
 .MyNav ul li.submenu ul li a {
+  padding: 8px 16px;
+  display: block;
+  text-align: left; }
+
+.MsNav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.MsNav ul li {
+  float: left; }
+
+.MsNav ul li a {
+  display: block;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none; }
+
+.MsNav ul li a:hover {
+  color: black;
+  background-color: #4c8df8; }
+
+.MsNav ul li.submenu ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin-bottom: 2vh; }
+
+.MsNav ul li.submenu:hover ul {
+  display: block;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.MsNav ul li.submenu ul li {
+  float: none; }
+
+.MsNav ul li.submenu ul li a {
   padding: 8px 16px;
   display: block;
   text-align: left; }
