@@ -1182,6 +1182,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .fade-in {
   opacity: 1;
+  line-height: 3;
   background-color: transparent;
   color: whitesmoke !important;
   width: 100vw;
@@ -1195,28 +1196,25 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 50px; }
 
 .hMichael {
-  height: 50px;
-  width: 50px;
-  color: whitesmoke;
-  position: absolute;
-  float: left;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  content: "";
-  text-align: center;
+  height: 100%;
+  width: auto;
+  margin-left: 10%;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6); }
 
 .hMichael2 {
-  height: 50px;
-  position: absolute;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  display: flex;
   color: inherit;
-  float: left;
-  top: 50%;
-  left: 13%;
+  margin-top: 3%;
   transform: translateY(-50%);
+  text-decoration: none;
   content: "";
-  text-align: center;
+  align-content: center;
   text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6); }
 
 .aa_header-outer {
@@ -1266,6 +1264,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   vertical-align: middle; }
 
+.ce2 {
+  width: 50%;
+  height: 100%;
+  padding-left: 0%; }
+
 .w50 {
   float: right;
   content: "";
@@ -1293,7 +1296,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   display: inline-block;
   clear: both;
-  height: 50px !important;
+  height: 52px !important;
   animation: explode 1s ease-in;
   box-shadow: 0 5px 15px #1f1f1f; }
 
@@ -1639,6 +1642,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
   line-height: 2.25rem;
   font-weight: 500;
   padding: 0; }
+
+.w50-2 {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  content: "";
+  width: 50%;
+  padding-left: 0%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 10; }
+
+.TopDiv {
+  position: sticky; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -3484,18 +3501,19 @@ he3 {
   height: 100px;
   width: 100%;
   z-index: 7;
+  overflow-y: hidden !important;
   overflow-x: hidden; }
 
 .ms_header-inner {
+  display: inline-flex !important;
   background-color: transparent;
   height: 70px;
   position: sticky;
-  vertical-align: center;
-  top: 20px;
+  align-items: center !important;
   width: 100%;
   box-shadow: 0 5px 15px #1f1f1f;
   z-index: 7;
-  overflow-y: hidden;
+  overflow-y: hidden !important;
   overflow-x: hidden;
   transition: all 1s; }
 

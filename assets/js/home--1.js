@@ -46,7 +46,7 @@ let scrollpos = window.scrollY
 
 window.addEventListener('scroll', function() {
     scrollpos = window.scrollY;
- //   console.log("scrollY= " + scrollpos)
+    console.log("scrollY= " + scrollpos)
     if (scrollpos > 0) {
         if((document.getElementById("stack1xy").classList.contains("fade-in"))) {
             document.getElementById("stack1xy").classList.remove("fade-in");           //alert("what the heck2");

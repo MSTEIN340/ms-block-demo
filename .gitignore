@@ -1,4 +1,5 @@
 /node_modules/
 /build/
 **/main.css
-**/main.map.css
+**/main.css.map
+

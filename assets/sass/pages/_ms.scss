@@ -7,20 +7,22 @@
   height: 100px;
   width: 100%;
   z-index: 7;
+  overflow-y: hidden !important;
   overflow-x: hidden;
 }
 
 .ms_header-inner {
   //color: white;
+  display: inline-flex !important;
   background-color: transparent;
   height: 70px;
   position: sticky;
-  vertical-align: center;
-  top: 20px;
+  align-items: center !important;
+ // top: 20px;
   width: 100%;
   box-shadow: 0 5px 15px #1f1f1f;
   z-index: 7;
-  overflow-y: hidden;
+  overflow-y: hidden !important;
   overflow-x: hidden;
   //  border-radius: 100px;
   transition: all 1s;
