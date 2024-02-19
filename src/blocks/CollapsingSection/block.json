@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ms-block-demo/collapsingsection",
+  "title": "Collapsing Section",
+  "category": "text",
+  "description": "Collapsing Section",
+  "keywords": ["contact", "form", "hover"],
+  "version": "1",
+  "textdomain": "ms-block-demo",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "collapsed": {
+      "type": "boolean",
+      "default": false
+    },
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#FFF"
+    }
+  },
+  "style": "file:./index.css"
+}

@@ -2,6 +2,7 @@
 
 function up_register_blocks() {
     $blocks = [
+
         [ 'name' => 'fancy-header' ],
         [ 'name' => 'search-form', 'options' => [
             'render_callback' => 'up_search_form_render_cb'
@@ -16,15 +17,20 @@ function up_register_blocks() {
 	    [ 'name' => 'home--1a' ],
         [ 'name' => 'ms-hongkong' ],
         [ 'name' => 'starwars-intro' ],
-        [ 'name' => 'OurTeam' ],
+        [ 'name' => 'ourteam' ],
+        [ 'name' => 'collapsingsection' ],
         [ 'name' => 'halo' ],
-        [ 'name' => 'Boots' ],
-        [ 'name' => 'MyNav' ],
-        [ 'name' => 'FatNav' ],
+        [ 'name' => 'boots' ],
+        [ 'name' => 'mynav' ],
+        [ 'name' => 'fatnav' ],
         [ 'name' => 'latestnews', 'options' => [
             'render_callback' => 'get_post_details_cb'
         ]],
         [ 'name' => 'contactform' ],
+        [ 'name' => 'topper' ],
+        [ 'name' => 'clouds' ],
+        [ 'name' => 'barticle' ],
+        [ 'name' => 'msnav' ]
     ];
 
     foreach($blocks as $block) {

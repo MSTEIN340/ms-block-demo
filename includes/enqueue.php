@@ -12,6 +12,7 @@ function aa_enqueue_scripts()
 //	wp_enqueue_style('r_rateit2');
 	wp_register_style('r_rateit',plugins_url('/ms-block-demo/assets/css/style2.css') );
 	wp_enqueue_style('r_rateit');
+
     wp_register_style('ms_style',plugins_url('/ms-block-demo/assets/css/style.css') );
     wp_enqueue_style('ms_style');
     wp_enqueue_style('dashicons');
@@ -19,21 +20,23 @@ function aa_enqueue_scripts()
     wp_register_script('fat-nav-data', plugins_url('/ms-block-demo/assets/js/fat-nav-data.js'));
     wp_enqueue_script('fat-nav-data');
 
+    wp_register_script('starwars-intro', plugins_url('/ms-block-demo/assets/js/starwars-intro.js'));
+    wp_enqueue_script('starwars-intro');
 
-    wp_register_script('latest-news', plugins_url('/ms-block-demo/assets/js/latest-news.js'));
-    wp_enqueue_script('latest-news');
-
+    wp_register_script('collapsing-section', plugins_url('/ms-block-demo/assets/js/collapsing-section.js'));
+    wp_enqueue_script('collapsing-section');
 
     wp_register_script('contact-form', plugins_url('/ms-block-demo/assets/js/contact-form.js'));
     wp_enqueue_script('contact-form');
 
+    wp_register_script('barticle', plugins_url('/ms-block-demo/assets/js/barticle.js'));
+    wp_enqueue_script('barticle');
 
 	wp_register_script('home--1', plugins_url('/ms-block-demo/assets/js/home--1.js'),array('fat-nav-data') );
 	wp_enqueue_script('home--1');
 
     wp_register_script('grid-block', plugins_url('/ms-block-demo/assets/js/grid-block.js'));
     wp_enqueue_script('grid-block');
-
 
     wp_localize_script('fat-nav-data', 'msFatNavData', array(
         'pluginsUrl' => plugins_url(),
@@ -50,12 +53,14 @@ function aa_enqueue_scripts()
     ) );
 }
 
-
-
-
-
 function msaa_enqueue_block_editor_assets()
 {
+    wp_register_script('barticle', plugins_url('/ms-block-demo/assets/js/barticle.js'));
+    wp_enqueue_script('barticle');
+
+    wp_register_script('collapsing-section', plugins_url('/ms-block-demo/assets/js/collapsing-section.js'));
+    wp_enqueue_script('collapsing-section');
+
     wp_enqueue_script(
         'msln-block-js',
         plugins_url('/ms-block-demo/assets/js/e-latest-news.js'), // Path to your JS file

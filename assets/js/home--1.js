@@ -46,7 +46,7 @@ let scrollpos = window.scrollY
 
 window.addEventListener('scroll', function() {
     scrollpos = window.scrollY;
- //   console.log("scrollY= " + scrollpos)
+    console.log("scrollY= " + scrollpos)
     if (scrollpos > 0) {
         if((document.getElementById("stack1xy").classList.contains("fade-in"))) {
             document.getElementById("stack1xy").classList.remove("fade-in");           //alert("what the heck2");
@@ -224,6 +224,19 @@ function ShowTitle(f)
         document.getElementById(f).classList.remove("invisible");
     }
     document.getElementById(f).classList.add("visible");
+
+    if( f==='erp' )
+    {
+        console.log("f = 'erp'")
+        const Symbi = document.getElementById("SymbiWrapper")
+        Symbi.style.display = "contents";
+    }else{
+        const Symbi = document.getElementById("SymbiWrapper")
+        Symbi.style.display = "none";
+    }
+
+
+
 }
 
 function invisAllTitles(f) {

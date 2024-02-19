@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Symbi from "../symbiosis/Symbi";
-import {createRoot} from "react-dom";
+import { createRoot } from "react-dom";
 
 class GridBlock extends Component {
     /* add constructor, add componentdidmount, add state, call AjaxMe from component did mount, and set state to re-render */
@@ -27,11 +27,14 @@ class GridBlock extends Component {
         return (
             <>
                 <div id="ms-gb" className={"gridBlock"}>
-
+                    {/*
                     <div id="abc" className={"cell pos1" }  onClick="FlowElement('abc')">
                         Box {this.state.box}
                     </div>
-                    <Symbi />
+                    */}
+                    <Symbi
+                        status={"off"}
+                    />
 
                 </div>
             </>

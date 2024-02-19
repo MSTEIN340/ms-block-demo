@@ -20,29 +20,47 @@
 @import "components/card-parallax";
 @import "components/ms-header";
 @import "components/mynav";
-@import "components/_contact-form";
-//@import "components/feature-box";
+@import "components/msnav";
+@import "components/contact-form";
+@import "components/starwars-intro";
+@import "components/topper";
 @import "components/form";
+@import "components/collapsing-section";
+@import "components/clouds";
 
 //@import "popup";
-//@import "components/story";
+@import "components/barticle";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
-
 @import "pages/home";
-//@import "pages/symbi";
+@import "pages/symbi";
 //@import "pages/ms";
 @import "pages/aa";
-
+@import "pages/ms";
 //@import "pages/home--1";
 
 //@import "./index.css";
 
+.wp-site-blocks {
+  margin: -32;
+  padding: 0;
+}
+.wp-block-group {
+  margin-top: 0 !important;
+}
 
-
-
+ol.has-background, ul.has-background {
+  padding: 0em;
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#headerimg  {
+  display: inline-grid;
+}
 
 

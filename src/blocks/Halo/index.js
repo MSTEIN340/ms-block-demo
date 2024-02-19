@@ -5,7 +5,7 @@ import './main.css' // This only works because WebPack is running. ( NPM RUN STA
 import {InnerBlocks} from "@wordpress/block-editor";
 
 registerBlockType(block.name, {
-    icon: icons.secondary,
+    icon: icons.Wings,
     edit({ attributes, setAttributes }) {
 // Fragment
         return (

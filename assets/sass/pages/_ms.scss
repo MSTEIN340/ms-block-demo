@@ -7,20 +7,22 @@
   height: 100px;
   width: 100%;
   z-index: 7;
+  overflow-y: hidden !important;
   overflow-x: hidden;
 }
 
 .ms_header-inner {
-  color: white;
+  //color: white;
+  display: inline-flex !important;
   background-color: transparent;
   height: 70px;
   position: sticky;
-  vertical-align: center;
-  top: 20px;
+  align-items: center !important;
+ // top: 20px;
   width: 100%;
   box-shadow: 0 5px 15px #1f1f1f;
   z-index: 7;
-  overflow-y: hidden;
+  overflow-y: hidden !important;
   overflow-x: hidden;
   //  border-radius: 100px;
   transition: all 1s;
@@ -96,7 +98,7 @@
 
 // old fashioned float center for header
 .ms_center {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   //  margin: auto;
@@ -136,9 +138,11 @@
   content: "";
 }
 .bdev{
+  position: relative;
   display: none;
   width: 100vw;
   justify-content: center;
+  z-index: 1;
 }
 .ms-di2 {
   display: flex;
@@ -174,7 +178,7 @@
   min-width: 110vw;
 }
 
-.c1{
+.c1hk{
   margin-left: auto;
   margin-right: auto;
 }
@@ -303,58 +307,9 @@ p {
  // color: rgba(250, 188, 6, 0.87);
 }
 
-/* Set the font, lean the board, position it */
-#board {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(10deg);
-  transform-origin: 50% 100%;
-  text-align: justify;
-  position: absolute;
-  margin-left: -11em;
-  font-weight: bold;
-  overflow: hidden;
-  font-size: 350%;
-  height: 50em;
-  width: 18em;
-  bottom: 0;
-  left: 50%;
-  text-shadow: 7px 7px 3px rgba(0,0,0,0.6);
-}
 
-.droids {
-  width: 60%;
-  align-items: center;
-  margin-left: 25%;
-  border-radius: 20px;
-  transform: perspective(-3000px) rotateX(-40deg) !important;
-  transform-origin: 100% 50% !important;
-}
 
-#board:after {
-  position: absolute;
-  content: ' ';
-  bottom: 60%;
-  left: 0;
-  right: 0;
-  top: 0;
-}
 
-/* Set the scrolling animation and position it */
-#content {
-  animation: scroll 100s linear 6s;
-  position: absolute;
-  top: 100%;
-}
 
-#title, #subtitle {
-  text-align: center;
-}
 
-@keyframes scroll {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -170%;
-  }
-}
+

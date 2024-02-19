@@ -1,16 +1,57 @@
 .fade-in {
   opacity: 1;
+  line-height: 3;
   background-color: transparent;
   color: whitesmoke !important;
   width: 100vw;
   content: "";
   display: inline-block;
+  & a, span {
+    color: whitesmoke;
+  }
 
 }
 
 .hAngel {
   height: 50px;
   width: 50px;
+}
+
+.hMichael {
+  height: 100%;
+  width: auto;
+  margin-left: 10%;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  //float: left;
+  //top: 50%;
+  //left: 10%;
+ // transform: translateY(-50%);
+ // height: 90%;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+
+}
+
+.hMichael2 {
+  width: 40%;
+  height: 100%;
+  //margin-top: -20px;
+  position: relative;
+  display: flex;
+  color: inherit;
+  margin-top: 3%;
+
+  // padding-bottom: 20px;
+ // float: left;
+ // top: 50%;
+ // left: 13%;
+  transform: translateY(-50%);
+  // height: 90%;
+  text-decoration: none;
+  content: "";
+  align-content: center;
+  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
 }
 .aa_header-outer {
   display: flex;
@@ -22,6 +63,13 @@
   z-index: 7;
 }
 .hUp {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  top: -5px;
+}
+.hUp-ms {
   content: "";
   position: relative;
   display: inline-block;
@@ -53,6 +101,27 @@
   text-align: center;
   vertical-align: middle;
 }
+.ce2 {
+  width: 50%;
+  height: 100%;
+  // margin-top: -50px;
+//  transform: translateY(-50%);
+  padding-left: 0%;
+ // padding-bottom: 20px;
+ // margin-bottom: 30px;
+
+}
+.w50 {
+  float: right;
+  content: "";
+  // margin-top: 10px;
+  width: 50%;
+  //  height: 6rem;
+  padding-left: 0%;
+  //  padding-top: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
 
 .boom {
   opacity: 1;
@@ -73,7 +142,7 @@
   content: "";
   display: inline-block;
   clear: both;
-  height: 50px !important;
+  height: 52px !important;
   animation: explode 1s ease-in;
   box-shadow: 0 5px 15px #1f1f1f;
 }
@@ -97,32 +166,7 @@
   opacity: 1 !important;
 }
 
-.intro-start {
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  background: #0c88b4;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 7px;
-  color: black;
-  z-index: 1;
 
-}
-
-.intro-stop {
-  position: absolute;
-  bottom: 0;
-  left: 55px;
-  background: #0c88b4;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-  border-radius: 7px;
-  color: black;
-  z-index: 1;
-}
 
 .m50 {
   height: 100%;

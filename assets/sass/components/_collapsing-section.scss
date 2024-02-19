@@ -1,0 +1,27 @@
+.CS-section {
+
+}
+
+.CS-title {
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.CS-button {
+  position: relative;
+  float: right;
+  margin-right: 1rem;
+}
+
+.CS-btnimg {
+  height: 1rem !important;
+}
+
+.list-container {
+  columns: 4;
+  -webkit-columns: 4; /* For Safari */
+  -moz-columns: 4;    /* For Firefox */
+  list-style-type: none; /* Optional: removes bullet points */
+  //padding: 0; /* Optional: removes default padding */
+}
