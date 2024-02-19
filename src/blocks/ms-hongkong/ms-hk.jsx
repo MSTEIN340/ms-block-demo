@@ -74,9 +74,7 @@ class MsHk extends Component {
                     <img className="background-me3" src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/regal2c.png"  alt={"tt"}/>
                     <StarWars_Intro />
                 </div>
-
-
-                <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} onScroll={soop2()}>
+                <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} >
                     <GridBlock/>
                     <div className="fit">
                         <img id="arm"
@@ -88,18 +86,19 @@ class MsHk extends Component {
                     </div>
 
                     <header className="ms_header-outer">
+
                         <div className="ms_header-inner fade-in" id="stack1xy">
+                            <img
+                                className={"hMichael"}
+                                src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
+                                alt={"Favicon"}/>
 
-                            <span className={"center aa_font1ms"}>
-                                <img
-                                    className={"hMichael"}
-                                    src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
-                                    alt={"Favicon"}/>
-                                <span className={"hMichael2"}> Michael A. Stein < /span>
-                            </span>
-
-                            <span className={"aa_font2 w50"}><MsNav/></span>
+                            <a className={"hMichael2"} href={"https://www.MichaelAStein.com/"}>
+                                <span className={"ce2 aa_font1ms"}>Michael A. Stein </span>
+                            </a>
+                            <span className={"aa_font2 w50"}><MsNav /></span>
                         </div>
+
                     </header>
                     <span className={"shorter_view"}>
                         <div className="header2">
