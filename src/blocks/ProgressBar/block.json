@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ms-block-demo/progressbar",
+  "title": "Progress Bar",
+  "category": "text",
+  "description": "Horizontal Progress Bar",
+  "keywords": ["contact", "form", "hover"],
+  "version": "1",
+  "textdomain": "ms-block-demo",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "collapsed": {
+      "type": "boolean",
+      "default": false
+    },
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "range": {
+      "type": "number",
+      "default": "100"
+    },
+    "progressColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#FFF"
+    }
+  },
+  "style": "file:./index.css"
+}

@@ -57,7 +57,7 @@ class MenWin extends Component {
     }
 }
 
-export default CollapsingSection;
+export default ProgressBar;
 
 
 

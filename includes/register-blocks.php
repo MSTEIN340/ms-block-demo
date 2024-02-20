@@ -30,7 +30,8 @@ function up_register_blocks() {
         [ 'name' => 'topper' ],
         [ 'name' => 'clouds' ],
         [ 'name' => 'barticle' ],
-        [ 'name' => 'msnav' ]
+        [ 'name' => 'msnav' ],
+        [ 'name' => 'progressbar' ]
     ];
 
     foreach($blocks as $block) {

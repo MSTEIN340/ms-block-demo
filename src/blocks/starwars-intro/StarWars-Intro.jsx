@@ -18,7 +18,7 @@ class StarWars_Intro extends Component {
         this.state.partno = this.props.partno;
         this.state.box = 0;
         // Initialize scrollMeDiv as a class property
-        this.scrollMeRef = React.createRef();
+
     }
 
     componentDidMount() {
@@ -78,7 +78,7 @@ class StarWars_Intro extends Component {
                     </section>
                     <div id="board">
                         <div id="content">
-                            <p id="title">Episode I</p>
+                            <p id="title">Episode IV</p>
                             <p id="subtitle">A NEW HOME</p>
 
                             <p>Highly skilled full stack software developer with extensive backend and data management
