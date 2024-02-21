@@ -10,12 +10,41 @@
   "textdomain": "ms-block-demo",
   "editorScript": "file:./index.js",
   "attributes": {
-    "content": {
-      "type": "string"
-    },
-    "underline_color": {
+    "postID": {
       "type": "string",
-      "default": "#f87171"
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "date": {
+      "type": "string",
+      "default": ""
+    },
+    "author": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "'#000000'"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "'#000000'"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "opacity": {
+      "type": "string",
+      "default": "1"
     }
   },
   "style": "file:./index.css"
