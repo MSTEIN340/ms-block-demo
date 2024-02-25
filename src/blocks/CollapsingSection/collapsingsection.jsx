@@ -14,6 +14,7 @@ class CollapsingSection extends Component {
             borderColor: props.attributes.borderColor,
             textColor: props.attributes.textColor,
             collapsed: props.attributes.collapsed,
+            timeLine: props.attributes.timeLine,
         }
     }
 
@@ -44,6 +45,7 @@ class CollapsingSection extends Component {
             <div className="CS-section">
                 <div className={"CS-title"} style={{backgroundColor: this.state.borderColor, color: this.state.textColor, border: `1px solid ${this.state.borderColor}`,
                 }}>
+                    <span className={"float-left"}>{this.state.timeLine}</span>
                     {this.state.title}
                     <span id={"CS-button"+this.state.id} className={"CS-button"}>
                             <img id={"CS-btnimg"+this.state.id}

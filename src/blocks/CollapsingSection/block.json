@@ -22,6 +22,10 @@
       "type": "string",
       "default": ""
     },
+    "timeLine": {
+      "type": "string",
+      "default": ""
+    },
     "borderColor": {
       "type": "string",
       "default": "#000"

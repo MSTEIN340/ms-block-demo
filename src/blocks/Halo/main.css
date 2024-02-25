@@ -53,7 +53,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: relative;
   display: flex;
   color: inherit;
-  margin-top: 3%;
+  margin-top: 2.5%;
+  margin-left: 5px;
   transform: translateY(-50%);
   text-decoration: none;
   content: "";

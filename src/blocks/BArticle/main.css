@@ -1,37 +1,35 @@
-.progress-container {
-  position: relative;
-  width: 100%;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  margin: 0;
-  overflow: hidden; /* Ensures the inner bar stays within the border-radius */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* .progress-bar {
-  height: 20px;
-  background-image: linear-gradient(to right, red, yellow, green);
-  width: 0%; /* Default to 0 percent * /
-  border-radius: 5px;
-  transition: width 0.5s ease-in-out; /* Smooth transition for width changes * /
-}
- */
-.progress-bar {
-  position: relative;
-  height: 20px;
-  width: 0%; /* Default to 0 percent */
-  border-radius: 5px;
-  transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
-  background-size: 100% 100%; /* Scale the gradient over the full width */
-}
-
-.progress-label {
-  line-height: 1;
-  position: absolute;
-  top: 0;
+.barticle-div {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  overflow: hidden;
   font-size: 1rem;
-  padding: 0;
-  left: 48%;
-  z-index: 2;
+  font-style: normal;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: all 0.2s;
+  padding: 5px;
+  border-radius: 6px;
+  line-height: 1.2rem;
+}
+.barticle-div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.barticle-div:hover::after {
+  background-color: black;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.author {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,10 @@ registerBlockType(block.name, {
             type: 'string',
             default: '',
         },
+        timeLine: {
+            type: 'string',
+            default: '',
+        },
         borderColor: {
             type: 'string',
             default: "#000"
@@ -63,6 +67,12 @@ registerBlockType(block.name, {
             setAttributes({ title: value });
             forceRerender();
         };
+        const handleTimeLineChange = (timeLine, value) => {
+            const newTitle = { ...timeLine, [timeLine]: value };
+            setTitle(value);
+            setAttributes({ timeLine: value });
+            forceRerender();
+        };
         return (
             <>
                 <InspectorControls>
@@ -84,7 +94,12 @@ registerBlockType(block.name, {
                             </div>
 
                         </div>
-
+                        <TextControl
+                            label={__("Time Line", "text-domain")}
+                            value={attributes.timeLine}
+                            onChange={(value) => handleTimeLineChange('timeLine', value)}
+                            type="string"
+                        />
                         <PanelColorSettings
                             title={__("Header/Border Color", "text-domain")}
                             initialOpen={true}

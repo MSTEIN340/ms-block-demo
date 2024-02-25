@@ -1247,7 +1247,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: relative;
   display: flex;
   color: inherit;
-  margin-top: 3%;
+  margin-top: 2.5%;
+  margin-left: 5px;
   transform: translateY(-50%);
   text-decoration: none;
   content: "";
@@ -1799,6 +1800,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   list-style-type: none;
   /* Optional: removes bullet points */ }
 
+.float-left {
+  position: relative;
+  float: left;
+  margin-left: 1rem; }
+
 html, body {
   margin: 0;
   padding: 0; }
@@ -2052,6 +2058,63 @@ body {
   #foglayer_02 .image01, #foglayer_02 .image02,
   #foglayer_03 .image01, #foglayer_03 .image02 {
     width: 100%; } }
+
+/* Top Articles */
+.wp-block-ms-block-demo-top-articles {
+  margin-bottom: 2rem; }
+
+.wp-block-ms-block-demo-top-articles h6, .editor-styles-wrapper .wp-block-ms-block-demo-top-articles h6 {
+  margin-bottom: 1.25rem;
+  margin-top: 0px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white; }
+  .wp-block-ms-block-demo-top-articles h6 a:visited, .editor-styles-wrapper .wp-block-ms-block-demo-top-articles h6 a:visited {
+    color: white; }
+
+.wp-block-ms-block-demo-top-articles .single-post {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+
+.wp-block-ms-block-demo-top-articles .single-post-image {
+  flex-shrink: 0; }
+
+.wp-block-ms-block-demo-top-articles .single-post-image img {
+  width: 10rem;
+  border-radius: 0.5rem; }
+
+.wp-block-ms-block-demo-top-articles .single-post-detail {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
+
+.wp-block-ms-block-demo-top-articles .single-post-detail > a {
+  display: block;
+  font-weight: 500;
+  text-decoration: none; }
+
+.wp-block-ms-block-demo-top-articles .single-post-detail > span {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity)); }
+
+.toparticles {
+  border-radius: 10px;
+  background-color: rgba(114, 205, 188, 0.5);
+  text-decoration: none;
+  color: white; }
+  .toparticles a:visited {
+    color: white; }
+
+.ms_excerpt {
+  text-decoration: none;
+  color: white; }
+  .ms_excerpt a:visited {
+    color: white; }
+  .ms_excerpt p {
+    color: white; }
 
 .clearfix::after {
   content: "";

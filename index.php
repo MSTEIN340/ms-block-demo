@@ -38,6 +38,7 @@ foreach($allFiles as $filename) {
 add_action('init', 'up_register_blocks');
 add_action( 'wp_enqueue_scripts', 'aa_enqueue_scripts',1 );
 add_action( 'enqueue_block_editor_assets', 'msaa_enqueue_block_editor_assets' );
+
 add_action('wp_ajax_get_post_details_ajax', 'get_post_details_ajax');
 add_action('wp_ajax_nopriv_get_post_details_ajax', 'get_post_details_ajax');
 
@@ -46,3 +47,5 @@ add_action('wp_ajax_nopriv_contact_form_submission', 'handle_contact_form_submis
 
 add_action('wp_ajax_contact_form_submission', 'handle_contact_form_submission');
 add_action('wp_ajax_nopriv_contact_form_submission', 'handle_contact_form_submission');
+
+add_filter('rest_post_query','ms_rest_post_query', 10, 2);
