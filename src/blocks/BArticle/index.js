@@ -56,15 +56,16 @@ registerBlockType(block.name, {
 
 
         const onPostIdChange = (postID) => {
-            setAttributes({postID: postID});
+            setAttributes({ postID: postID});
             if (!postID) return; // Exit if no post ID
 
             const fetchData = (contentType) => {
                 // Fetch data from the WordPress REST API
                 apiFetch({ path: `/wp/v2/${contentType}/${postID}` }).then((data) => {
                     // Assuming both posts and pages have title, link, and date fields
+                  //  console.log("DATA:",data);
                     const updatedAttributes = {
-                        postID: data.id, // Use the correct property for ID
+                        postID: data.id.toString(), // Use the correct property for ID
                         title: data.title.rendered,
                         link: data.link,
                         date: data.date,
@@ -77,13 +78,15 @@ registerBlockType(block.name, {
                                 ...updatedAttributes,
                                 author: user.name // Assuming you want the author's display name
                             });
+                           // console.log("attributes", attributes);
                             forceRerender();
                         }).catch(error => {
                             console.error('Error fetching author:', error);
                         });
                     } else {
                         // Pages typically don't have an author in the same way posts do, handle accordingly
-                        setAttributes(updatedAttributes);
+                        setAttributes({...updatedAttributes});
+                       // console.log("updated attrubutes",updatedAttributes);
                         forceRerender();
                     }
 
@@ -142,7 +145,7 @@ registerBlockType(block.name, {
                         <div style={{flexGrow: 1, marginRight: '5px'}}>
                             <TextControl
                                 label={__("PostID", "text-domain")}
-                                value={attributes.postID}
+                                value={ attributes.postID }
                                 onChange={(value) => onPostIdChange(value)}
                                 type="string"
                             />
@@ -191,9 +194,7 @@ registerBlockType(block.name, {
                             },
                         ]}
                     />
-
                 </PanelBody>
-
             </InspectorControls>
             <BArticle
                 key={forceRerenderKey}
@@ -203,8 +204,8 @@ registerBlockType(block.name, {
             </> );
     },
     save({attributes}){
+        console.log("Save",attributes);
         return ( <BArticle
-            postID={attributes.postID}
             attributes={attributes}
         /> )
     }

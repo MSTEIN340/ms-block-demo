@@ -1,8 +1,8 @@
 <?php
 
 function up_register_blocks() {
+    $namespace = 'ms-block-demo';
     $blocks = [
-
         [ 'name' => 'fancy-header' ],
         [ 'name' => 'search-form', 'options' => [
             'render_callback' => 'up_search_form_render_cb'
@@ -17,29 +17,32 @@ function up_register_blocks() {
 	    [ 'name' => 'home--1a' ],
         [ 'name' => 'ms-hongkong' ],
         [ 'name' => 'starwars-intro' ],
-        [ 'name' => 'ourteam' ],
-        [ 'name' => 'collapsingsection' ],
-        [ 'name' => 'halo' ],
-        [ 'name' => 'boots' ],
-        [ 'name' => 'mynav' ],
-        [ 'name' => 'fatnav' ],
-        [ 'name' => 'latestnews', 'options' => [
+        [ 'name' => 'OurTeam' ],
+        [ 'name' => 'CollapsingSection' ],
+        [ 'name' => 'Halo' ],
+        [ 'name' => 'Boots' ],
+        [ 'name' => 'MyNav' ],
+        [ 'name' => 'FatNav' ],
+        [ 'name' => 'LatestNews', 'options' => [
             'render_callback' => 'get_post_details_cb'
         ]],
-        [ 'name' => 'contactform' ],
-        [ 'name' => 'topper' ],
-        [ 'name' => 'clouds' ],
-        [ 'name' => 'barticle' ],
-        [ 'name' => 'msnav' ],
-        [ 'name' => 'progressbar' ],
-        [ 'name' => 'toparticles', 'options' => [
+        [ 'name' => 'ContactForm' ],
+        [ 'name' => 'Topper' ],
+        [ 'name' => 'Clouds' ],
+        [ 'name' => 'BArticle' ],
+        [ 'name' => 'MsNav' ],
+        [ 'name' => 'ProgressBar' ],
+        [ 'name' => 'TopArticles', 'options' => [
             'render_callback' => 'get_top_articles_cb'
-        ]]
+        ]],
     ];
 
     foreach($blocks as $block) {
+
+        $str = ((UP_PLUGIN_DIR  . 'build/blocks/' . $block['name']));
+        //echo $str;
         register_block_type(
-            UP_PLUGIN_DIR . 'build/blocks/' . $block['name'],
+            $str, // Add the namespace to the block name
             isset($block['options']) ? $block['options'] : []
         ); // Only registers Options if they are present.
     }

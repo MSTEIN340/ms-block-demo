@@ -72,8 +72,9 @@ class MsHk extends Component {
             <>
                 <div className="ms-image-background ms-bki">
                     <img className="background-me3" src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/regal2c.png"  alt={"tt"}/>
-                    <StarWars_Intro />
+
                 </div>
+                <StarWars_Intro />
                 <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} >
                     <GridBlock/>
                     <div className="fit">

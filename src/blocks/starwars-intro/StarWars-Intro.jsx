@@ -1,7 +1,5 @@
 import { Component } from 'react';
 
-
-
 // this class operates as the main class that operates the application.
 
 class StarWars_Intro extends Component {
@@ -63,16 +61,14 @@ class StarWars_Intro extends Component {
         console.log("Render Star Wars Intro");
         return (
             <>
-                <script>
-                    document.addEventListener("DOMContentLoaded", animationend_listener);
-                </script>
+                <div id="intro-stop" className="intro-stop">
+                    Stop
+                </div>
                 <div id={"IntroBackground"}>
                     <div className={"intro-start"}>
                         Start
                     </div>
-                    <div className={"intro-stop"}>
-                        Stop
-                    </div>
+
                     <section className="intro"><br/><br/>
                         A long time ago, in a Parallax far,<br/> far away....
                     </section>
@@ -107,7 +103,9 @@ class StarWars_Intro extends Component {
                     </div>
 
                 </div>
-
+                <script>
+                    document.addEventListener("DOMContentLoaded", animationend_listener);
+                </script>
             </>
         )
     }

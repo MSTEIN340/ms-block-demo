@@ -21,7 +21,11 @@
   border-width: thin;
   border-radius: 7px;
   color: black;
-  z-index: 2;
+  z-index: 5;
+  transition: all 3s;
+}
+.intro-stop:hover {
+  background: white;
 }
 
 /* Set the font, lean the board, position it */
@@ -53,7 +57,7 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 3s;
-  z-index: -1;
+  z-index: 0;
 }
 
 .droids {

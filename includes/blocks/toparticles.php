@@ -51,7 +51,6 @@ function get_top_articles_cb($atts) {
 
                 </div>
             </div>
-
             <?php
 
         }
@@ -66,4 +65,3 @@ function get_top_articles_cb($atts) {
           //  return "hey Jude";
             return $output;
 }
-
