@@ -12,6 +12,10 @@
   position: relative;
   float: right;
   margin-right: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+
 }
 
 .CS-btnimg {

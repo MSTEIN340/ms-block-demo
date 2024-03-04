@@ -154,3 +154,61 @@ function get_primary_category($post_id) {
     return $primary_category->name;
 }
 
+function get_post_details2_ajax() {
+    //check_ajax_referer('my_nonce', 'nonce');
+    $post_data = isset($_POST['post']) ? $_POST['post'] : '';
+    ?>
+
+    <?php
+    ob_start();
+    ?>
+        <div class="my-post-box" >
+            <?php
+            get_post_details_and_save_to_html2($post_data);
+            ?>
+        </div>
+    <?php
+    $html_output = ob_get_clean();
+    wp_send_json_success($html_output);
+    wp_die();
+}
+
+function get_post_details_and_save_to_html2($post_id) {
+    // Get the post object
+    $post = get_post($post_id);
+
+    // Check if the post exists
+    if (!$post) {
+        return 'Post not found';
+    }
+
+    // Start output buffering
+
+
+    // HTML tructure
+    // -------------------------------------------------------------------------------------------------------------
+
+    ?>
+
+    <div class="">
+        <div class="">
+            <div class="news_title2"><?php echo esc_html($post->post_title); ?></div>
+            <span class="news-h2">
+            <?php if (has_post_thumbnail($post_id)): ?>
+                <div class="ln_image-container2">
+                <img class="img-h2" src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="<?php echo esc_attr($post->post_title); ?>">
+                </div>
+            <?php endif; ?>
+            </span>
+
+            <div class="ms-content2">
+                <?php echo apply_filters('the_content', $post->post_content); ?>
+            </div>
+     </div>
+    </div>
+
+    <?php
+    // -------------------------------------------------------------------------------------------------------------
+    // End output buffering and capture the output
+
+}

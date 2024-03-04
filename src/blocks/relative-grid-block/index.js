@@ -4,7 +4,7 @@ import { __ } from '@wordpress/i18n'
 import block from './block.json'
 import { PanelBody, ColorPalette } from '@wordpress/components'
 import icons from '../../icons'
-import GridBlock from './GridBlock.jsx'
+import RelativeGridBlock from './RelativeGridBlock.jsx'
 import './main.css' // This only works because WebPack is running. ( NPM RUN START )
 
 
@@ -16,7 +16,7 @@ registerBlockType(block.name, {
         //  console.log(blockProps)
 
         return (
-                <GridBlock  />
+                <RelativeGridBlock  />
         )
     },
     save({attributes}){
@@ -31,7 +31,7 @@ registerBlockType(block.name, {
         })
 
         return (
-                <GridBlock  />
+                <RelativeGridBlock  />
         )
 
     }

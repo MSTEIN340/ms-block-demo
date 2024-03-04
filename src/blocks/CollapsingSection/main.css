@@ -9,6 +9,9 @@
   float: right;
   margin-right: 1rem;
 }
+.CS-button:hover {
+  cursor: pointer;
+}
 
 .CS-btnimg {
   height: 1rem !important;

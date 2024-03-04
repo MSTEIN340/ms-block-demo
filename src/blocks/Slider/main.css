@@ -24,7 +24,7 @@
   display: inline-block;
   width: 50%;
   min-width: 50%;
-  margin-right: 20px;
+  margin-right: pxToRem(20px);
 }
 .content-wrapper .image-container img {
   width: 100%;
@@ -34,8 +34,8 @@
 }
 .content-wrapper .image-container .overlayFM {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: pxToRem(20px);
+  left: pxToRem(20px);
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -43,8 +43,8 @@
 .content-wrapper .text-block {
   width: 40%;
   min-width: 40%;
-  height: 550px;
-  max-height: 550px;
+  height: pxToRem(550px);
+  max-height: pxToRem(550px);
   overflow-y: hidden;
 }
 
@@ -52,7 +52,7 @@
   font-family: Georgia, serif;
   font-weight: 500;
   line-height: normal;
-  padding-left: 10px;
+  padding-left: pxToRem(10px);
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
@@ -98,7 +98,7 @@
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .fatnav ul li.sm2 ul li a {
-  padding: 8px 16px 8px 25px;
+  padding: pxToRem(8px) pxToRem(16px) pxToRem(8px) pxToRem(25px);
   display: block;
   text-align: left;
 }
@@ -180,10 +180,10 @@
 .nBak {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: pxToRem(40px);
   right: 0;
   display: none;
-  height: 600px;
+  height: pxToRem(600px);
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
@@ -195,8 +195,8 @@
 
 .mRight {
   position: relative;
-  height: 600px;
-  max-height: 600px;
+  height: pxToRem(600px);
+  max-height: pxToRem(600px);
   margin-left: 5%;
   overflow-y: hidden;
 }
@@ -208,8 +208,8 @@
   margin-top: 0;
   padding-top: 0;
   width: 33%;
-  height: 500px;
-  max-height: 500px;
+  height: pxToRem(500px);
+  max-height: pxToRem(500px);
 }
 
 .image-container img {

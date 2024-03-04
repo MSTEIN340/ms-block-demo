@@ -12,13 +12,14 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   z-index: 1;
   transition: all 0.2s;
-  padding: 5px;
-  border-radius: 6px;
+  padding: pxToRem(5px);
+  border-radius: pxToRem(6px);
   line-height: 1.2rem;
 }
 .barticle-div:hover {
-  transform: translateY(-3px);
+  transform: translateY(pxToRem(-3px));
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .barticle-div:hover::after {
   background-color: black;
@@ -28,7 +29,7 @@
 
 .author {
   font-size: 0.8rem;
-  margin-top: 5px;
+  margin-top: pxToRem(5px);
   font-style: italic;
 }
 

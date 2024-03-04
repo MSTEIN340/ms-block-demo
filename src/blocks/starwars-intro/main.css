@@ -6,7 +6,7 @@
   border-style: solid;
   border-color: black;
   border-width: thin;
-  border-radius: 7px;
+  border-radius: pxToRem(7px);
   color: black;
   z-index: 2;
 }
@@ -19,7 +19,7 @@
   border-style: solid;
   border-color: black;
   border-width: thin;
-  border-radius: 7px;
+  border-radius: pxToRem(7px);
   color: black;
   z-index: 5;
   transition: all 3s;
@@ -31,7 +31,7 @@
 /* Set the font, lean the board, position it */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(10deg);
+  transform: perspective(pxToRem(300px)) rotateX(10deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
@@ -44,7 +44,7 @@
   bottom: 0;
   left: 50%;
   opacity: 1;
-  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: pxToRem(7px) pxToRem(7px) pxToRem(3px) rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 

@@ -24,7 +24,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -moz-perspective: 150rem;
   position: relative;
   overflow: hidden;
-  height: 8rem;
   color: black;
   display: inline-block;
   width: 260px !important;
@@ -32,27 +31,27 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 1.5rem;
-  height: 200px !important;
-  min-height: 100px;
-  border-radius: 20px;
+  height: pxToRem(200px) !important;
+  min-height: pxToRem(100px);
+  border-radius: pxToRem(20px);
 }
 .cardp__side {
-  height: 100px !important;
+  height: pxToRem(100px) !important;
   content: "";
   transition: all 0.8s linear;
   position: absolute;
-  top: 40px;
+  top: pxToRem(40px);
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .cardp__side--front {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 100%;
 }
 .cardp__side--back {
@@ -150,7 +149,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .cardp {
     height: auto;
-    border-radius: 3px;
+    border-radius: pxToRem(3px);
     background-color: #fff;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   }
@@ -201,8 +200,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .cardf__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -211,12 +210,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .cardf__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -365,7 +364,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-right: 1rem;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 .cardt__bcolor1 {
   background-color: #03a9f4;
@@ -381,8 +380,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .cardt__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -391,12 +390,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .cardt__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -546,7 +545,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   height: 100% !important;
   margin-top: 0;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 
 .icon-team {
@@ -554,10 +553,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-color: white;
   border-width: thick;
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: pxToRem(150px);
+  width: pxToRem(150px);
   margin-top: 5rem;
-  border-radius: 140px;
+  border-radius: pxToRem(140px);
   z-index: 3;
 }
 
@@ -588,7 +587,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: white;
   background-color: white;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: pxToRem(60px);
   padding-bottom: 3rem;
 }
 
@@ -602,20 +601,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .aa-social2 {
   position: absolute;
-  bottom: 10px;
-  Right: 10px;
+  bottom: pxToRem(10px);
+  Right: pxToRem(10px);
   margin: 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
+  height: pxToRem(30px);
+  width: pxToRem(30px);
   z-index: 6;
 }
 
 .michaelstein {
   position: absolute;
   color: white;
-  bottom: 10px;
-  left: 10px;
+  bottom: pxToRem(10px);
+  left: pxToRem(10px);
   width: 100%;
   text-align: center;
   margin: 0;
@@ -626,12 +625,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .aa-social {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: pxToRem(10px);
+  left: pxToRem(10px);
   margin: 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
+  height: pxToRem(30px);
+  width: pxToRem(30px);
   z-index: 6;
 }
 
@@ -644,7 +643,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 20px 20px 0 0;
+  border-radius: pxToRem(20px) pxToRem(20px) 0 0;
 }
 
 .c1b {
@@ -685,7 +684,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .btn:hover {
   background-color: #03a9f4;
-  transform: translateY(-3px);
+  transform: translateY(pxToRem(-3px));
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:hover::after {
@@ -734,7 +733,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: pxToRem(3px);
   transition: all 0.2s;
 }
 .btn-text:hover {
@@ -751,12 +750,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .btn2, .btn2:link, .btn2:visited {
   color: white;
   text-align: center;
-  border-radius: 6px;
+  border-radius: pxToRem(6px);
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: pxToRem(10px);
   z-index: 3;
-  padding: 12px !important;
+  padding: pxToRem(12px) !important;
   background-color: #03a9f4;
   text-decoration: none;
   display: inline-block;
@@ -766,7 +765,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   cursor: pointer;
 }
 .btn2:hover {
-  transform: translateY(-3px);
+  transform: translateY(pxToRem(-3px));
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn2:hover::after {
@@ -798,7 +797,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 6px;
+  border-radius: pxToRem(6px);
   position: absolute;
   top: 0;
   left: 0;
@@ -816,14 +815,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: pxToRem(3px);
   transition: all 0.2s;
 }
 .btn2-text:hover {
   background-color: #55c57a;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  transform: translateY(pxToRem(-2px));
 }
 .btn2-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -832,20 +831,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .fade-in {
   opacity: 1;
-  line-height: 3;
   background-color: transparent;
   color: whitesmoke !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
 }
 .fade-in a, .fade-in span {
   color: whitesmoke;
 }
 
 .hAngel {
-  height: 50px;
-  width: 50px;
+  height: pxToRem(50px);
+  width: pxToRem(50px);
 }
 
 .hMichael {
@@ -853,9 +851,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: auto;
   margin-left: 10%;
   position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  padding-top: pxToRem(5px);
+  padding-bottom: pxToRem(5px);
+  text-shadow: pxToRem(7px) pxToRem(7px) pxToRem(7px) rgba(0, 0, 0, 0.6);
 }
 
 .hMichael2 {
@@ -870,15 +868,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-decoration: none;
   content: "";
   align-content: center;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  text-shadow: pxToRem(7px) pxToRem(7px) pxToRem(7px) rgba(0, 0, 0, 0.6);
 }
 
 .aa_header-outer {
   display: flex;
   align-items: center;
   position: sticky;
-  top: -30px;
-  height: 100px;
+  top: pxToRem(-30px);
+  height: pxToRem(100px);
   width: 100vw;
   z-index: 7;
 }
@@ -887,22 +885,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: pxToRem(50px);
+  top: pxToRem(-5px);
 }
 
 .hUp-ms {
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: pxToRem(50px);
+  top: pxToRem(-5px);
 }
 
 .aa_header-inner {
   color: white;
   background-color: transparent;
-  height: 70px;
+  height: pxToRem(70px);
   position: sticky;
   vertical-align: middle;
   top: 0;
@@ -928,12 +926,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   vertical-align: middle;
 }
 
-.ce2 {
-  width: 50%;
-  height: 100%;
-  padding-left: 0%;
-}
-
 .w50 {
   float: right;
   content: "";
@@ -951,7 +943,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   display: inline-block;
   clear: both;
-  height: 50px !important;
+  height: pxToRem(50px) !important;
   animation: explode 1s ease-in;
 }
 
@@ -961,11 +953,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: black !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
   clear: both;
-  height: 52px !important;
+  height: pxToRem(52px) !important;
   animation: explode 1s ease-in;
-  box-shadow: 0 5px 15px #1f1f1f;
+  box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
 }
 
 @keyframes explode {}
@@ -984,7 +976,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .m50 {
   height: 100%;
-  margin-bottom: -150px;
+  margin-bottom: pxToRem(-150px);
   padding: 0 !important;
   overflow-y: hidden;
 }
@@ -1850,13 +1842,6 @@ he3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
-.aa_font1ms {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   font-size: 2rem;
   letter-spacing: -1px;
 }

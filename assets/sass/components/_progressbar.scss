@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background-color: #e0e0e0;
-  border-radius: 5px;
+  border-radius: pxToRem(5px);
   margin: 0;
   overflow: hidden; /* Ensures the inner bar stays within the border-radius */
 }
@@ -18,10 +18,10 @@
 
 .progress-bar {
   position: relative;
-  height: 20px;
+  height: pxToRem(20px);
   // background-image: linear-gradient(to right, red, yellow, green);
   width: 0%; /* Default to 0 percent */
-  border-radius: 5px;
+  border-radius: pxToRem(5px);
   transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
   background-size: 100% 100%; /* Scale the gradient over the full width */
 }

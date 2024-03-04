@@ -4,7 +4,7 @@
   clear: both;
 }
 
-.barticle-div {
+.hotarticle-div {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   overflow: hidden;
   font-size: 1rem;
@@ -12,14 +12,13 @@
   text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
   z-index: 1;
   transition: all .2s;
-  padding: pxToRem(5px);
-  border-radius: pxToRem(6px);
+  padding: 5px;
+  border-radius: 6px;
   line-height: 1.2rem;
   &:hover {
     //   background-color: #03a9f4;
-    transform: translateY(pxToRem(-3px));
+    transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black, .2);
-    cursor: pointer;
 
     &::after {
       background-color: black;
@@ -29,7 +28,7 @@
   }
 }
 
-.author {
+.ha-author {
   font-size: .8rem;
   margin-top: pxToRem(5px);
   font-style: italic;

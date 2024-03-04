@@ -28,9 +28,9 @@
 .content-line {
   margin: -2px 0 0px 0 ;
   font-size: .9rem;
-  height: 42px;
+  height: pxToRem(42px);
   overflow: hidden;
-  padding: 3px 20px;
+  padding: pxToRem(3px) pxToRem(20px);
   border-width: thin ;
   border-style: solid; /* This line is needed */
   border-top-color: #7b7777;
@@ -39,26 +39,31 @@
 
   p {
     line-height: 1;
-    margin: 0 6px;
+    margin: 0 pxToRem(6px);
     color: #3d3c3c;
-    padding: 0 5px;
-
-      margin: 0;
-
-
-
-
-  }
+    padding: 0 pxToRem(5px);
+     }
 }
 .news_title {
-  margin: -10px 0 0 0;
-  padding: 5px;
+  margin: pxToRem(-10px) 0 0 0;
+  padding: pxToRem(5px);
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 1;
   letter-spacing: -1px;
   background-color: #3e86ff;
+}
+.news_title2 {
+  margin: pxToRem(-10px) 20% 0 20%;
+  padding: pxToRem(5px);
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  background-color: #2576a6;
 }
 
 .category-banner {
@@ -69,12 +74,12 @@
   color: #fff; /* Text color */
   transform: translate(0, -50%) rotate(-45deg);
   transform-origin: 0 0;
-  padding: 5px 10px;
+  padding: pxToRem(5px) pxToRem(10px);
   width: 100%; /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px; /* Adjust as needed */
+  height: pxToRem(30px); /* Adjust as needed */
 }
 
 .news-h {
@@ -88,16 +93,26 @@
   display: block; /* Ensures the image takes up the full width of its container */
   width: 100%; /* Adjust as needed */
 }
+.img-h2 {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 20%; /* Adjust as needed */
+  margin: 0 20% 0 20%;
+}
 .more-link {
   position: absolute;
   color: #3e86ff;
   font-weight: 600;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  bottom: pxToRem(10px); /* Adjust as needed */
+  right: pxToRem(10px); /* Adjust as needed */
   /* Additional styling for the link */
 }
 .more-link:visited {
   color: #3e86ff;
+}
+
+.ms-content2 {
+  margin: 0 20% 0 20%;
+  background-color: rgba( 0,0,0,.4);
 }
 
 
@@ -108,11 +123,11 @@
   box-sizing: border-box;
   height: 90%;
 
-  padding: 30px 8px 0 ;
+  padding: pxToRem(30px) 8px 0 ;
   margin-bottom: -10px; /* Adjust as needed, provides space for the 'More' link */
   overflow-y: hidden;
   p {
-    margin-bottom: 15px;
+    margin-bottom: pxToRem(15px);
     text-align: justify;
   }
 }
@@ -122,7 +137,7 @@
   width: 100%;
  // color: white !important;
   text-align: center;
-  margin-top: 5px;
+  margin-top: pxToRem(5px);
   font-family: "Montserrat", sans-serif !important;
   font-weight: 600;
   font-size: 2rem;
@@ -138,8 +153,8 @@
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  height: 390px;
-  max-height: 390px;
+  height: pxToRem(390px);
+  max-height: pxToRem(390px);
 }
 
 .ln_image-container img {
@@ -172,9 +187,9 @@
   background-color: transparent;
   color: black;
   padding: 0;
-  height: 600px !important;
+  height: pxToRem(600px) !important;
   width: 100%;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   z-index: 1;
 }
 
@@ -213,14 +228,14 @@
   //margin: 10px;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 
 
   &__side {
     // height: 8rem;
     height: 90% !important;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: pxToRem(30px);
+    margin-bottom: pxToRem(30px);
 
     content: "";
     transition: all .8s linear;
@@ -230,7 +245,7 @@
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 20px;
+    border-radius: pxToRem(20px);
     overflow: hidden;
 
 
@@ -239,7 +254,7 @@
     &--front {
       //padding: 5px;
       background-image: linear-gradient(to left,whitesmoke, white);
-      border-radius: 20px;
+      border-radius: pxToRem(20px);
       height: 90%;
       width: 99%;
       border-style: solid;

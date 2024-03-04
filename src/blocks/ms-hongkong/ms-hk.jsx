@@ -226,6 +226,9 @@ class MsHk extends Component {
                                         </div>
                                     </a>
                                 </span>
+                                <div id={"my-post-box"}>
+
+                                </div>
                         </div>
 
 
@@ -237,14 +240,11 @@ class MsHk extends Component {
                         </div>
                      </span>
                     <script>
-                        console.log("I'm here!!");
                         const scrollMeDiv = document.getElementById("scrollMe");
-                        console.log(scrollMeDiv);
                         scrollMeDiv ? scrollMeDiv.addEventListener('scroll', ms_handleScroll) : console.log("Failed to
                         get Inside Conditional");
                         scrollMeDiv ? scrollMeDiv.addEventListener('mousemove', ms_mouseMove) : console.log("Failed to
                         get Inside Conditional");
-                        console.log("Did Mount");
                     </script>
                 </div>
             </>

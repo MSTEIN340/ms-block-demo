@@ -1,7 +1,11 @@
 <?php
 
 function up_register_blocks() {
-    $namespace = 'ms-block-demo';
+
+    /* Note! These are path names to block.json files, not block names.
+    Path Names are CASE SENSITIVE in Linux, so if you do this wrong it will work
+    in WAMP but not in LAMP.
+    */
     $blocks = [
         [ 'name' => 'fancy-header' ],
         [ 'name' => 'search-form', 'options' => [
@@ -23,6 +27,8 @@ function up_register_blocks() {
         [ 'name' => 'Boots' ],
         [ 'name' => 'MyNav' ],
         [ 'name' => 'FatNav' ],
+        [ 'name' => 'grid-block' ],
+        [ 'name' => 'relative-grid-block' ],
         [ 'name' => 'LatestNews', 'options' => [
             'render_callback' => 'get_post_details_cb'
         ]],
@@ -35,6 +41,7 @@ function up_register_blocks() {
         [ 'name' => 'TopArticles', 'options' => [
             'render_callback' => 'get_top_articles_cb'
         ]],
+
     ];
 
     foreach($blocks as $block) {

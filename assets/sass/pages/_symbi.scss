@@ -1,5 +1,5 @@
-$startX: 4;
-$startY: 13;
+$startX: 1;
+$startY: 1;
 $topH: 5;
 $startW: 2;
 
@@ -73,6 +73,16 @@ $columns: bi ac hr sa en om ma sh;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
   z-index: -2;
+}
+.gridBlock2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  z-index: 1;
 }
 
 .brassPlates {

@@ -10,44 +10,35 @@ registerBlockType(block.name, {
 // Fragment
         return (
             <>
-
-
-
-                <header className="ms_header-outer">
-
-                    <div className="ms_header-inner fade-in" id="stack1xy">
+                <header className="topper-outer">
+                    <div className="topper-inner fade-in" id="stack1xy">
                         <img
-                            className={"hMichael"}
+                            className={"hMichaelb"}
                             src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
                             alt={"Favicon"}/>
 
-                        <a className={"hMichael2"} href={"https://www.MichaelAStein.com/"}>
-                            <span className={"ce2 aa_font1ms"}>Michael A. Stein </span>
+                        <a className={"hMichael2b"} href={"https://www.MichaelAStein.com/"}>
+                            <div className={"ce2 aa_font1ms"}>Michael A. Stein </div>
                         </a>
-                        <span className={"aa_font2 w50"}><InnerBlocks/></span>
+                        <span className={"aa_font2 w50b"}><InnerBlocks/></span>
                     </div>
-
                 </header>
-
-
             </>
         )
     },
     save({attributes}) {
         return (
             <>
-
-
-                <header className="ms_header-outer">
-                    <div className="ms_header-inner fade-in" id="stack1xy">
+                <header className="topper-outer">
+                    <div className="topper-inner fade-in" id="stack1xy">
                         <img
-                            className={"hMichael"}
+                            className={"hMichaelb"}
                             src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
                             alt={"Favicon"}/>
-                        <a className={"hMichael2"} href={"https://www.MichaelAStein.com/"}> <span className={"ce2 aa_font1ms"}>
-                              < span>Michael A. Stein < /span></span>
+                        <a className={"hMichael2b"} href={"https://www.MichaelAStein.com/"}>
+                            <div className={"ce2 aa_font1ms"}>Michael A. Stein </div>
                         </a>
-                        <span className={"aa_font2 w50"}><InnerBlocks.Content/></span>
+                        <span className={"aa_font2 w50b"}><InnerBlocks.Content/></span>
                     </div>
                 </header>
             </>

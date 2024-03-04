@@ -9,7 +9,8 @@ class MsNav extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { /*
+        this.state = {
+            /*
             title: props.attributes.title,
             postID: props.postID,
             author: props.attributes.author,
@@ -21,6 +22,8 @@ class MsNav extends Component {
             opacity: props.attributes.opacity, */
         }
     }
+
+
     componentDidMount() {
       //   console.log("Did Mount");
     }
@@ -29,10 +32,14 @@ class MsNav extends Component {
 
     }
     render() {
+
         console.log("Render MsNav");
         return (
             <nav className={"MsNav"}>
-                <ul>
+                <div className="menu-icon" onClick={"toggleMenu()"}>
+                    <ii>☰</ii>
+                </div>
+                <ul id="msmenu" >
                     <li><a href="http://localhost/MichaelAStein/">Home</a></li>
                     <li><a href="./whats-new/">What's New?</a></li>
                     <li><a href="./extended-resume/">Resume</a></li>

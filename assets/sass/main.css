@@ -27,13 +27,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   letter-spacing: -1px;
 }
 
-.aa_font1ms {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
 .ms_font2 {
   text-decoration: underline;
   font-size: 1rem;
@@ -404,12 +397,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .btn2, .btn2:link, .btn2:visited {
   color: white;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   z-index: 3;
-  padding: 12px !important;
+  padding: 0.75rem !important;
   background-color: #03a9f4;
   text-decoration: none;
   display: inline-block;
@@ -419,7 +412,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   cursor: pointer;
 }
 .btn2:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.1875rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn2:hover::after {
@@ -451,7 +444,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -469,14 +462,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: 0.1875rem;
   transition: all 0.2s;
 }
 .btn2-text:hover {
   background-color: #55c57a;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 .btn2-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -651,7 +644,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   width: 50%;
   min-width: 50%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .content-wrapper .image-container img {
   width: 100%;
@@ -661,8 +654,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .content-wrapper .image-container .overlayFM {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 1.25rem;
+  left: 1.25rem;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -670,8 +663,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .content-wrapper .text-block {
   width: 40%;
   min-width: 40%;
-  height: 550px;
-  max-height: 550px;
+  height: 34.375rem;
+  max-height: 34.375rem;
   overflow-y: hidden;
 }
 
@@ -679,7 +672,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: Georgia, serif;
   font-weight: 500;
   line-height: normal;
-  padding-left: 10px;
+  padding-left: 0.625rem;
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
@@ -725,7 +718,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
 }
 
@@ -749,7 +742,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .fatnav ul li.sm2 ul li a {
-  padding: 8px 16px 8px 25px;
+  padding: 0.5rem 1rem 0.5rem 1.5625rem;
   display: block;
   text-align: left;
 }
@@ -807,10 +800,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .nBak {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 2.5rem;
   right: 0;
   display: none;
-  height: 600px;
+  height: 37.5rem;
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
@@ -822,8 +815,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .mRight {
   position: relative;
-  height: 600px;
-  max-height: 600px;
+  height: 37.5rem;
+  max-height: 37.5rem;
   margin-left: 5%;
   overflow-y: hidden;
 }
@@ -835,8 +828,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 0;
   padding-top: 0;
   width: 33%;
-  height: 500px;
-  max-height: 500px;
+  height: 31.25rem;
+  max-height: 31.25rem;
 }
 
 .image-container img {
@@ -870,9 +863,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .content-line {
   margin: -2px 0 0px 0;
   font-size: 0.9rem;
-  height: 42px;
+  height: 2.625rem;
   overflow: hidden;
-  padding: 3px 20px;
+  padding: 0.1875rem 1.25rem;
   border-width: thin;
   border-style: solid; /* This line is needed */
   border-top-color: #7b7777;
@@ -881,21 +874,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .content-line p {
   line-height: 1;
-  margin: 0 6px;
+  margin: 0 0.375rem;
   color: #3d3c3c;
-  padding: 0 5px;
-  margin: 0;
+  padding: 0 0.3125rem;
 }
 
 .news_title {
-  margin: -10px 0 0 0;
-  padding: 5px;
+  margin: -0.625rem 0 0 0;
+  padding: 0.3125rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 1;
   letter-spacing: -1px;
   background-color: #3e86ff;
+}
+
+.news_title2 {
+  margin: -0.625rem 20% 0 20%;
+  padding: 0.3125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  background-color: #2576a6;
 }
 
 .category-banner {
@@ -906,12 +909,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff; /* Text color */
   transform: translate(0, -50%) rotate(-45deg);
   transform-origin: 0 0;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   width: 100%; /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px; /* Adjust as needed */
+  height: 1.875rem; /* Adjust as needed */
 }
 
 .news-h {
@@ -926,17 +929,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%; /* Adjust as needed */
 }
 
+.img-h2 {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 20%; /* Adjust as needed */
+  margin: 0 20% 0 20%;
+}
+
 .more-link {
   position: absolute;
   color: #3e86ff;
   font-weight: 600;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  bottom: 0.625rem; /* Adjust as needed */
+  right: 0.625rem; /* Adjust as needed */
   /* Additional styling for the link */
 }
 
 .more-link:visited {
   color: #3e86ff;
+}
+
+.ms-content2 {
+  margin: 0 20% 0 20%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .ln_content-area {
@@ -945,12 +959,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   line-height: 1;
   box-sizing: border-box;
   height: 90%;
-  padding: 30px 8px 0;
+  padding: 1.875rem 8px 0;
   margin-bottom: -10px; /* Adjust as needed, provides space for the 'More' link */
   overflow-y: hidden;
 }
 .ln_content-area p {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   text-align: justify;
 }
 
@@ -958,7 +972,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   font-family: "Montserrat", sans-serif !important;
   font-weight: 600;
   font-size: 2rem;
@@ -974,8 +988,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  height: 390px;
-  max-height: 390px;
+  height: 24.375rem;
+  max-height: 24.375rem;
 }
 
 .ln_image-container img {
@@ -1003,9 +1017,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: transparent;
   color: black;
   padding: 0;
-  height: 600px !important;
+  height: 37.5rem !important;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   z-index: 1;
 }
 
@@ -1034,12 +1048,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-right: 1rem;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 .ln_card__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -1048,12 +1062,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
 }
 .ln_card__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -1197,7 +1211,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: relative;
   width: 100%;
   background-color: #e0e0e0;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   margin: 0;
   overflow: hidden; /* Ensures the inner bar stays within the border-radius */
 }
@@ -1212,9 +1226,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
  */
 .progress-bar {
   position: relative;
-  height: 20px;
+  height: 1.25rem;
   width: 0%; /* Default to 0 percent */
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   transition: width 0.5s ease-in-out; /* Smooth transition for width changes */
   background-size: 100% 100%; /* Scale the gradient over the full width */
 }
@@ -1234,7 +1248,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -moz-perspective: 150rem;
   position: relative;
   overflow: hidden;
-  height: 8rem;
   color: black;
   display: inline-block;
   width: 260px !important;
@@ -1242,27 +1255,27 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 1.5rem;
-  height: 200px !important;
-  min-height: 100px;
-  border-radius: 20px;
+  height: 12.5rem !important;
+  min-height: 6.25rem;
+  border-radius: 1.25rem;
 }
 .cardp__side {
-  height: 100px !important;
+  height: 6.25rem !important;
   content: "";
   transition: all 0.8s linear;
   position: absolute;
-  top: 40px;
+  top: 2.5rem;
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .cardp__side--front {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   height: 100%;
 }
 .cardp__side--back {
@@ -1360,7 +1373,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .cardp {
     height: auto;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     background-color: #fff;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   }
@@ -1397,20 +1410,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .fade-in {
   opacity: 1;
-  line-height: 3;
   background-color: transparent;
   color: whitesmoke !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
 }
 .fade-in a, .fade-in span {
   color: whitesmoke;
 }
 
 .hAngel {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
 .hMichael {
@@ -1418,9 +1430,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: auto;
   margin-left: 10%;
   position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  text-shadow: 0.4375rem 0.4375rem 0.4375rem rgba(0, 0, 0, 0.6);
 }
 
 .hMichael2 {
@@ -1435,15 +1447,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-decoration: none;
   content: "";
   align-content: center;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  text-shadow: 0.4375rem 0.4375rem 0.4375rem rgba(0, 0, 0, 0.6);
 }
 
 .aa_header-outer {
   display: flex;
   align-items: center;
   position: sticky;
-  top: -30px;
-  height: 100px;
+  top: -1.875rem;
+  height: 6.25rem;
   width: 100vw;
   z-index: 7;
 }
@@ -1452,22 +1464,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: 3.125rem;
+  top: -0.3125rem;
 }
 
 .hUp-ms {
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: 3.125rem;
+  top: -0.3125rem;
 }
 
 .aa_header-inner {
   color: white;
   background-color: transparent;
-  height: 70px;
+  height: 4.375rem;
   position: sticky;
   vertical-align: middle;
   top: 0;
@@ -1493,12 +1505,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   vertical-align: middle;
 }
 
-.ce2 {
-  width: 50%;
-  height: 100%;
-  padding-left: 0%;
-}
-
 .w50 {
   float: right;
   content: "";
@@ -1516,7 +1522,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   display: inline-block;
   clear: both;
-  height: 50px !important;
+  height: 3.125rem !important;
   animation: explode 1s ease-in;
 }
 
@@ -1526,11 +1532,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: black !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
   clear: both;
-  height: 52px !important;
+  height: 3.25rem !important;
   animation: explode 1s ease-in;
-  box-shadow: 0 5px 15px #1f1f1f;
+  box-shadow: 0 0.3125rem 0.9375rem #1f1f1f;
 }
 
 @keyframes explode {}
@@ -1549,7 +1555,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .m50 {
   height: 100%;
-  margin-bottom: -150px;
+  margin-bottom: -9.375rem;
   padding: 0 !important;
   overflow-y: hidden;
 }
@@ -1571,7 +1577,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
 }
 
@@ -1583,7 +1589,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .MyNav ul li.submenu ul {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 10rem;
   margin-bottom: 2vh;
 }
 
@@ -1598,9 +1604,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .MyNav ul li.submenu ul li a {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   display: block;
   text-align: left;
+}
+
+.MsNav {
+  float: right;
+}
+.MsNav .menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+.MsNav .menu-icon ii {
+  display: block;
 }
 
 .MsNav ul {
@@ -1620,7 +1638,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
 }
 
@@ -1629,10 +1647,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: #4c8df8;
 }
 
+.MsNav ul.active {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  .MsNav .menu-icon {
+    display: block;
+  }
+  .MsNav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .MsNav ul li {
+    width: 100%;
+  }
+  .MsNav ul.active {
+    display: flex !important;
+  }
+}
 .MsNav ul li.submenu ul {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 10rem;
   margin-bottom: 2vh;
 }
 
@@ -1647,7 +1690,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .MsNav ul li.submenu ul li a {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   display: block;
   text-align: left;
 }
@@ -1655,12 +1698,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .contact_form-container {
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  max-width: 1000px;
+  font-size: 1rem;
+  max-width: 62.5rem;
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 0 1.875rem 1.875rem 1.875rem;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: auto;
   z-index: 10;
@@ -1668,7 +1711,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .contact_form-container h2 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: whitesmoke;
 }
 .contact_form-container .contact_form-row {
@@ -1677,17 +1720,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .contact_form-container .contact_form-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .contact_form-container .contact_form-group.half-width {
   width: 48%;
 }
 .contact_form-container .contact_form-group input, .contact_form-container .contact_form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 .contact_form-container .contact_form-group input:focus, .contact_form-container .contact_form-group textarea:focus {
@@ -1696,30 +1739,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .contact_form-container .contact_form-group input:focus + label, .contact_form-container .contact_form-group input:not(:placeholder-shown) + label, .contact_form-container .contact_form-group textarea:focus + label, .contact_form-container .contact_form-group textarea:not(:placeholder-shown) + label {
   top: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #007bff;
   background-color: #ffffff;
-  padding: 0 4px;
-  border-radius: 4px;
-  left: 8px;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  left: 0.5rem;
 }
 .contact_form-container .contact_form-group label {
   position: absolute;
-  left: 12px;
-  top: 12px;
-  font-size: 14px;
+  left: 0.75rem;
+  top: 0.75rem;
+  font-size: 0.875rem;
   color: #777;
   transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 .contact_form-container .contact_submit-button {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #007bff;
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1730,10 +1773,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   color: white;
   background-color: green;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: bold;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   display: none;
 }
 
@@ -1749,7 +1792,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-style: solid;
   border-color: black;
   border-width: thin;
-  border-radius: 7px;
+  border-radius: 0.4375rem;
   color: black;
   z-index: 2;
 }
@@ -1762,7 +1805,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-style: solid;
   border-color: black;
   border-width: thin;
-  border-radius: 7px;
+  border-radius: 0.4375rem;
   color: black;
   z-index: 5;
   transition: all 3s;
@@ -1774,7 +1817,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /* Set the font, lean the board, position it */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  transform: perspective(300px) rotateX(10deg);
+  transform: perspective(18.75rem) rotateX(10deg);
   transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
@@ -1787,7 +1830,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   bottom: 0;
   left: 50%;
   opacity: 1;
-  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0.4375rem 0.4375rem 0.1875rem rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -1947,6 +1990,85 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: sticky;
 }
 
+.ce2 {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  vertical-align: middle;
+  padding-left: 0%;
+}
+
+.aa_font1ms {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.641025641vw, 2rem); /* Adjust min and max values as needed */
+  letter-spacing: -1px;
+  line-height: 70px;
+}
+
+.topper-outer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  position: sticky;
+  top: -25px;
+  height: 100px;
+  width: 100%;
+  z-index: 7;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+}
+
+.topper-inner {
+  display: flex !important;
+  background-color: transparent;
+  height: 70px;
+  position: sticky;
+  align-items: center !important;
+  width: 100%;
+  box-shadow: 0 0.3125rem 0.9375rem #1f1f1f;
+  z-index: 7;
+  overflow-y: hidden !important;
+  overflow-x: hidden;
+  transition: all 1s;
+}
+
+.w50b {
+  float: right;
+  content: "";
+  width: 65%;
+  padding-left: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hMichaelb {
+  height: 80%;
+  width: auto;
+  margin-left: 10%;
+  position: relative;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  text-shadow: 0.4375rem 0.4375rem 0.4375rem rgba(0, 0, 0, 0.6);
+}
+
+.hMichael2b {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  vertical-align: middle;
+  width: 25%;
+  height: 100%;
+  position: relative;
+  color: inherit;
+  margin-top: 0%;
+  margin-left: 0.3125rem;
+  text-decoration: none;
+  content: "";
+  text-shadow: 0.4375rem 0.4375rem 0.4375rem rgba(0, 0, 0, 0.6);
+}
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -2049,6 +2171,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: relative;
   float: right;
   margin-right: 1rem;
+}
+.CS-button:hover {
+  cursor: pointer;
 }
 
 .CS-btnimg {
@@ -2499,13 +2624,14 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   z-index: 1;
   transition: all 0.2s;
-  padding: 5px;
-  border-radius: 6px;
+  padding: 0.3125rem;
+  border-radius: 0.375rem;
   line-height: 1.2rem;
 }
 .barticle-div:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.1875rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .barticle-div:hover::after {
   background-color: black;
@@ -2515,7 +2641,7 @@ body {
 
 .author {
   font-size: 0.8rem;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   font-style: italic;
 }
 
@@ -2928,39 +3054,39 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0);
   border-radius: 10px;
-  grid-row: 13/span 5;
+  grid-row: 1/span 5;
 }
 
 .symbi__1 {
-  grid-column: 4/span 2;
+  grid-column: 1/span 2;
 }
 
 .symbi__2 {
-  grid-column: 6/span 2;
+  grid-column: 3/span 2;
 }
 
 .symbi__3 {
-  grid-column: 8/span 2;
+  grid-column: 5/span 2;
 }
 
 .symbi__4 {
-  grid-column: 10/span 2;
+  grid-column: 7/span 2;
 }
 
 .symbi__5 {
-  grid-column: 12/span 2;
+  grid-column: 9/span 2;
 }
 
 .symbi__6 {
-  grid-column: 14/span 2;
+  grid-column: 11/span 2;
 }
 
 .symbi__7 {
-  grid-column: 16/span 2;
+  grid-column: 13/span 2;
 }
 
 .symbi__8 {
-  grid-column: 18/span 2;
+  grid-column: 15/span 2;
 }
 
 .sy-icon-h2 {
@@ -2972,363 +3098,363 @@ body {
 }
 
 .bi-1 {
-  grid-column: 4/span 2;
-  grid-row: 18/span 1;
+  grid-column: 1/span 2;
+  grid-row: 6/span 1;
 }
 
 .bi-2 {
-  grid-column: 4/span 2;
-  grid-row: 19/span 1;
+  grid-column: 1/span 2;
+  grid-row: 7/span 1;
 }
 
 .bi-3 {
-  grid-column: 4/span 2;
-  grid-row: 20/span 1;
+  grid-column: 1/span 2;
+  grid-row: 8/span 1;
 }
 
 .bi-4 {
-  grid-column: 4/span 2;
-  grid-row: 21/span 1;
+  grid-column: 1/span 2;
+  grid-row: 9/span 1;
 }
 
 .bi-5 {
-  grid-column: 4/span 2;
-  grid-row: 22/span 1;
+  grid-column: 1/span 2;
+  grid-row: 10/span 1;
 }
 
 .bi-6 {
-  grid-column: 4/span 2;
-  grid-row: 23/span 1;
+  grid-column: 1/span 2;
+  grid-row: 11/span 1;
 }
 
 .bi-7 {
-  grid-column: 4/span 2;
-  grid-row: 24/span 1;
+  grid-column: 1/span 2;
+  grid-row: 12/span 1;
 }
 
 .bi-8 {
-  grid-column: 4/span 2;
-  grid-row: 25/span 1;
+  grid-column: 1/span 2;
+  grid-row: 13/span 1;
 }
 
 .bi-9 {
-  grid-column: 4/span 2;
-  grid-row: 26/span 1;
+  grid-column: 1/span 2;
+  grid-row: 14/span 1;
 }
 
 .ac-1 {
-  grid-column: 6/span 2;
-  grid-row: 18/span 1;
+  grid-column: 3/span 2;
+  grid-row: 6/span 1;
 }
 
 .ac-2 {
-  grid-column: 6/span 2;
-  grid-row: 19/span 1;
+  grid-column: 3/span 2;
+  grid-row: 7/span 1;
 }
 
 .ac-3 {
-  grid-column: 6/span 2;
-  grid-row: 20/span 1;
+  grid-column: 3/span 2;
+  grid-row: 8/span 1;
 }
 
 .ac-4 {
-  grid-column: 6/span 2;
-  grid-row: 21/span 1;
+  grid-column: 3/span 2;
+  grid-row: 9/span 1;
 }
 
 .ac-5 {
-  grid-column: 6/span 2;
-  grid-row: 22/span 1;
+  grid-column: 3/span 2;
+  grid-row: 10/span 1;
 }
 
 .ac-6 {
-  grid-column: 6/span 2;
-  grid-row: 23/span 1;
+  grid-column: 3/span 2;
+  grid-row: 11/span 1;
 }
 
 .ac-7 {
-  grid-column: 6/span 2;
-  grid-row: 24/span 1;
+  grid-column: 3/span 2;
+  grid-row: 12/span 1;
 }
 
 .ac-8 {
-  grid-column: 6/span 2;
-  grid-row: 25/span 1;
+  grid-column: 3/span 2;
+  grid-row: 13/span 1;
 }
 
 .ac-9 {
-  grid-column: 6/span 2;
-  grid-row: 26/span 1;
+  grid-column: 3/span 2;
+  grid-row: 14/span 1;
 }
 
 .hr-1 {
-  grid-column: 8/span 2;
-  grid-row: 18/span 1;
+  grid-column: 5/span 2;
+  grid-row: 6/span 1;
 }
 
 .hr-2 {
-  grid-column: 8/span 2;
-  grid-row: 19/span 1;
+  grid-column: 5/span 2;
+  grid-row: 7/span 1;
 }
 
 .hr-3 {
-  grid-column: 8/span 2;
-  grid-row: 20/span 1;
+  grid-column: 5/span 2;
+  grid-row: 8/span 1;
 }
 
 .hr-4 {
-  grid-column: 8/span 2;
-  grid-row: 21/span 1;
+  grid-column: 5/span 2;
+  grid-row: 9/span 1;
 }
 
 .hr-5 {
-  grid-column: 8/span 2;
-  grid-row: 22/span 1;
+  grid-column: 5/span 2;
+  grid-row: 10/span 1;
 }
 
 .hr-6 {
-  grid-column: 8/span 2;
-  grid-row: 23/span 1;
+  grid-column: 5/span 2;
+  grid-row: 11/span 1;
 }
 
 .hr-7 {
-  grid-column: 8/span 2;
-  grid-row: 24/span 1;
+  grid-column: 5/span 2;
+  grid-row: 12/span 1;
 }
 
 .hr-8 {
-  grid-column: 8/span 2;
-  grid-row: 25/span 1;
+  grid-column: 5/span 2;
+  grid-row: 13/span 1;
 }
 
 .hr-9 {
-  grid-column: 8/span 2;
-  grid-row: 26/span 1;
+  grid-column: 5/span 2;
+  grid-row: 14/span 1;
 }
 
 .sa-1 {
-  grid-column: 10/span 2;
-  grid-row: 18/span 1;
+  grid-column: 7/span 2;
+  grid-row: 6/span 1;
 }
 
 .sa-2 {
-  grid-column: 10/span 2;
-  grid-row: 19/span 1;
+  grid-column: 7/span 2;
+  grid-row: 7/span 1;
 }
 
 .sa-3 {
-  grid-column: 10/span 2;
-  grid-row: 20/span 1;
+  grid-column: 7/span 2;
+  grid-row: 8/span 1;
 }
 
 .sa-4 {
-  grid-column: 10/span 2;
-  grid-row: 21/span 1;
+  grid-column: 7/span 2;
+  grid-row: 9/span 1;
 }
 
 .sa-5 {
-  grid-column: 10/span 2;
-  grid-row: 22/span 1;
+  grid-column: 7/span 2;
+  grid-row: 10/span 1;
 }
 
 .sa-6 {
-  grid-column: 10/span 2;
-  grid-row: 23/span 1;
+  grid-column: 7/span 2;
+  grid-row: 11/span 1;
 }
 
 .sa-7 {
-  grid-column: 10/span 2;
-  grid-row: 24/span 1;
+  grid-column: 7/span 2;
+  grid-row: 12/span 1;
 }
 
 .sa-8 {
-  grid-column: 10/span 2;
-  grid-row: 25/span 1;
+  grid-column: 7/span 2;
+  grid-row: 13/span 1;
 }
 
 .sa-9 {
-  grid-column: 10/span 2;
-  grid-row: 26/span 1;
+  grid-column: 7/span 2;
+  grid-row: 14/span 1;
 }
 
 .en-1 {
-  grid-column: 12/span 2;
-  grid-row: 18/span 1;
+  grid-column: 9/span 2;
+  grid-row: 6/span 1;
 }
 
 .en-2 {
-  grid-column: 12/span 2;
-  grid-row: 19/span 1;
+  grid-column: 9/span 2;
+  grid-row: 7/span 1;
 }
 
 .en-3 {
-  grid-column: 12/span 2;
-  grid-row: 20/span 1;
+  grid-column: 9/span 2;
+  grid-row: 8/span 1;
 }
 
 .en-4 {
-  grid-column: 12/span 2;
-  grid-row: 21/span 1;
+  grid-column: 9/span 2;
+  grid-row: 9/span 1;
 }
 
 .en-5 {
-  grid-column: 12/span 2;
-  grid-row: 22/span 1;
+  grid-column: 9/span 2;
+  grid-row: 10/span 1;
 }
 
 .en-6 {
-  grid-column: 12/span 2;
-  grid-row: 23/span 1;
+  grid-column: 9/span 2;
+  grid-row: 11/span 1;
 }
 
 .en-7 {
-  grid-column: 12/span 2;
-  grid-row: 24/span 1;
+  grid-column: 9/span 2;
+  grid-row: 12/span 1;
 }
 
 .en-8 {
-  grid-column: 12/span 2;
-  grid-row: 25/span 1;
+  grid-column: 9/span 2;
+  grid-row: 13/span 1;
 }
 
 .en-9 {
-  grid-column: 12/span 2;
-  grid-row: 26/span 1;
+  grid-column: 9/span 2;
+  grid-row: 14/span 1;
 }
 
 .om-1 {
-  grid-column: 14/span 2;
-  grid-row: 18/span 1;
+  grid-column: 11/span 2;
+  grid-row: 6/span 1;
 }
 
 .om-2 {
-  grid-column: 14/span 2;
-  grid-row: 19/span 1;
+  grid-column: 11/span 2;
+  grid-row: 7/span 1;
 }
 
 .om-3 {
-  grid-column: 14/span 2;
-  grid-row: 20/span 1;
+  grid-column: 11/span 2;
+  grid-row: 8/span 1;
 }
 
 .om-4 {
-  grid-column: 14/span 2;
-  grid-row: 21/span 1;
+  grid-column: 11/span 2;
+  grid-row: 9/span 1;
 }
 
 .om-5 {
-  grid-column: 14/span 2;
-  grid-row: 22/span 1;
+  grid-column: 11/span 2;
+  grid-row: 10/span 1;
 }
 
 .om-6 {
-  grid-column: 14/span 2;
-  grid-row: 23/span 1;
+  grid-column: 11/span 2;
+  grid-row: 11/span 1;
 }
 
 .om-7 {
-  grid-column: 14/span 2;
-  grid-row: 24/span 1;
+  grid-column: 11/span 2;
+  grid-row: 12/span 1;
 }
 
 .om-8 {
-  grid-column: 14/span 2;
-  grid-row: 25/span 1;
+  grid-column: 11/span 2;
+  grid-row: 13/span 1;
 }
 
 .om-9 {
-  grid-column: 14/span 2;
-  grid-row: 26/span 1;
+  grid-column: 11/span 2;
+  grid-row: 14/span 1;
 }
 
 .ma-1 {
-  grid-column: 16/span 2;
-  grid-row: 18/span 1;
+  grid-column: 13/span 2;
+  grid-row: 6/span 1;
 }
 
 .ma-2 {
-  grid-column: 16/span 2;
-  grid-row: 19/span 1;
+  grid-column: 13/span 2;
+  grid-row: 7/span 1;
 }
 
 .ma-3 {
-  grid-column: 16/span 2;
-  grid-row: 20/span 1;
+  grid-column: 13/span 2;
+  grid-row: 8/span 1;
 }
 
 .ma-4 {
-  grid-column: 16/span 2;
-  grid-row: 21/span 1;
+  grid-column: 13/span 2;
+  grid-row: 9/span 1;
 }
 
 .ma-5 {
-  grid-column: 16/span 2;
-  grid-row: 22/span 1;
+  grid-column: 13/span 2;
+  grid-row: 10/span 1;
 }
 
 .ma-6 {
-  grid-column: 16/span 2;
-  grid-row: 23/span 1;
+  grid-column: 13/span 2;
+  grid-row: 11/span 1;
 }
 
 .ma-7 {
-  grid-column: 16/span 2;
-  grid-row: 24/span 1;
+  grid-column: 13/span 2;
+  grid-row: 12/span 1;
 }
 
 .ma-8 {
-  grid-column: 16/span 2;
-  grid-row: 25/span 1;
+  grid-column: 13/span 2;
+  grid-row: 13/span 1;
 }
 
 .ma-9 {
-  grid-column: 16/span 2;
-  grid-row: 26/span 1;
+  grid-column: 13/span 2;
+  grid-row: 14/span 1;
 }
 
 .sh-1 {
-  grid-column: 18/span 2;
-  grid-row: 18/span 1;
+  grid-column: 15/span 2;
+  grid-row: 6/span 1;
 }
 
 .sh-2 {
-  grid-column: 18/span 2;
-  grid-row: 19/span 1;
+  grid-column: 15/span 2;
+  grid-row: 7/span 1;
 }
 
 .sh-3 {
-  grid-column: 18/span 2;
-  grid-row: 20/span 1;
+  grid-column: 15/span 2;
+  grid-row: 8/span 1;
 }
 
 .sh-4 {
-  grid-column: 18/span 2;
-  grid-row: 21/span 1;
+  grid-column: 15/span 2;
+  grid-row: 9/span 1;
 }
 
 .sh-5 {
-  grid-column: 18/span 2;
-  grid-row: 22/span 1;
+  grid-column: 15/span 2;
+  grid-row: 10/span 1;
 }
 
 .sh-6 {
-  grid-column: 18/span 2;
-  grid-row: 23/span 1;
+  grid-column: 15/span 2;
+  grid-row: 11/span 1;
 }
 
 .sh-7 {
-  grid-column: 18/span 2;
-  grid-row: 24/span 1;
+  grid-column: 15/span 2;
+  grid-row: 12/span 1;
 }
 
 .sh-8 {
-  grid-column: 18/span 2;
-  grid-row: 25/span 1;
+  grid-column: 15/span 2;
+  grid-row: 13/span 1;
 }
 
 .sh-9 {
-  grid-column: 18/span 2;
-  grid-row: 26/span 1;
+  grid-column: 15/span 2;
+  grid-row: 14/span 1;
 }
 
 .gridBlock {
@@ -3342,6 +3468,17 @@ body {
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
   z-index: -2;
+}
+
+.gridBlock2 {
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  z-index: 1;
 }
 
 .brassPlates {

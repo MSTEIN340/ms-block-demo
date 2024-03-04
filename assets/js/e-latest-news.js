@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', LoadLatestNews );
+
 
 function LoadLatestNews() {
     console.log("LoadLatestNews");

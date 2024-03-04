@@ -188,28 +188,36 @@ function calculateAngleFromHorizon(x1, y1, x2, y2) {
 
 function calculate360DegreeAngle(x1, y1, x2, y2) {
     // Calculate the differences in x and y coordinates
-    var deltaX = x2 - x1;
-    var deltaY = y2 - y1;
+    let deltaX = x2 - x1;
+    let deltaY = y2 - y1;
 
     // Calculate the angle in radians
-    var angleRadians = Math.atan2(deltaY, deltaX);
+    let angleRadians = Math.atan2(deltaY, deltaX);
 
     // Convert the angle to degrees
-    var angleDegrees = angleRadians * (180 / Math.PI);
+    let angleDegrees = angleRadians * (180 / Math.PI);
 
     // Adjust the angle to a 0-360 range with 0 degrees at the top
-    var angleFromTop = (angleDegrees + 144) % 360;
+    let angleFromTop = (angleDegrees + 144) % 360;
     if (angleFromTop < 0) {
         angleFromTop += 360;
     }
-
     return angleFromTop;
 }
 
+function toggleMenu() {
+    console.log("Toggle Menu");
+    if (document.getElementById("msmenu").classList.contains("active")) {
+        document.getElementById("msmenu").classList.remove("active");
+    }else if((!document.getElementById("msmenu").classList.contains("active"))){
+        document.getElementById("msmenu").classList.add("active");
+    }
+}
 function ShowTitle(f)
 {
     console.log(window.innerHeight)
     let five = ["cv", "wd", "db", "bi", "erp"];
+    // swap out visible / invisible classes.
     for (let i = 0; i < 5; i++) {
         if (document.getElementById(five[i]).classList.contains("visible")) {
             console.log("contains Visible")
@@ -219,24 +227,56 @@ function ShowTitle(f)
             document.getElementById(five[i]).classList.add("invisible");
         }
     }
+
     if (document.getElementById(f).classList.contains("invisible")) {
         console.log(f + " contains Invisible")
         document.getElementById(f).classList.remove("invisible");
     }
     document.getElementById(f).classList.add("visible");
 
-    if( f==='erp' )
-    {
-        console.log("f = 'erp'")
-        const Symbi = document.getElementById("SymbiWrapper")
-        Symbi.style.display = "contents";
-    }else{
-        const Symbi = document.getElementById("SymbiWrapper")
-        Symbi.style.display = "none";
+    if( f==='wd' ) {
+      setMyPostBox(1730);
     }
+    if( f==='db' ) {
+        setMyPostBox(1733);
+    }
+    if( f==='bi' ) {
+        setMyPostBox(1737);
+    }
+    if( f==='erp' ) {
+        setMyPostBox(1763);
+    }
+}
 
+function setMyPostBox(post) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', myBlockData.ajax_url, true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
 
+    xhr.onload = function() {
+        if (this.status >= 200 && this.status < 400) {
 
+            let response = JSON.parse(this.response);
+            let htmlContent = response.data;
+
+            let myPostBox = document.getElementById('my-post-box');
+            console.log("setMyPostBox");
+            if (myPostBox) {
+                myPostBox.innerHTML = htmlContent; // Assuming response is the HTML content you want to insert
+                console.log("content",htmlContent);
+            }
+        } else {
+            console.error("Server reached, but it returned an error");
+        }
+    };
+
+    // Handling errors
+    xhr.onerror = function() {
+        // There was a connection error of some sort
+        console.error("Failed to send request");
+    };
+    // Sending the request
+    xhr.send('action=get_post_details2_ajax&nonce=' + myBlockData.nonce + '&post=' + post );
 }
 
 function invisAllTitles(f) {

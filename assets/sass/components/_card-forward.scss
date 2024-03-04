@@ -20,8 +20,8 @@
     &__side {
        // height: 8rem;
         height: 90% !important;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: pxToRem(30px);
+        margin-bottom: pxToRem(30px);
 
         content: "";
         transition: all .8s linear;
@@ -31,7 +31,7 @@
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 20px;
+        border-radius: pxToRem(20px);
         overflow: hidden;
 
 
@@ -40,7 +40,7 @@
         &--front {
             //padding: 5px;
             background-image: linear-gradient(to left,whitesmoke, white);
-            border-radius: 20px;
+            border-radius: pxToRem(20px);
             height: 90%;
             width: 99%;
             border-style: solid;

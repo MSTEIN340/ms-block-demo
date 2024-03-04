@@ -24,7 +24,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -moz-perspective: 150rem;
   position: relative;
   overflow: hidden;
-  height: 8rem;
   color: black;
   display: inline-block;
   width: 260px !important;
@@ -32,27 +31,27 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 1.5rem;
-  height: 200px !important;
-  min-height: 100px;
-  border-radius: 20px;
+  height: pxToRem(200px) !important;
+  min-height: pxToRem(100px);
+  border-radius: pxToRem(20px);
 }
 .cardp__side {
-  height: 100px !important;
+  height: pxToRem(100px) !important;
   content: "";
   transition: all 0.8s linear;
   position: absolute;
-  top: 40px;
+  top: pxToRem(40px);
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .cardp__side--front {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 100%;
 }
 .cardp__side--back {
@@ -150,7 +149,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .cardp {
     height: auto;
-    border-radius: 3px;
+    border-radius: pxToRem(3px);
     background-color: #fff;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   }
@@ -201,8 +200,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .cardf__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -211,12 +210,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .cardf__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -365,7 +364,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-right: 1rem;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 .cardt__bcolor1 {
   background-color: #03a9f4;
@@ -381,8 +380,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .cardt__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -391,12 +390,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .cardt__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -546,7 +545,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   height: 100% !important;
   margin-top: 0;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 
 .icon-team {
@@ -554,10 +553,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-color: white;
   border-width: thick;
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: pxToRem(150px);
+  width: pxToRem(150px);
   margin-top: 5rem;
-  border-radius: 140px;
+  border-radius: pxToRem(140px);
   z-index: 3;
 }
 
@@ -588,7 +587,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: white;
   background-color: white;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: pxToRem(60px);
   padding-bottom: 3rem;
 }
 
@@ -602,20 +601,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .aa-social2 {
   position: absolute;
-  bottom: 10px;
-  Right: 10px;
+  bottom: pxToRem(10px);
+  Right: pxToRem(10px);
   margin: 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
+  height: pxToRem(30px);
+  width: pxToRem(30px);
   z-index: 6;
 }
 
 .michaelstein {
   position: absolute;
   color: white;
-  bottom: 10px;
-  left: 10px;
+  bottom: pxToRem(10px);
+  left: pxToRem(10px);
   width: 100%;
   text-align: center;
   margin: 0;
@@ -626,12 +625,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .aa-social {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: pxToRem(10px);
+  left: pxToRem(10px);
   margin: 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
+  height: pxToRem(30px);
+  width: pxToRem(30px);
   z-index: 6;
 }
 
@@ -644,7 +643,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 20px 20px 0 0;
+  border-radius: pxToRem(20px) pxToRem(20px) 0 0;
 }
 
 .c1b {
@@ -692,9 +691,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .content-line {
   margin: -2px 0 0px 0;
   font-size: 0.9rem;
-  height: 42px;
+  height: pxToRem(42px);
   overflow: hidden;
-  padding: 3px 20px;
+  padding: pxToRem(3px) pxToRem(20px);
   border-width: thin;
   border-style: solid; /* This line is needed */
   border-top-color: #7b7777;
@@ -703,21 +702,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .content-line p {
   line-height: 1;
-  margin: 0 6px;
+  margin: 0 pxToRem(6px);
   color: #3d3c3c;
-  padding: 0 5px;
-  margin: 0;
+  padding: 0 pxToRem(5px);
 }
 
 .news_title {
-  margin: -10px 0 0 0;
-  padding: 5px;
+  margin: pxToRem(-10px) 0 0 0;
+  padding: pxToRem(5px);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 1;
   letter-spacing: -1px;
   background-color: #3e86ff;
+}
+
+.news_title2 {
+  margin: pxToRem(-10px) 20% 0 20%;
+  padding: pxToRem(5px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  background-color: #2576a6;
 }
 
 .category-banner {
@@ -728,12 +737,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff; /* Text color */
   transform: translate(0, -50%) rotate(-45deg);
   transform-origin: 0 0;
-  padding: 5px 10px;
+  padding: pxToRem(5px) pxToRem(10px);
   width: 100%; /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px; /* Adjust as needed */
+  height: pxToRem(30px); /* Adjust as needed */
 }
 
 .news-h {
@@ -748,17 +757,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%; /* Adjust as needed */
 }
 
+.img-h2 {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 20%; /* Adjust as needed */
+  margin: 0 20% 0 20%;
+}
+
 .more-link {
   position: absolute;
   color: #3e86ff;
   font-weight: 600;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  bottom: pxToRem(10px); /* Adjust as needed */
+  right: pxToRem(10px); /* Adjust as needed */
   /* Additional styling for the link */
 }
 
 .more-link:visited {
   color: #3e86ff;
+}
+
+.ms-content2 {
+  margin: 0 20% 0 20%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .ln_content-area {
@@ -767,12 +787,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   line-height: 1;
   box-sizing: border-box;
   height: 90%;
-  padding: 30px 8px 0;
+  padding: pxToRem(30px) 8px 0;
   margin-bottom: -10px; /* Adjust as needed, provides space for the 'More' link */
   overflow-y: hidden;
 }
 .ln_content-area p {
-  margin-bottom: 15px;
+  margin-bottom: pxToRem(15px);
   text-align: justify;
 }
 
@@ -780,7 +800,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 5px;
+  margin-top: pxToRem(5px);
   font-family: "Montserrat", sans-serif !important;
   font-weight: 600;
   font-size: 2rem;
@@ -796,8 +816,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  height: 390px;
-  max-height: 390px;
+  height: pxToRem(390px);
+  max-height: pxToRem(390px);
 }
 
 .ln_image-container img {
@@ -825,9 +845,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: transparent;
   color: black;
   padding: 0;
-  height: 600px !important;
+  height: pxToRem(600px) !important;
   width: 100%;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   z-index: 1;
 }
 
@@ -856,12 +876,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-right: 1rem;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 .ln_card__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -870,12 +890,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .ln_card__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -1018,12 +1038,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .contact_form-container {
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  max-width: 1000px;
+  font-size: 1rem;
+  max-width: pxToRem(1000px);
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 0 pxToRem(30px) pxToRem(30px) pxToRem(30px);
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: pxToRem(8px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: auto;
   z-index: 10;
@@ -1031,7 +1051,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .contact_form-container h2 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: pxToRem(20px);
   color: whitesmoke;
 }
 .contact_form-container .contact_form-row {
@@ -1040,17 +1060,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .contact_form-container .contact_form-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: pxToRem(15px);
 }
 .contact_form-container .contact_form-group.half-width {
   width: 48%;
 }
 .contact_form-container .contact_form-group input, .contact_form-container .contact_form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: pxToRem(10px);
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: pxToRem(16px);
   transition: border-color 0.3s ease;
 }
 .contact_form-container .contact_form-group input:focus, .contact_form-container .contact_form-group textarea:focus {
@@ -1059,30 +1079,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .contact_form-container .contact_form-group input:focus + label, .contact_form-container .contact_form-group input:not(:placeholder-shown) + label, .contact_form-container .contact_form-group textarea:focus + label, .contact_form-container .contact_form-group textarea:not(:placeholder-shown) + label {
   top: -6px;
-  font-size: 12px;
+  font-size: pxToRem(12px);
   color: #007bff;
   background-color: #ffffff;
-  padding: 0 4px;
-  border-radius: 4px;
-  left: 8px;
+  padding: 0 pxToRem(4px);
+  border-radius: pxToRem(4px);
+  left: pxToRem(8px);
 }
 .contact_form-container .contact_form-group label {
   position: absolute;
-  left: 12px;
-  top: 12px;
-  font-size: 14px;
+  left: pxToRem(12px);
+  top: pxToRem(12px);
+  font-size: pxToRem(14px);
   color: #777;
   transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 .contact_form-container .contact_submit-button {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: pxToRem(10px);
   background-color: #007bff;
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1093,10 +1113,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   color: white;
   background-color: green;
-  padding: 10px;
+  padding: pxToRem(10px);
   font-weight: bold;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: pxToRem(10px);
   display: none;
 }
 
@@ -1107,12 +1127,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .btn2, .btn2:link, .btn2:visited {
   color: white;
   text-align: center;
-  border-radius: 6px;
+  border-radius: pxToRem(6px);
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: pxToRem(10px);
   z-index: 3;
-  padding: 12px !important;
+  padding: pxToRem(12px) !important;
   background-color: #03a9f4;
   text-decoration: none;
   display: inline-block;
@@ -1122,7 +1142,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   cursor: pointer;
 }
 .btn2:hover {
-  transform: translateY(-3px);
+  transform: translateY(pxToRem(-3px));
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn2:hover::after {
@@ -1154,7 +1174,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 6px;
+  border-radius: pxToRem(6px);
   position: absolute;
   top: 0;
   left: 0;
@@ -1172,14 +1192,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: pxToRem(3px);
   transition: all 0.2s;
 }
 .btn2-text:hover {
   background-color: #55c57a;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  transform: translateY(pxToRem(-2px));
 }
 .btn2-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -1188,20 +1208,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .fade-in {
   opacity: 1;
-  line-height: 3;
   background-color: transparent;
   color: whitesmoke !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
 }
 .fade-in a, .fade-in span {
   color: whitesmoke;
 }
 
 .hAngel {
-  height: 50px;
-  width: 50px;
+  height: pxToRem(50px);
+  width: pxToRem(50px);
 }
 
 .hMichael {
@@ -1209,9 +1228,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: auto;
   margin-left: 10%;
   position: relative;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  padding-top: pxToRem(5px);
+  padding-bottom: pxToRem(5px);
+  text-shadow: pxToRem(7px) pxToRem(7px) pxToRem(7px) rgba(0, 0, 0, 0.6);
 }
 
 .hMichael2 {
@@ -1226,15 +1245,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-decoration: none;
   content: "";
   align-content: center;
-  text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+  text-shadow: pxToRem(7px) pxToRem(7px) pxToRem(7px) rgba(0, 0, 0, 0.6);
 }
 
 .aa_header-outer {
   display: flex;
   align-items: center;
   position: sticky;
-  top: -30px;
-  height: 100px;
+  top: pxToRem(-30px);
+  height: pxToRem(100px);
   width: 100vw;
   z-index: 7;
 }
@@ -1243,22 +1262,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: pxToRem(50px);
+  top: pxToRem(-5px);
 }
 
 .hUp-ms {
   content: "";
   position: relative;
   display: inline-block;
-  height: 50px;
-  top: -5px;
+  height: pxToRem(50px);
+  top: pxToRem(-5px);
 }
 
 .aa_header-inner {
   color: white;
   background-color: transparent;
-  height: 70px;
+  height: pxToRem(70px);
   position: sticky;
   vertical-align: middle;
   top: 0;
@@ -1284,12 +1303,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   vertical-align: middle;
 }
 
-.ce2 {
-  width: 50%;
-  height: 100%;
-  padding-left: 0%;
-}
-
 .w50 {
   float: right;
   content: "";
@@ -1307,7 +1320,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   content: "";
   display: inline-block;
   clear: both;
-  height: 50px !important;
+  height: pxToRem(50px) !important;
   animation: explode 1s ease-in;
 }
 
@@ -1317,11 +1330,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: black !important;
   width: 100vw;
   content: "";
-  display: inline-block;
+  display: inline-flex;
   clear: both;
-  height: 52px !important;
+  height: pxToRem(52px) !important;
   animation: explode 1s ease-in;
-  box-shadow: 0 5px 15px #1f1f1f;
+  box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
 }
 
 @keyframes explode {}
@@ -1340,7 +1353,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .m50 {
   height: 100%;
-  margin-bottom: -150px;
+  margin-bottom: pxToRem(-150px);
   padding: 0 !important;
   overflow-y: hidden;
 }
@@ -1362,7 +1375,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 }
 
@@ -1374,7 +1387,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .MyNav ul li.submenu ul {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: pxToRem(160px);
   margin-bottom: 2vh;
 }
 
@@ -1389,7 +1402,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .MyNav ul li.submenu ul li a {
-  padding: 8px 16px;
+  padding: pxToRem(8px) pxToRem(16px);
   display: block;
   text-align: left;
 }
@@ -1404,7 +1417,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: inline-block;
   width: 50%;
   min-width: 50%;
-  margin-right: 20px;
+  margin-right: pxToRem(20px);
 }
 .content-wrapper .image-container img {
   width: 100%;
@@ -1414,8 +1427,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .content-wrapper .image-container .overlayFM {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: pxToRem(20px);
+  left: pxToRem(20px);
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   background-color: rgba(0, 0, 0, 0.5);
@@ -1423,8 +1436,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .content-wrapper .text-block {
   width: 40%;
   min-width: 40%;
-  height: 550px;
-  max-height: 550px;
+  height: pxToRem(550px);
+  max-height: pxToRem(550px);
   overflow-y: hidden;
 }
 
@@ -1432,7 +1445,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: Georgia, serif;
   font-weight: 500;
   line-height: normal;
-  padding-left: 10px;
+  padding-left: pxToRem(10px);
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
@@ -1478,7 +1491,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: inherit;
   background-color: inherit;
   text-align: center;
-  padding: 12px 16px;
+  padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 }
 
@@ -1502,7 +1515,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .fatnav ul li.sm2 ul li a {
-  padding: 8px 16px 8px 25px;
+  padding: pxToRem(8px) pxToRem(16px) pxToRem(8px) pxToRem(25px);
   display: block;
   text-align: left;
 }
@@ -1560,10 +1573,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .nBak {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: pxToRem(40px);
   right: 0;
   display: none;
-  height: 600px;
+  height: pxToRem(600px);
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
@@ -1575,8 +1588,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .mRight {
   position: relative;
-  height: 600px;
-  max-height: 600px;
+  height: pxToRem(600px);
+  max-height: pxToRem(600px);
   margin-left: 5%;
   overflow-y: hidden;
 }
@@ -1588,8 +1601,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 0;
   padding-top: 0;
   width: 33%;
-  height: 500px;
-  max-height: 500px;
+  height: pxToRem(500px);
+  max-height: pxToRem(500px);
 }
 
 .image-container img {
@@ -2466,13 +2479,6 @@ he3 {
   letter-spacing: -1px;
 }
 
-.aa_font1ms {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
 .ms_font2 {
   text-decoration: underline;
   font-size: 1rem;
@@ -2898,9 +2904,9 @@ he3 {
 .content-line {
   margin: -2px 0 0px 0;
   font-size: 0.9rem;
-  height: 42px;
+  height: pxToRem(42px);
   overflow: hidden;
-  padding: 3px 20px;
+  padding: pxToRem(3px) pxToRem(20px);
   border-width: thin;
   border-style: solid; /* This line is needed */
   border-top-color: #7b7777;
@@ -2909,21 +2915,31 @@ he3 {
 }
 .content-line p {
   line-height: 1;
-  margin: 0 6px;
+  margin: 0 pxToRem(6px);
   color: #3d3c3c;
-  padding: 0 5px;
-  margin: 0;
+  padding: 0 pxToRem(5px);
 }
 
 .news_title {
-  margin: -10px 0 0 0;
-  padding: 5px;
+  margin: pxToRem(-10px) 0 0 0;
+  padding: pxToRem(5px);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 1;
   letter-spacing: -1px;
   background-color: #3e86ff;
+}
+
+.news_title2 {
+  margin: pxToRem(-10px) 20% 0 20%;
+  padding: pxToRem(5px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 1px;
+  background-color: #2576a6;
 }
 
 .category-banner {
@@ -2934,12 +2950,12 @@ he3 {
   color: #fff; /* Text color */
   transform: translate(0, -50%) rotate(-45deg);
   transform-origin: 0 0;
-  padding: 5px 10px;
+  padding: pxToRem(5px) pxToRem(10px);
   width: 100%; /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px; /* Adjust as needed */
+  height: pxToRem(30px); /* Adjust as needed */
 }
 
 .news-h {
@@ -2954,17 +2970,28 @@ he3 {
   width: 100%; /* Adjust as needed */
 }
 
+.img-h2 {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 20%; /* Adjust as needed */
+  margin: 0 20% 0 20%;
+}
+
 .more-link {
   position: absolute;
   color: #3e86ff;
   font-weight: 600;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  bottom: pxToRem(10px); /* Adjust as needed */
+  right: pxToRem(10px); /* Adjust as needed */
   /* Additional styling for the link */
 }
 
 .more-link:visited {
   color: #3e86ff;
+}
+
+.ms-content2 {
+  margin: 0 20% 0 20%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .ln_content-area {
@@ -2973,12 +3000,12 @@ he3 {
   line-height: 1;
   box-sizing: border-box;
   height: 90%;
-  padding: 30px 8px 0;
+  padding: pxToRem(30px) 8px 0;
   margin-bottom: -10px; /* Adjust as needed, provides space for the 'More' link */
   overflow-y: hidden;
 }
 .ln_content-area p {
-  margin-bottom: 15px;
+  margin-bottom: pxToRem(15px);
   text-align: justify;
 }
 
@@ -2986,7 +3013,7 @@ he3 {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 5px;
+  margin-top: pxToRem(5px);
   font-family: "Montserrat", sans-serif !important;
   font-weight: 600;
   font-size: 2rem;
@@ -3002,8 +3029,8 @@ he3 {
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  height: 390px;
-  max-height: 390px;
+  height: pxToRem(390px);
+  max-height: pxToRem(390px);
 }
 
 .ln_image-container img {
@@ -3031,9 +3058,9 @@ he3 {
   background-color: transparent;
   color: black;
   padding: 0;
-  height: 600px !important;
+  height: pxToRem(600px) !important;
   width: 100%;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   z-index: 1;
 }
 
@@ -3062,12 +3089,12 @@ he3 {
   padding-right: 1rem;
   height: 100% !important;
   min-height: 100px;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
 }
 .ln_card__side {
   height: 90% !important;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: pxToRem(30px);
+  margin-bottom: pxToRem(30px);
   content: "";
   transition: all 0.8s linear;
   position: absolute;
@@ -3076,12 +3103,12 @@ he3 {
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   overflow: hidden;
 }
 .ln_card__side--front {
   background-image: linear-gradient(to left, whitesmoke, white);
-  border-radius: 20px;
+  border-radius: pxToRem(20px);
   height: 90%;
   width: 99%;
   border-style: solid;
@@ -3224,12 +3251,12 @@ he3 {
 .contact_form-container {
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  max-width: 1000px;
+  font-size: 1rem;
+  max-width: pxToRem(1000px);
   width: 100%;
-  padding: 0 30px 30px 30px;
+  padding: 0 pxToRem(30px) pxToRem(30px) pxToRem(30px);
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: pxToRem(8px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: auto;
   z-index: 10;
@@ -3237,7 +3264,7 @@ he3 {
 .contact_form-container h2 {
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: pxToRem(20px);
   color: whitesmoke;
 }
 .contact_form-container .contact_form-row {
@@ -3246,17 +3273,17 @@ he3 {
 }
 .contact_form-container .contact_form-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: pxToRem(15px);
 }
 .contact_form-container .contact_form-group.half-width {
   width: 48%;
 }
 .contact_form-container .contact_form-group input, .contact_form-container .contact_form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: pxToRem(10px);
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: pxToRem(16px);
   transition: border-color 0.3s ease;
 }
 .contact_form-container .contact_form-group input:focus, .contact_form-container .contact_form-group textarea:focus {
@@ -3265,30 +3292,30 @@ he3 {
 }
 .contact_form-container .contact_form-group input:focus + label, .contact_form-container .contact_form-group input:not(:placeholder-shown) + label, .contact_form-container .contact_form-group textarea:focus + label, .contact_form-container .contact_form-group textarea:not(:placeholder-shown) + label {
   top: -6px;
-  font-size: 12px;
+  font-size: pxToRem(12px);
   color: #007bff;
   background-color: #ffffff;
-  padding: 0 4px;
-  border-radius: 4px;
-  left: 8px;
+  padding: 0 pxToRem(4px);
+  border-radius: pxToRem(4px);
+  left: pxToRem(8px);
 }
 .contact_form-container .contact_form-group label {
   position: absolute;
-  left: 12px;
-  top: 12px;
-  font-size: 14px;
+  left: pxToRem(12px);
+  top: pxToRem(12px);
+  font-size: pxToRem(14px);
   color: #777;
   transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 .contact_form-container .contact_submit-button {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: pxToRem(10px);
   background-color: #007bff;
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -3299,10 +3326,10 @@ he3 {
   text-align: center;
   color: white;
   background-color: green;
-  padding: 10px;
+  padding: pxToRem(10px);
   font-weight: bold;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: pxToRem(10px);
   display: none;
 }
 

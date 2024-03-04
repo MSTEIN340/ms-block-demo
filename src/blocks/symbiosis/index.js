@@ -9,14 +9,16 @@ import './main.css' // This only works because WebPack is running. ( NPM RUN STA
 
 
 registerBlockType(block.name, {
-    icon: icons.primary,
+    icon: icons.Wings,
     edit({ attributes, setAttributes }) {
         const { content, underline_color } = attributes
         const blockProps = useBlockProps()
         //  console.log(blockProps)
 
         return (
-            <Symbi  />
+            <Symbi
+                status={"on"}
+            />
         )
     },
     save({attributes}){
@@ -31,7 +33,9 @@ registerBlockType(block.name, {
         })
 
         return (
-            <Symbi  />
+            <Symbi
+                status={"on"}
+            />
         )
 
     }

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ms-block-demo/toparticles",
+  "title": "Top Articles",
+  "category": "text",
+  "description": "Top Articles",
+  "keywords": ["Posts text"],
+  "version": "1",
+  "textdomain": "ms-block-demo",
+  "editorScript": "file:./index.js",
+
+
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "count": {
+      "type": "number",
+      "default": "3"
+    },
+  "categories": {
+    "type": "array",
+    "default": []
+  }
+},
+  "style": "file:./index.css"
+}
