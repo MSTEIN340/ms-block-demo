@@ -302,6 +302,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
   animation: explode 1s ease-in;
 }
 
+.fade-in {
+  opacity: 1;
+  background-color: transparent;
+  color: whitesmoke !important;
+  width: 100vw;
+  content: "";
+  line-height: pxToRem(70px) !important;
+  display: inline-flex;
+}
+.fade-in a, .fade-in span {
+  color: whitesmoke;
+}
+
 .boom2 {
   opacity: 1;
   background-color: whitesmoke !important;
@@ -312,6 +325,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   clear: both;
   height: pxToRem(52px) !important;
   animation: explode 1s ease-in;
+  line-height: pxToRem(52px) !important;
   box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
 }
 
@@ -466,7 +480,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   color: rgba(213, 208, 208, 0.88);
   text-shadow: 1px 1px 1px rgb(31, 31, 31), -1px -1px 0px rgb(61, 60, 60);
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
   content: "";
 }
 
@@ -494,16 +508,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .fit {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: auto;
+  transition: all 0.5s;
   z-index: 10 !important;
   right: 0;
   bottom: 0;
 }
 
 .noarm {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 70%;
   width: auto;
@@ -513,7 +528,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .arm {
-  position: absolute;
+  position: fixed;
   bottom: 30%;
   margin-left: 0;
   height: 40%;

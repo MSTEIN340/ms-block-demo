@@ -106,7 +106,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 100vh;
   max-height: 100%;
   width: 100vw;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
   margin: 0;
@@ -827,9 +827,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .img-h2 {
   display: block;
   /* Ensures the image takes up the full width of its container */
-  width: 20%;
+  width: 100%;
   /* Adjust as needed */
-  margin: 0 20% 0 20%; }
+  height: auto; }
+
+.clearfix::after, .news_title2::after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .more-link {
   position: absolute;
@@ -883,6 +888,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   height: 24.375rem;
   max-height: 24.375rem; }
+
+.ln_image-container2 {
+  float: left;
+  width: 25%;
+  margin-right: 1rem; }
 
 .ln_image-container img {
   width: 100%;
@@ -1333,6 +1343,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 3.125rem !important;
   animation: explode 1s ease-in; }
 
+.fade-in {
+  opacity: 1;
+  background-color: transparent;
+  color: whitesmoke !important;
+  width: 100vw;
+  content: "";
+  line-height: 4.375rem !important;
+  display: inline-flex; }
+  .fade-in a, .fade-in span {
+    color: whitesmoke; }
+
 .boom2 {
   opacity: 1;
   background-color: whitesmoke !important;
@@ -1343,6 +1364,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   clear: both;
   height: 3.25rem !important;
   animation: explode 1s ease-in;
+  line-height: 3.25rem !important;
   box-shadow: 0 0.3125rem 0.9375rem #1f1f1f; }
 
 @keyframes explode {}.invisible {
@@ -1403,7 +1425,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: left; }
 
 .MsNav {
-  float: right; }
+  float: right;
+  margin-right: 15%; }
   .MsNav .menu-icon {
     display: none;
     cursor: pointer;
@@ -1414,6 +1437,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .MsNav ul {
   text-align: center;
   list-style-type: none;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
   overflow: hidden; }
@@ -1422,10 +1446,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   float: left; }
 
 .MsNav ul li a {
-  display: block;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.75rem;
+  box-sizing: border-box;
   padding: 0.75rem 1rem;
   text-decoration: none; }
 
@@ -1436,21 +1461,64 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .MsNav ul.active {
   display: block; }
 
+@media only screen and (max-width: 1300px) {
+  .fit {
+    display: none; }
+  .MsNav {
+    margin-right: 7%; }
+    .MsNav ul {
+      float: right;
+      margin-right: 0%;
+      font-size: 1rem; }
+      .MsNav ul .menu-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 1.875rem; }
+        .MsNav ul .menu-icon ii {
+          display: block;
+          float: right; } }
+
 @media only screen and (max-width: 1000px) {
+  .aa_font1ms {
+    font-size: clamp(2rem, 1.64103vw, 4rem) !important;
+    /* Adjust min and max values as needed */ }
   html {
-    font-size: 12px; }
+    font-size: 14px; }
+  .w50b {
+    width: 30% !important; }
+  .hMichael2b {
+    width: 80% !important; }
   .MsNav .menu-icon {
     display: block; }
   .MsNav ul {
     display: none;
-    flex-direction: column;
-    align-items: center;
+    font-size: 2.5rem;
+    color: whitesmoke; }
+    .MsNav ul li a {
+      color: whitesmoke; } }
+  @media only screen and (max-width: 1000px) and (max-width: 1000px) {
+    .MsNav ul.active {
+      display: flex !important;
+      float: right;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0; } }
+
+@media only screen and (max-width: 1000px) {
+  .vMenu {
+    position: absolute;
+    top: 150% !important;
+    transform: translateX(-50%);
     width: 100%;
-    padding: 0; }
+    display: block;
+    align-items: stretch;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; }
+    .vMenu ul {
+      background: rgba(0, 0, 0, 0.8); }
   .MsNav ul li {
-    width: 100%; }
-  .MsNav ul.active {
-    display: flex !important; } }
+    width: 100%; } }
 
 .MsNav ul li.submenu ul {
   display: none;
@@ -1550,7 +1618,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: whitesmoke; }
 
 .intro-start {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 5px;
   background: #0c88b4;
@@ -1562,7 +1630,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   z-index: 2; }
 
 .intro-stop {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 55px;
   background: #0c88b4;
@@ -1596,7 +1664,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   z-index: 1; }
 
 #IntroBackground {
-  position: absolute;
+  position: fixed;
+  display: block;
   content: ' ';
   bottom: 0;
   left: 0;
@@ -1736,18 +1805,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .ce2 {
   width: 100%;
   height: 100%;
-  align-self: center;
   vertical-align: middle;
+  float: left;
   padding-left: 0%; }
 
 .aa_font1ms {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: clamp(1rem, 1.64103vw, 2rem);
+  font-size: clamp(1.8rem, 1.64103vw, 3rem);
   /* Adjust min and max values as needed */
-  letter-spacing: -1px;
-  line-height: 70px; }
+  letter-spacing: -1px; }
 
+/*
 .topper-outer {
   display: flex;
   background-color: transparent;
@@ -1758,28 +1827,75 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 100%;
   z-index: 7;
   overflow-y: hidden !important;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .topper-inner {
+  //color: white;
   display: flex !important;
   background-color: transparent;
   height: 70px;
   position: sticky;
   align-items: center !important;
+  // top: 20px;
   width: 100%;
-  box-shadow: 0 0.3125rem 0.9375rem #1f1f1f;
+  box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
   z-index: 7;
   overflow-y: hidden !important;
   overflow-x: hidden;
-  transition: all 1s; }
+  //  border-radius: 100px;
+  transition: all 1s;
+}
 
 .w50b {
   float: right;
   content: "";
+  // margin-top: 10px;
   width: 65%;
+  //  height: 6rem;
   padding-left: 0%;
+  //  padding-top: 1rem;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+ */
+.topper-outer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 7; }
+
+.topper-inner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 5px 15px #1f1f1f;
+  z-index: 7;
+  transition: all 1s; }
+
+.aa_font2ms {
+  text-decoration: underline;
+  font-size: 1rem;
+  letter-spacing: 0; }
+
+.w50b {
+  position: absolute;
+  line-height: 70px;
+  top: 50%;
+  right: 0% !important;
+  transform: translateY(-50%);
+  width: 75%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: right; }
 
 .hMichaelb {
   height: 80%;
@@ -1791,6 +1907,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-shadow: 0.4375rem 0.4375rem 0.4375rem rgba(0, 0, 0, 0.6); }
 
 .hMichael2b {
+  float: left;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -2217,11 +2334,14 @@ body {
   overflow: hidden;
   font-size: 1rem;
   font-style: normal;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 0px black;
   border-radius: 10px;
-  background-color: rgba(114, 205, 188, 0.5);
+  background-color: rgba(76, 141, 248, 0.5);
   text-decoration: none;
   color: white; }
+  .toparticles:hover {
+    background-color: #4c8df8;
+    cursor: pointer; }
   .toparticles a:visited {
     color: white; }
 
@@ -2229,7 +2349,7 @@ body {
   overflow: hidden;
   font-size: 1rem;
   font-style: normal;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   text-decoration: none;
   color: white; }
   .ms_excerpt a:visited {
@@ -2237,7 +2357,7 @@ body {
   .ms_excerpt p {
     color: white; }
 
-.clearfix::after {
+.clearfix::after, .news_title2::after {
   content: "";
   display: table;
   clear: both; }
@@ -3842,7 +3962,7 @@ he3 {
   padding: 0;
   color: rgba(213, 208, 208, 0.88);
   text-shadow: 1px 1px 1px #1f1f1f, -1px -1px 0px #3d3c3c;
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
   content: ""; }
 
 .invisible {
@@ -3864,15 +3984,16 @@ he3 {
   margin-right: auto; }
 
 .fit {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: auto;
+  transition: all 0.5s;
   z-index: 10 !important;
   right: 0;
   bottom: 0; }
 
 .noarm {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 70%;
   width: auto;
@@ -3881,7 +4002,7 @@ he3 {
   right: 0; }
 
 .arm {
-  position: absolute;
+  position: fixed;
   bottom: 30%;
   margin-left: 0;
   height: 40%;

@@ -55,6 +55,7 @@
   background-color: #3e86ff;
 }
 .news_title2 {
+  @extend .clearfix;
   margin: pxToRem(-10px) 20% 0 20%;
   padding: pxToRem(5px);
 
@@ -95,8 +96,14 @@
 }
 .img-h2 {
   display: block; /* Ensures the image takes up the full width of its container */
-  width: 20%; /* Adjust as needed */
-  margin: 0 20% 0 20%;
+  width: 100%; /* Adjust as needed */
+  height: auto;
+ // margin: 0 20% 0 20%;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .more-link {
   position: absolute;
@@ -155,6 +162,11 @@
   width: 100%;
   height: pxToRem(390px);
   max-height: pxToRem(390px);
+}
+.ln_image-container2 {
+  float: left; // Float the image container to the left
+  width: 25%; // Adjust the width as needed
+  margin-right: 1rem; // Add some margin to separate the text from the image
 }
 
 .ln_image-container img {

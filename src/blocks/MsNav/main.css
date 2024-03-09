@@ -14,6 +14,7 @@
 */
 .MsNav {
   float: right;
+  margin-right: 15%;
 }
 .MsNav .menu-icon {
   display: none;
@@ -27,6 +28,7 @@
 .MsNav ul {
   text-align: center;
   list-style-type: none;
+  font-size: pxToRem(20px);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -37,10 +39,11 @@
 }
 
 .MsNav ul li a {
-  display: block;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: pxToRem(60px);
+  box-sizing: border-box;
   padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 }
@@ -54,25 +57,79 @@
   display: block;
 }
 
+@media only screen and (max-width: 1300px) {
+  .fit {
+    display: none;
+  }
+  .MsNav {
+    margin-right: 7%;
+  }
+  .MsNav ul {
+    float: right;
+    margin-right: 0%;
+    font-size: pxToRem(16px);
+  }
+  .MsNav ul .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: pxToRem(30px);
+  }
+  .MsNav ul .menu-icon ii {
+    display: block;
+    float: right;
+  }
+}
 @media only screen and (max-width: 1000px) {
+  .aa_font1ms {
+    font-size: clamp(2rem, 1.641025641vw, 4rem) !important; /* Adjust min and max values as needed */
+  }
   html {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .w50b {
+    width: 30% !important;
+  }
+  .hMichael2b {
+    width: 80% !important;
   }
   .MsNav .menu-icon {
     display: block;
   }
   .MsNav ul {
     display: none;
+    font-size: pxToRem(40px);
+    color: whitesmoke;
+  }
+  .MsNav ul li a {
+    color: whitesmoke;
+  }
+}
+@media only screen and (max-width: 1000px) and (max-width: 1000px) {
+  .MsNav ul.active {
+    display: flex !important;
+    float: right;
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0;
   }
+}
+@media only screen and (max-width: 1000px) {
+  .vMenu {
+    position: absolute;
+    top: 150% !important;
+    transform: translateX(-50%);
+    width: 100%;
+    display: block;
+    align-items: stretch;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .vMenu ul {
+    background: rgba(0, 0, 0, 0.8);
+  }
   .MsNav ul li {
     width: 100%;
-  }
-  .MsNav ul.active {
-    display: flex !important;
   }
 }
 .MsNav ul li.submenu ul {

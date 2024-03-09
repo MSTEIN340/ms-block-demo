@@ -1,7 +1,9 @@
 // My Nav
 
 .MsNav {
+  //height: 75px;
   float: right;
+  margin-right: 15%;
   .menu-icon {
     display: none;
     cursor: pointer;
@@ -12,9 +14,11 @@
   }
 }
 
+
 .MsNav ul {
   text-align: center;
   list-style-type: none;
+  font-size: pxToRem(20px);
   margin: 0;
   padding: 0;
   //  padding-left: 25%;
@@ -27,10 +31,11 @@
 }
 
 .MsNav ul li a {
-  display: block;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
+  display: flex;
+  align-items: center; // Centers text vertically
+  justify-content: center; // Centers text horizontally
+  height: pxToRem(60px);
+  box-sizing: border-box;
   padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 
@@ -45,32 +50,94 @@
   display: block;
 }
 
+@media only screen and (max-width: 1300px) {
+  .fit {
+    display: none;
+  }
+
+  .MsNav {
+    margin-right: 7%;
+    ul {
+      //height: 75px;
+      float: right;
+      margin-right: 0%;
+      font-size: pxToRem(16px);
+
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+        font-size: pxToRem(30px); // Adjust size as needed
+        ii {
+          display: block; // Ensures the icon aligns correctly
+          float: right;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1000px) {
+  .aa_font1ms {
+    font-size: clamp(2rem, 1.641025641vw, 4rem) !important; /* Adjust min and max values as needed */
+  }
   html {
-    font-size: 12px; // Now 1rem equals 12px
+    font-size: 14px; // Now 1rem equals 12px
   }
-
-  .MsNav .menu-icon {
-    display: block;
+  .w50b{
+    width: 30% !important;
   }
+  .hMichael2b {
+    width: 80% !important;
+  }
+  .MsNav {
 
+    .menu-icon {
+      display: block;
+    }
+  }
   .MsNav ul {
+    li a {
+      color: whitesmoke;
+    }
     display: none; // Use flexbox instead of floats
-    flex-direction: column; // Stack children vertically
-    align-items: center; // Center items horizontally
-    width: 100%; // Take up the full width
-    padding: 0;
+    font-size: pxToRem(40px);
+    color: whitesmoke;
+    &.active {
+      @media only screen and (max-width: 1000px) {
+        display: flex !important;
+        float: right;
+        flex-direction: column; // Stack children vertically
+        align-items: center; // Center items horizontally
+        width: 100%; // Take up the full width
+        padding: 0;
+
+      }
+    }
   }
+
+  .vMenu {
+
+  position: absolute;
+  top: 150% !important; // Position the menu right below the header
+  //left: 50%; // Center it horizontally
+  transform: translateX(-50%); // Adjust horizontal centering
+  width: 100%; // Menu container takes full width of the viewport
+  display: block; // Display as block to fill the container
+  align-items: stretch; // Stretch items to fill the container (if using flexbox)
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Optional: add shadow for depth
+  z-index: 999; // Ensure it's on top of other content
+  ul {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
 
   .MsNav ul li {
     width: 100%; // Each li takes up the full width of the ul
   }
-
   .MsNav ul.active {
-    display: flex !important; // Flex should be applied here as well to keep the vertical layout
+   // display: flex !important; // Flex should be applied here as well to keep the vertical layout
   }
 }
-
 
 .MsNav ul li.submenu ul {
   display: none;

@@ -29,30 +29,20 @@ function get_top_articles_cb($atts) {
         while($query->have_posts()) {
             $query->the_post();
             ?>
-            <div class="single-post toparticles">
-                <a class="single-post-image" href="<?php the_permalink(); ?>">
+            <div class="single-post toparticles" data-link="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('thumbnail'); ?>
-                </a>
                 <div class="single-post-detail">
-                    <a href="<?php the_permalink(); ?>">
                         <h6><?php the_title(); ?></h6>
-                    </a>
                     <span class="ms_excerpt">
-                        <a class="ms_excerpt" href="<?php the_permalink(); ?>">
                         <?php the_excerpt(); ?>
-                        </a>
                     </span>
                     <span>
                         <span  class="ms_excerpt">By</span>
-                        <a href="<?php the_permalink(); ?>">
                             <?php the_author(); ?>
-                        </a>
                     </span>
-
                 </div>
             </div>
             <?php
-
         }
     }
     ?>

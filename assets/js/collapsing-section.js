@@ -4,12 +4,12 @@ function setEventListener(event) {
     let contentsid = "";
     let imageid = "";
     const clickedButtonId = event.target.id;
-    console.log('Clicked button ID:', clickedButtonId);
+   // console.log('Clicked button ID:', clickedButtonId);
 
     document.querySelectorAll('[id^="CS-button"]').forEach(button => {
-        console.log('Event Listener added');
+      //  console.log('Event Listener added');
         button.addEventListener('click', () => {
-            console.log('Button clicked:', button.id);
+          //  console.log('Button clicked:', button.id);
             // Your event handling logic...
             contentsid = button.id.replace('CS-button', 'CS-contents');
             imageid = button.id.replace('CS-button', 'CS-btnimg');

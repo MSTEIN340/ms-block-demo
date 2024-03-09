@@ -32,6 +32,9 @@ function aa_enqueue_scripts()
     wp_register_script('barticle', plugins_url('/ms-block-demo/assets/js/barticle.js'));
     wp_enqueue_script('barticle');
 
+    wp_register_script('toparticle', plugins_url('/ms-block-demo/assets/js/toparticle.js'));
+    wp_enqueue_script('toparticle');
+
 	wp_register_script('home--1', plugins_url('/ms-block-demo/assets/js/home--1.js'),array('fat-nav-data') );
 	wp_enqueue_script('home--1');
 

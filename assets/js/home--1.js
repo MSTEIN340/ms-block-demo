@@ -41,12 +41,12 @@ let mdA = {
 };
 
 
-console.log("load")
+//console.log("load")
 let scrollpos = window.scrollY
 
 window.addEventListener('scroll', function() {
     scrollpos = window.scrollY;
-    console.log("scrollY= " + scrollpos)
+ //   console.log("scrollY= " + scrollpos)
     if (scrollpos > 0) {
         if((document.getElementById("stack1xy").classList.contains("fade-in"))) {
             document.getElementById("stack1xy").classList.remove("fade-in");           //alert("what the heck2");
@@ -65,7 +65,7 @@ window.addEventListener('scroll', function() {
 
 function soop2()
 {
-    console.log("You're in the Sup");
+   // console.log("You're in the Sup");
 }
 
 
@@ -124,7 +124,7 @@ function aa_handleScroll(event)
 function stopscroll() {
     var block = document.querySelector(".scrollMe");
     if (block) {
-        document.body.style.overflowY = 'hidden';
+      //  document.body.style.overflowY = 'hidden';
     }
 }
 
@@ -145,7 +145,7 @@ function ms_mouseMove(event)
 
     let angie = calculate360DegreeAngle( sxr, syr, clientx, clienty);
     arm.style.transform = 'rotate(' + angie + 'deg)';
- //   console.log("angie=",angie);
+   // console.log("angie=",angie);
 
     return mouse;
 
@@ -206,21 +206,26 @@ function calculate360DegreeAngle(x1, y1, x2, y2) {
 }
 
 function toggleMenu() {
-    console.log("Toggle Menu");
+ //   console.log("Toggle Menu");
     if (document.getElementById("msmenu").classList.contains("active")) {
         document.getElementById("msmenu").classList.remove("active");
     }else if((!document.getElementById("msmenu").classList.contains("active"))){
         document.getElementById("msmenu").classList.add("active");
     }
+    if (document.getElementById("vMenu").classList.contains("vMenu")) {
+        document.getElementById("vMenu").classList.remove("vMenu");
+    }else if((!document.getElementById("vMenu").classList.contains("vMenu"))){
+        document.getElementById("vMenu").classList.add("vMenu");
+    }
 }
 function ShowTitle(f)
 {
-    console.log(window.innerHeight)
+  //  console.log(window.innerHeight)
     let five = ["cv", "wd", "db", "bi", "erp"];
     // swap out visible / invisible classes.
     for (let i = 0; i < 5; i++) {
         if (document.getElementById(five[i]).classList.contains("visible")) {
-            console.log("contains Visible")
+         //   console.log("contains Visible")
             document.getElementById(five[i]).classList.remove("visible");
         }
         if((!document.getElementById(five[i]).classList.contains("invisible"))){
@@ -229,7 +234,7 @@ function ShowTitle(f)
     }
 
     if (document.getElementById(f).classList.contains("invisible")) {
-        console.log(f + " contains Invisible")
+       // console.log(f + " contains Invisible")
         document.getElementById(f).classList.remove("invisible");
     }
     document.getElementById(f).classList.add("visible");
@@ -260,10 +265,10 @@ function setMyPostBox(post) {
             let htmlContent = response.data;
 
             let myPostBox = document.getElementById('my-post-box');
-            console.log("setMyPostBox");
+         //   console.log("setMyPostBox");
             if (myPostBox) {
                 myPostBox.innerHTML = htmlContent; // Assuming response is the HTML content you want to insert
-                console.log("content",htmlContent);
+              //  console.log("content",htmlContent);
             }
         } else {
             console.error("Server reached, but it returned an error");

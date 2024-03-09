@@ -39,7 +39,7 @@ class BArticle extends Component {
     }
     componentDidMount() {
 
-        console.log("Did Mount");
+     //   console.log("Did Mount");
     }
     componentWillUnmount() {
         // Get the div element from the ref
@@ -63,7 +63,6 @@ class BArticle extends Component {
             position: 'relative',
             border: `1px solid ${this.state.borderColor}`, // apply border color
             textAlign: 'center',
-
         };
         console.log("Render barticle");
         return (

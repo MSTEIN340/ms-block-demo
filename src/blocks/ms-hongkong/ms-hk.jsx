@@ -71,35 +71,32 @@ class MsHk extends Component {
         return (
             <>
                 <div className="ms-image-background ms-bki">
-                    <img className="background-me3" src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/regal2c.png"  alt={"tt"}/>
-
+                    <img className="background-me3"
+                         src="https://www.michaelastein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/regal2c.png"
+                         alt={"tt"}/>
                 </div>
-                <StarWars_Intro />
-                <div className="wrapper" id="scrollMe" ref={this.scrollMeRef} >
-                    <GridBlock/>
-                    <div className="fit">
-                        <img id="arm"
-                             src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/arm.png"
-                             className="arm" alt="f"/>
-                        <img
-                            src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/MeNo-armc.png"
-                            className="noarm" alt="f"/>
-                    </div>
 
-                    <header className="ms_header-outer">
-
-                        <div className="ms_header-inner fade-in" id="stack1xy">
+                <div className="fit">
+                    <img id="arm"
+                         src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/arm.png"
+                         className="arm" alt="f"/>
+                    <img
+                        src="https://www.MichaelAStein.com/wp-content/plugins/ms-block-demo/src/blocks/ms-hongkong/img/MeNo-armc.png"
+                        className="noarm" alt="f"/>
+                </div>
+                <div className="wrapper" id="scrollMe">
+                    <StarWars_Intro/>
+                    <header className="topper-outer">
+                        <div className="topper-inner fade-in" id="stack1xy">
                             <img
-                                className={"hMichael"}
+                                className={"hMichaelb"}
                                 src={"https://www.MichaelAStein.com/wp-content/uploads/2023/10/cropped-favicon2-150x150.png"}
                                 alt={"Favicon"}/>
-
-                            <a className={"hMichael2"} href={"https://www.MichaelAStein.com/"}>
-                                <span className={"ce2 aa_font1ms"}>Michael A. Stein </span>
+                            <a className={"hMichael2b"} href={"https://www.MichaelAStein.com/"}>
+                                <div className={"ce2 aa_font1ms"}>Michael A. Stein</div>
                             </a>
-                            <span className={"aa_font2 w50"}><MsNav /></span>
+                            <span id="vMenu" className={"aa_font2ms w50b"}><MsNav/></span>
                         </div>
-
                     </header>
                     <span className={"shorter_view"}>
                         <div className="header2">
@@ -230,12 +227,6 @@ class MsHk extends Component {
 
                                 </div>
                         </div>
-
-
-
-
-
-
 
                         </div>
                      </span>

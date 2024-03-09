@@ -190,22 +190,23 @@ function get_post_details_and_save_to_html2($post_id) {
 
     ?>
 
-    <div class="">
-        <div class="">
-            <div class="news_title2"><?php echo esc_html($post->post_title); ?></div>
-            <span class="news-h2">
-            <?php if (has_post_thumbnail($post_id)): ?>
-                <div class="ln_image-container2">
-                <img class="img-h2" src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="<?php echo esc_attr($post->post_title); ?>">
-                </div>
-            <?php endif; ?>
-            </span>
 
+        <div class="">
+
+            <div class="news_title2"><?php echo esc_html($post->post_title); ?></div>
+                <div class="news-h2">
+                </div>
             <div class="ms-content2">
+                <?php if (has_post_thumbnail($post_id)): ?>
+                    <div class="ln_image-container2">
+                        <img class="img-h2" src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="<?php echo esc_attr($post->post_title); ?>">
+                    </div>
+                <?php endif; ?>
                 <?php echo apply_filters('the_content', $post->post_content); ?>
             </div>
+
      </div>
-    </div>
+
 
     <?php
     // -------------------------------------------------------------------------------------------------------------

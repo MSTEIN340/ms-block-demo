@@ -1,3 +1,7 @@
+.wrapper {
+  //  overflow-y: hidden !important;
+}
+
 .ms_header-outer {
   display: flex;
   background-color: transparent;
@@ -153,7 +157,7 @@
 //  top: 0;
   color: rgba(213, 208, 208, 0.88);
   text-shadow: 1px 1px 1px rgb(31, 31, 31), -1px -1px 0px rgb(61, 60, 60);
-  font-size: 3.5rem;
+  font-size: 3.5rem !important;
   //margin-top: 25px;
 
   content: "";
@@ -185,10 +189,10 @@
 
 
 .fit {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: auto;
-
+  transition: all 0.5s;
 //  margin-top: 10%;
 
 //  margin-top: 40vh;
@@ -208,7 +212,7 @@
 }
 
 .noarm {
-  position: absolute;
+  position: fixed;
   bottom: 0;
  // margin-top: 250px;
   height: 70%;
@@ -218,7 +222,7 @@
   right: 0;
 }
 .arm {
-  position: absolute;
+  position: fixed;
   bottom: 30%;
   margin-left: 0;
   height: 40%;
@@ -227,6 +231,7 @@
   right: 0;
   // default start is 304 degrees
   transform: rotate(0deg);
+  //transition: all 0.8s;
 }
 
 body {

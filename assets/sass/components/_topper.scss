@@ -17,10 +17,10 @@
 .ce2 {
   width: 100%;
   height: 100%;
-  align-self: center;
+ // align-self: center;
   vertical-align: middle;
   //line-height: 2;
-
+  float: left;
   // margin-top: -50px;
   //  transform: translateY(-50%);
   padding-left: 0%;
@@ -29,13 +29,14 @@
 }
 
 .aa_font1ms {
+  // line-height: 70px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: clamp(1rem, 1.641025641vw, 2rem); /* Adjust min and max values as needed */
+  font-size: clamp(1.8rem, 1.641025641vw, 3rem); /* Adjust min and max values as needed */
   letter-spacing: -1px;
-  line-height: 70px; // Set this to the height of .topper-inner
+  // line-height: 70px; // Set this to the height of .topper-inner
 }
-
+/*
 .topper-outer {
   display: flex;
   background-color: transparent;
@@ -77,6 +78,50 @@
   text-align: center;
   vertical-align: middle;
 }
+ */
+.topper-outer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  position: sticky; // Keep the header sticky
+  top: 0; // Adjusted to 0
+  height: 70px;
+  width: 100%;
+  z-index: 7;
+//  overflow: hidden; // Ensure no internal overflow
+}
+
+.topper-inner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%; // Ensure this matches .topper-outer height if necessary
+  width: 100%;
+  position: relative; // For absolute positioning context of children
+  box-shadow: 0 5px 15px #1f1f1f;
+  z-index: 7;
+  transition: all 1s;
+}
+.aa_font2ms {
+  // color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+  letter-spacing: 0;
+
+}
+
+.w50b {
+  position: absolute;
+  line-height: 70px;
+  top: 50%; // Center vertically
+  right: 0% !important; // Center horizontally
+  transform: translateY( -50%); // Adjust for exact centering
+  width: 75%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
 
 .hMichaelb {
   height: 80%;
@@ -89,6 +134,7 @@
 }
 
 .hMichael2b {
+  float: left;
   display: flex;
   align-items: center; // Aligns items on the current line
   flex-wrap: wrap; // Allows items to wrap onto multiple lines

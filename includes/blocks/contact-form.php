@@ -33,7 +33,7 @@ function handle_contact_form_submission() {
         // Set the recipient and sender email addresses
         $to = 'mstein.software@gmail.com'; // Replace with the recipient email address
         $headers = array('Content-Type: text/plain; charset=UTF-8');
-
+        $headers = 'From: MichaelAStein.com <wordpress@archangel-media.com>';
         // Send the email using wp_mail()
         if (wp_mail($to, $subject, $email_content, $headers)) {
             echo 'Success';

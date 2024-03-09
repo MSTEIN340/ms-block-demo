@@ -21,8 +21,8 @@ class LatestNews extends Component {
 
     componentDidMount() {
 
-        console.log("Did Mount");
-        console.log("Event Listener Added");
+        //console.log("Did Mount");
+     //   console.log("Event Listener Added");
       //  document.addEventListener('DOMContentLoaded', LoadLatestNews);
         LoadLatestNews();
     }
@@ -31,15 +31,15 @@ class LatestNews extends Component {
     }
 
     handleScroll(event) {
-        console.log('Scrolled!', event);
+      //  console.log('Scrolled!', event);
 
         const { scrollTop, scrollLeft } = event.target;
-        console.log('Scroll position:', { scrollTop, scrollLeft });
+     //   console.log('Scroll position:', { scrollTop, scrollLeft });
     }
 
     render() {
        // updateArray();
-        console.log("Render Latest News");
+      //  console.log("Render Latest News");
 
         // contents("hello");
         // console.log(multidimensionalArray["WORDPRESS"][2]);

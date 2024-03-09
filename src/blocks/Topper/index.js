@@ -38,7 +38,7 @@ registerBlockType(block.name, {
                         <a className={"hMichael2b"} href={"https://www.MichaelAStein.com/"}>
                             <div className={"ce2 aa_font1ms"}>Michael A. Stein </div>
                         </a>
-                        <span className={"aa_font2 w50b"}><InnerBlocks.Content/></span>
+                        <span id="vMenu" className={"aa_font2ms w50b"}><InnerBlocks.Content/></span>
                     </div>
                 </header>
             </>

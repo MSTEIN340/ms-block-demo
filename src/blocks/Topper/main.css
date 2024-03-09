@@ -38,19 +38,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .ce2 {
   width: 100%;
   height: 100%;
-  align-self: center;
   vertical-align: middle;
+  float: left;
   padding-left: 0%;
 }
 
 .aa_font1ms {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: clamp(1rem, 1.641025641vw, 2rem); /* Adjust min and max values as needed */
+  font-size: clamp(1.8rem, 1.641025641vw, 3rem); /* Adjust min and max values as needed */
   letter-spacing: -1px;
-  line-height: 70px;
 }
 
+/*
 .topper-outer {
   display: flex;
   background-color: transparent;
@@ -65,26 +65,74 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .topper-inner {
+  //color: white;
   display: flex !important;
   background-color: transparent;
   height: 70px;
   position: sticky;
   align-items: center !important;
+  // top: 20px;
   width: 100%;
   box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
   z-index: 7;
   overflow-y: hidden !important;
   overflow-x: hidden;
+  //  border-radius: 100px;
   transition: all 1s;
 }
 
 .w50b {
   float: right;
   content: "";
+  // margin-top: 10px;
   width: 65%;
+  //  height: 6rem;
   padding-left: 0%;
+  //  padding-top: 1rem;
   text-align: center;
   vertical-align: middle;
+}
+ */
+.topper-outer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 7;
+}
+
+.topper-inner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 5px 15px #1f1f1f;
+  z-index: 7;
+  transition: all 1s;
+}
+
+.aa_font2ms {
+  text-decoration: underline;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.w50b {
+  position: absolute;
+  line-height: 70px;
+  top: 50%;
+  right: 0% !important;
+  transform: translateY(-50%);
+  width: 75%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 .hMichaelb {
@@ -98,6 +146,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .hMichael2b {
+  float: left;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -232,6 +281,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
   animation: explode 1s ease-in;
 }
 
+.fade-in {
+  opacity: 1;
+  background-color: transparent;
+  color: whitesmoke !important;
+  width: 100vw;
+  content: "";
+  line-height: pxToRem(70px) !important;
+  display: inline-flex;
+}
+.fade-in a, .fade-in span {
+  color: whitesmoke;
+}
+
 .boom2 {
   opacity: 1;
   background-color: whitesmoke !important;
@@ -242,6 +304,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   clear: both;
   height: pxToRem(52px) !important;
   animation: explode 1s ease-in;
+  line-height: pxToRem(52px) !important;
   box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
 }
 
@@ -268,6 +331,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .MsNav {
   float: right;
+  margin-right: 15%;
 }
 .MsNav .menu-icon {
   display: none;
@@ -281,6 +345,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .MsNav ul {
   text-align: center;
   list-style-type: none;
+  font-size: pxToRem(20px);
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -291,10 +356,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .MsNav ul li a {
-  display: block;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: pxToRem(60px);
+  box-sizing: border-box;
   padding: pxToRem(12px) pxToRem(16px);
   text-decoration: none;
 }
@@ -308,25 +374,79 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: block;
 }
 
+@media only screen and (max-width: 1300px) {
+  .fit {
+    display: none;
+  }
+  .MsNav {
+    margin-right: 7%;
+  }
+  .MsNav ul {
+    float: right;
+    margin-right: 0%;
+    font-size: pxToRem(16px);
+  }
+  .MsNav ul .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: pxToRem(30px);
+  }
+  .MsNav ul .menu-icon ii {
+    display: block;
+    float: right;
+  }
+}
 @media only screen and (max-width: 1000px) {
+  .aa_font1ms {
+    font-size: clamp(2rem, 1.641025641vw, 4rem) !important; /* Adjust min and max values as needed */
+  }
   html {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .w50b {
+    width: 30% !important;
+  }
+  .hMichael2b {
+    width: 80% !important;
   }
   .MsNav .menu-icon {
     display: block;
   }
   .MsNav ul {
     display: none;
+    font-size: pxToRem(40px);
+    color: whitesmoke;
+  }
+  .MsNav ul li a {
+    color: whitesmoke;
+  }
+}
+@media only screen and (max-width: 1000px) and (max-width: 1000px) {
+  .MsNav ul.active {
+    display: flex !important;
+    float: right;
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0;
   }
+}
+@media only screen and (max-width: 1000px) {
+  .vMenu {
+    position: absolute;
+    top: 150% !important;
+    transform: translateX(-50%);
+    width: 100%;
+    display: block;
+    align-items: stretch;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .vMenu ul {
+    background: rgba(0, 0, 0, 0.8);
+  }
   .MsNav ul li {
     width: 100%;
-  }
-  .MsNav ul.active {
-    display: flex !important;
   }
 }
 .MsNav ul li.submenu ul {

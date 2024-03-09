@@ -125,6 +125,22 @@
   height: pxToRem(50px) !important;
   animation: explode 1s ease-in;
 }
+
+.fade-in {
+  opacity: 1;
+  // line-height: 3;
+  background-color: transparent;
+  color: whitesmoke !important;
+  width: 100vw;
+  content: "";
+  line-height: pxToRem(70px) !important; // Set this to the height of .topper-inner
+  display: inline-flex;
+  & a, span {
+    color: whitesmoke;
+  }
+
+}
+
 .boom2 {
   opacity: 1;
   background-color: whitesmoke !important;
@@ -135,6 +151,7 @@
   clear: both;
   height: pxToRem(52px) !important;
   animation: explode 1s ease-in;
+  line-height: pxToRem(52px) !important; // Set this to the height of .topper-inner
   box-shadow: 0 pxToRem(5px) pxToRem(15px) #1f1f1f;
 }
 .boom::after{
