@@ -1788,6 +1788,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-weight: 500;
   padding: 0; }
 
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white; }
+
+/* Set the animation, color, size and hide the text */
+.intro {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  z-index: 1;
+  animation: intro 4s ease-out 1s;
+  color: #4bd5ee;
+  font-weight: 400;
+  font-size: 300%;
+  opacity: 0;
+  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6); }
+
+@keyframes intro {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .w50-2 {
   position: absolute;
   top: 35px;
@@ -4012,35 +4041,6 @@ he3 {
 
 body {
   margin: 0; }
-
-.star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background-color: white; }
-
-/* Set the animation, color, size and hide the text */
-.intro {
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  z-index: 1;
-  animation: intro 6s ease-out 1s;
-  color: #4bd5ee;
-  font-weight: 400;
-  font-size: 300%;
-  opacity: 0;
-  text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.6); }
-
-@keyframes intro {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 1; }
-  90% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 
 /* Set the animation & hide the logo */
 .logo {
