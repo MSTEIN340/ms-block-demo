@@ -25,6 +25,7 @@ function animationend_listener() {
             Intro.style.opacity = 0;
             brassPlates.style.opacity = 1;
             introstop.style.opacity = 0;
+            handleStopClick();
         }, 57000);
         const introstop = document.getElementById('intro-stop');
         if (introstop) {
